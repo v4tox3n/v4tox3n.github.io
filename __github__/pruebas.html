@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pruebas</title>
+
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+            
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                text-decoration: none;
+                list-style: none;
+            }
+            
+            body {
+                font-family: 'Georgia', serif;
+                background-color: #222222;
+                overflow-x: hidden;
+            }
+
+            .center {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .information-about-buying {
+                z-index: 100000;
+                width: 100%;
+                height: 100vh;
+                top: 0;
+                background-color: rgba(255, 255, 255, 0.514);
+                position: fixed;
+            }
+
+            .restore-button {
+                position: absolute;
+                border-radius: 10px;
+                transform: scale(2);
+                width: 20px;
+                color: red;
+                background-color: transparent;
+                cursor: pointer;
+                top: 15px;
+                right: 15px;
+            }
+            
+            .restore-button:hover {
+                transform: scale(2.2);
+                color: black;
+                background-color: red;
+                cursor: pointer;
+            }
+
+            .safepassPanel {
+                background-color: rgba(255, 255, 255, 0.726);
+                border: 2px solid black;
+                border-radius: 10px;
+                padding: 20px;
+                position: relative;
+            }
+
+            .border1 {
+                color: white;
+                text-shadow: -1px -1px 0 black, 1px -1px 0 black, 1px 1px 0 black, -1px 1px 0 black;
+            }
+            
+            .inside1 {
+                color: #DBB000
+            }
+
+            .border1,
+            .inside1 {
+                position: absolute;
+                top: 0;
+                left: 19px;
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="information-about-buying center">
+            <div class="safepassPanel">
+                <h2 class="border1">Comprar SafePass</h2>
+                <h2 class="inside1">Comprar SafePass</h2>
+                <br>
+                <p>Esta aplicación es gratis, por lo que no tendrá que realizar ningún pago.</p>
+                <p>Para descargar SafePass, debes abrir con la sección "Descargar Bot"</p>
+                <p>un ticket en nuestro <a href="http://" target="_blank">servidor de Discord</a>.</p>
+                <p>Si tienes alguna pregunta puedes proporcionar tu problema en el apartado</p>
+                <p>de soporte de la página y revisa antes si tu pregunta está en el FAQ de la web.</p>
+                <button class="restore-button"> X </button>
+            </div>
+        </div>
+    </body>
+</html>
