@@ -3,306 +3,262 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>V4 Bots</title>
+        <title>V4 Dev Solutions</title>
         <link rel="stylesheet" href="styles/style.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
-        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
 
     <body>
+        <div id="inicio">Puto si lo lees xd :)</div>
+
         <header class="fixed-header">
             <div class="back">
                 <div class="menu container">
-                    <a href="index.html" class="logo">V4 BOTS</a>
+                    <a href="index.html" class="logo">V4 Dev Solutions</a>
                     <input type="checkbox" id="menu">   
                     <label for="menu">
-                        <img src="assets/menu.png" class="icon-menu">
+                        <img onclick="showNavBar()" src="assets/menu.png" class="icon-menu">
                     </label>
                     <nav class="navBar">
                         <ul>
-                            <li><a class = "header-buttons" href="#inicio">INICIO</a></li>
-                            <li><a class = "header-buttons" href="#bots">BOTS</a></li>
-                            <li><a class = "header-buttons" href="#comunidad">COMUNIDAD</a></li>
-                            <li><a class = "header-buttons" href="#soporte">SOPORTE</a></li>
-                            <li><a class = "header-buttons" href="#faq">FAQ</a></li>
+                            <li><a onclick="quitNavBar()" class = "header-buttons" href="#inicio">INICIO</a></li>
+                            <li><a onclick="quitNavBar()" class = "header-buttons" href="#solicitar-aplicación">SOLICITAR APLICACIÓN</a></li>
+                            <li><a onclick="quitNavBar()" class = "header-buttons" href="#soporte">SOPORTE</a></li>
+                            <li><a onclick="quitNavBar()" class = "header-buttons" href="#faq">FAQ</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </header>
 
-        <div class="center allElements" id="inicio">
-            <div class="main-container">
-                <div class="bots-container" id="bots">
-                    <div class="bot">
-                        <br>
-                        <div class="center">
-                            <div class="hh p"><h3 class="bot-title border"><strong>SafePass</strong></h3></div>
-                            <div class="ff p"><h3 class="bot-title inside"><strong>SafePass</strong></h3></div>
-                        </div>
-                        <br>
-                        <ul class="center">
-                            <br>
-                            <li class="caracteristicas-title"><strong>Características :</strong></li>
-                            <li class="bot-text1">SafePass es una herramienta muy útil</li>
-                            <li class="bot-text1">para aquellas personas que siempre se</li>
-                            <li class="bot-text1">olvidan de sus contraseñas y tienen</li>
-                            <li class="bot-text1">que reestablecerla y hacer una nueva.</li>
-                            <li class="bot-text1">Con SafePass, guarda tus contraseñas en</li>
-                            <li class="bot-text1">la aplicación y no volverás a olvidar</li>
-                            <li class="bot-text1">ninguna otra contraseña.</li>
-                            
-                            <img src="assets/SafePass.png" alt="SafePass-Image" class="bot-image">
-                            
-                            
-                            <!-- <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li> -->
-                            <button onclick="safepassShowPanel()" class="buy-button-change-vs">Comprar</button>
-                        </ul>
-                    </div>
-                    <div class="bot">
-                        <br>
-                        <div class="center">
-                            <div class="hh pp"><h3 class="bot-title border"><strong>Textos</strong></h3></div>
-                            <div class="ff pp"><h3 class="bot-title inside"><strong>Textos</strong></h3></div>
-                        </div>
-                        <br>
-                        <ul class="center">
-                            <br>
-                            <li class="caracteristicas-title"><strong>Características :</strong></li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <button class="buy-button-change-vs" id="SafePass">Comprar</button>
-                        </ul>
-                    </div>
-                    <div class="bot">
-                        <br>
-                        <div class="center">
-                            <div class="hh ppp"><h3 class="bot-title border"><strong>Textos</strong></h3></div>
-                            <div class="ff ppp"><h3 class="bot-title inside"><strong>Textos</strong></h3></div>
-                        </div>
-                        <br>
-                        <ul class="center">
-                            <br>
-                            <li class="caracteristicas-title"><strong>Características :</strong></li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <button class="buy-button-change-vs">Comprar</button>
-                        </ul>
-                    </div>
-        
-                    <div class="bot">
-                        <br>
-                        <div class="center">
-                            <div class="hh pppp"><h3 class="bot-title border"><strong>Textos</strong></h3></div>
-                            <div class="ff pppp"><h3 class="bot-title inside"><strong>Textos</strong></h3></div>
-                        </div>
-                        <br>
-                        <ul class="center">
-                            <br>
-                            <li class="caracteristicas-title"><strong>Características :</strong></li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <button class="buy-button-change-vs">Comprar</button>
-                        </ul>
-                    </div>
-                    <div class="bot">
-                        <br>
-                        <div class="center">
-                            <div class="hh ppppp"><h3 class="bot-title border"><strong>Textos</strong></h3></div>
-                            <div class="ff ppppp"><h3 class="bot-title inside"><strong>Textos</strong></h3></div>
-                        </div>
-                        <br>
-                        <ul class="center">
-                            <br>
-                            <li class="caracteristicas-title"><strong>Características :</strong></li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <button class="buy-button-change-vs">Comprar</button>
-                        </ul>
-                    </div>
-                    <div class="bot">
-                        <br>
-                        <div class="center">
-                            <div class="hh pppppp"><h3 class="bot-title border"><strong>Textos</strong></h3></div>
-                            <div class="ff pppppp"><h3 class="bot-title inside"><strong>Textos</strong></h3></div>
-                        </div>
-                        <br>
-                        <ul class="center">
-                            <br>
-                            <li class="caracteristicas-title"><strong>Características :</strong></li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <li class="bot-text">-------</li>
-                            <button class="buy-button-change-vs">Comprar</button>
-                        </ul>
-                    </div>
-                    
-                    <h4 class="transparent-text" id="comunidad">.</h4>
-                    <br>
-                    <br>
-                </div>
+        <div class="animated-container">
+            <div class="bubbles">
+                <span style="--i:11;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:10;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:23;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:20;"></span>
+                <span style="--i:22;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:18;"></span>
+                <span class="bubblesSpan" style="--i:21;"></span>
+                <span class="bubblesSpan" style="--i:15;"></span>
+                <span class="bubblesSpan" style="--i:13;"></span>
+                <span class="bubblesSpan" style="--i:26;"></span>
+                <span class="bubblesSpan" style="--i:17;"></span>
+                <span class="bubblesSpan" style="--i:13;"></span>
+                <span class="bubblesSpan" style="--i:28;"></span>
 
-                <div class="comunity-container">
-                    <br>
-                    <br>
-                    <br>
-                    <img class="img-soap" src="assets/bot-image.png">
-                </div>
-        
-                <div class="footer" id="soporte">
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <div id="support-form-container">
-                        <form method="post">
-                            <label id="supportTitle" class="support-label">SOPORTE</label>
-                            <div class="support-name">
-                                <input id="supportInput" type="text" required placeholder="Nombre" class="support-input">
-                            </div>
-                        
-                            <textarea id="supportTextArea" cols="30" rows="7" class="support-textarea" placeholder="Escribe tu pregunta..." required></textarea>
-                        
-                            <div class="support-send">
-                                <input type="submit" value="Enviar" class="support-send-button">
-                            </div>
-                        </form>
-                    </div>
-        
-                    <div id="discord-container">
-                        <h1 id="discordTitle">Únete a nuestro servidor de Discord</h1>
-                        <p id="discordP">En él se envían las dudas sobre la página / bots</p>
-                        <a id="discord-button" href="prueba/index.html" target="_blank">¡Únete ahora!</a>
-                    </div>
+                <span class="bubblesSpan" style="--i:11;"></span>
+                <span class="bubblesSpan" style="--i:12;"></span>
+                <span class="bubblesSpan" style="--i:24;"></span>
+                <span class="bubblesSpan" style="--i:10;"></span>
+                <span class="bubblesSpan" style="--i:14;"></span>
+                <span class="bubblesSpan" style="--i:23;"></span>
+                <span class="bubblesSpan" style="--i:18;"></span>
+                <span class="bubblesSpan" style="--i:16;"></span>
+                <span class="bubblesSpan" style="--i:19;"></span>
+                <span class="bubblesSpan" style="--i:20;"></span>
+                <span class="bubblesSpan" style="--i:22;"></span>
+                <span class="bubblesSpan" style="--i:25;"></span>
+                <span class="bubblesSpan" style="--i:18;"></span>
+                <span class="bubblesSpan" style="--i:21;"></span>
+                <span class="bubblesSpan" style="--i:15;"></span>
+                <span class="bubblesSpan" style="--i:13;"></span>
+                <span class="bubblesSpan" style="--i:26;"></span>
+                <span class="bubblesSpan" style="--i:17;"></span>
+                <span class="bubblesSpan" style="--i:13;"></span>
+                <span class="bubblesSpan" style="--i:28;"></span>
 
-                    <br>
-                    <br>
+                <span class="bubblesSpan" style="--i:15;"></span>
+                <span class="bubblesSpan" style="--i:13;"></span>
+                <span class="bubblesSpan" style="--i:26;"></span>
+                <span class="bubblesSpan" style="--i:17;"></span>
+                <span class="bubblesSpan" style="--i:13;"></span>
 
-                    <div class="faq-container" id="faq">
-                        <h2 id="titleFAQ" onclick="encogerFaq()">Preguntas Frecuentes</h2>
-                        <br>
-                        <ul class="preguntas-respuestas-faq">
-                            <li>
-                                <strong id="que1">¿Cómo puedo obtener ayuda?</strong>
-                                <p id="ans1">Puedes obtener ayuda enviando un mensaje en nuestro servidor de Discord o completando el formulario de soporte.</p>
-                            </li>
-                            <br>
-                            <li>
-                                <strong id="que2">¿Cómo puedo descargarme los bots que yo quiero?</strong>
-                                <p id="ans2">Despúes de efectuar el pago (si es un bot de pago), debes solicitar ayuda en el servidor de Discord abriendo un ticket con la sección "Descargar Bot"</p>
-                            </li>
-                            <br>
-                            <li>
-                                <strong id="que3">¿Podéis hacer un bot que yo os diga?</strong>
-                                <p id="ans3">Puedes dejar sugerencias de bots en nuestro servidor de Discord, abriendo un ticket en el canal "tickets" con la sección "Bot Nuevo"</p>
-                            </li>
-                            <!-- Última pregunta -->
-                            <br>
-                        </ul>
-                    </div>
+                <span class="bubblesSpan" style="--i:15;"></span>
+                <span class="bubblesSpan" style="--i:13;"></span>
+                <span class="bubblesSpan" style="--i:26;"></span>
+                <span class="bubblesSpan" style="--i:17;"></span>
+                <span class="bubblesSpan" style="--i:13;"></span>
+            </div>
 
-                    <br>
-                    <br>
-                    <br>
-
-                    <footer>
-                        <p id="copyright" class="copy">&copy; 2024 V4 Bots - Todos los derechos reservados</p>
-                    </footer>
-                    <br>
+            <div class="title center">
+                <h2 class="border1">V4 Dev Solutions</h2>
+                <h2 class="inside1">V4 Dev Solutions</h2>
+                <div class="text-container">
+                    <p>¿Necesitas alguna aplicación específicamente</p>
+                    <p>para alguna cosa? Nosotros te podemos proporcionar</p>
+                    <p>tu aplicación deseada estrechándonos a tus gustos</p>
+                    <p>y a tus gustos. Solo debes completar un formulario.</p>
                 </div>
             </div>
         </div>
 
-        <div class="information-about-buying center">
-            <div class="safepassPanel">
-                <h2 class="border1">Comprar SafePass</h2>
-                <h2 class="inside1">Comprar SafePass</h2>
+        <div class="allElements center">
+            <div class="main-container">
+                <div class="safepass centrado">
+                    <h2 class="border2">¿Aún no conoces SafePass?</h2>
+                    <h2 class="inside2">¿Aún no conoces SafePass?</h2>
+                    <div class="text-container1">
+                        SafePass es una herramienta muy útil para aquellas personas que siempre se olvidan de sus contraseñas y tienen que reestablecerla y hacer una nueva. Con SafePass guarda tus contraseñas en la aplicación y no volverás a olvidar ninguna otra contraseña. Tiene una interfaz sencilla de entender. <a href="descargar-safepass.html">Descargar</a>
+                    </div>
+
+                    <img src="assets/SafePass.png">
+                </div>
+
+                <h1 class="transparent-text" id="solicitar-aplicación">...</h1>
+
+                <div class="formulario">
+                    <h2 class="border3">Formulario Solicitud Aplicación</h2>
+                    <h2 class="inside3">Formulario Solicitud Aplicación</h2>
+                    <div class="text-container1">
+                        ¿Quieres tener una aplicación para ti personalizada? Rellenando el siguiente <a href="formulario.html">formulario</a> vas a enviar una solicitud al equipo de V4 Dev Solutions para que hagan tu aplicación. No obstante, también existe la posibilidad de que no hagan tu aplicación, en ese caso, serás contactado y avisado. En caso de que sí hagamos tu aplicación personalizada, también serás avisado, y cuando la tengamos terminada, será entregada al destinatario. Nota : Si en el formulario no dejas ninguna manera de contactar contigo, no se hará esa aplicación.
+                    </div>
+                    <a href="formulario.html">
+                        <button>Formulario</button>
+                    </a>
+                </div>
+
+                <h1 class="transparent-text">...</h1>
+
                 <br>
-                <p>Esta aplicación es gratis, por lo que no tendrá que realizar ningún pago.</p>
-                <p>Para descargar SafePass, debes abrir con la sección "Descargar Bot"</p>
-                <p>un ticket en nuestro <a href="404.html" target="_blank">servidor de Discord</a>.</p>
-                <p>Si tienes alguna pregunta puedes proporcionar tu problema en el apartado</p>
-                <p>de soporte de la página y revisa antes si tu pregunta está en el FAQ de la web.</p>
-                <button class="restore-button"> X </button>
+                <br>
+                <br>
+
+                <div class="steps">
+                    <h2 class="border3">Pasos a seguir</h2>
+                    <h2 class="inside3">Pasos a seguir</h2>
+                    <div class="img-steps center">
+                        <img src="assets/steps-to-follow.png">
+                    </div>
+                </div>
+
+                <h1 class="transparent-text" id="soporte">...</h1>
+
+                <div class="soporte">
+                    <form method="post">
+                        <h2 class="border3">Soporte</h2>
+                        <h2 class="inside3">Soporte</h2>
+                        <br>
+                        <div class="support-name">
+                            <input id="supportInput" type="text" required placeholder="Nombre" class="support-input">
+                        </div>
+                    
+                        <textarea id="supportTextArea" cols="30" rows="12" class="support-textarea" placeholder="Escribe tu pregunta..." required></textarea>
+                    
+                        <div class="support-send">
+                            <input type="submit" value="Enviar" class="support-send-button">
+                        </div>
+                    </form>
+                </div>
+
+                <h1 class="transparent-text">...</h1>
+
+                <div id="discord-container">
+                    <h1 id="discordTitle">Únete a nuestro servidor de Discord</h1>
+                    <p id="discordP">En él se envían las dudas sobre la página / bots</p>
+                    <a id="discord-button" href="prueba/index.html" target="_blank">¡Únete ahora!</a>
+                </div>
+
+                <h1 class="transparent-text" id="faq">...</h1>
+
+                <div class="wrapper">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <h2 class="border4">FAQ</h2>
+                    <h2 class="inside4">FAQ</h2>
+
+                    <!-- Pregunta 1 -->
+                    <div class="faq">
+                        <button class="accordion">
+                            ¿Qué es V4 Dev Solutions?
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="pannel">
+                            <p>V4 Dev Solutions crea aplicaciones a tu gusto adaptándolas a tus gustos y necesidades.</p>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 2 -->
+                    <div class="faq">
+                        <button class="accordion">
+                            ¿Qué tengo que hacer para que hagáis mi aplicación?
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="pannel">
+                            <p>Debes rellenar el <a href="#solicitar-aplicación">formulario de solicitud</a> que tienes más arriba. Con eso nos llega tu aplicación deseada y podremos hacerla.</p>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 3 -->
+                    <div class="faq">
+                        <button class="accordion">
+                            ¿Cúanto tiempo tardáis en acabar la aplicación / web?
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="pannel">
+                            <p>El tiempo depende mucho del tipo de aplicación / web que quieras tener. Para un proyecto normal, aproximadamente 1 semana.</p>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 4 -->
+                    <div class="faq">
+                        <button class="accordion">
+                            ¿Qué tengo que hacer para que hagáis mi aplicación?
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="pannel">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam modi sequi, dolorem quod incidunt molestiae sit at deserunt ratione, possimus officiis cupiditate repellendus harum in illo vel sint eligendi ipsa?</p>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 5 -->
+                    <div class="faq">
+                        <button class="accordion">
+                            ¿Qué tengo que hacer para que hagáis mi aplicación?
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="pannel">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ex ratione dignissimos perspiciatis commodi obcaecati facere asperiores ullam, minima sed nostrum voluptatum voluptatibus laborum! Ut veritatis obcaecati ducimus? Molestiae, voluptate!</p>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 6 -->
+                    <div class="faq">
+                        <button class="accordion">
+                            ¿Qué tengo que hacer para que hagáis mi aplicación?
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="pannel">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim aspernatur asperiores, quod doloribus in molestiae repellat veritatis suscipit reiciendis non explicabo, necessitatibus temporibus, maxime quidem velit aliquam culpa soluta totam!</p>
+                    </div>
+                    </div>
+
+                    <!-- Pregunta 7 -->
+                    <div class="faq">
+                        <button class="accordion">
+                            ¿Qué tengo que hacer para que hagáis mi aplicación?
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="pannel">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae incidunt et ipsum est quidem, reprehenderit, adipisci libero illo temporibus accusantium deserunt amet quis cum. Illo cupiditate corrupti neque sint vel!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+                <br>
+                <br>
+                <!-- copyright -->
             </div>
         </div>
 
