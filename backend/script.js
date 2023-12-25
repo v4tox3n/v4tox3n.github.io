@@ -94,6 +94,11 @@ document.addEventListener('DOMContentLoaded', () => {
         
         const formData = new FormData(supportForm);
 
+        if (!areSupportFieldsCompleted(formData)) {
+            // alert('Por favor, completa todos los campos antes de enviar el formulario de soporte.');
+            return;
+        }
+
         const message = formatSupportFormData(formData);
 
         if (message) {
@@ -101,12 +106,20 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    function areSupportFieldsCompleted(formData) {
+        // Verificar si hay algún campo vacío en el formulario de soporte
+        const fields = Array.from(formData.values());
+        return !fields.some(value => value === null || value === undefined || value === '');
+    }
+
     function formatSupportFormData(formData) {
         const message = `
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 **Formulario de Soporte**
 > - __Nombre__: ${formData.get('supportInput')}
 > - __Pregunta__: ${formData.get('supportTextArea')}
+
+> - __Respuesta__: 
         `;
         
         return message;
@@ -126,9 +139,13 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .then((response) => {
             if (response.ok) {
-                console.log('Mensaje de soporte enviado con éxito.');
+                alert('Mensaje enviado.');
+                console.log('Mensaje enviado');
+
+                document.getElementById('supportInput').dataset = '';
+                document.getElementById('supportTextArea').content = '';
             } else {
-                console.error('Error al enviar el mensaje de soporte.');
+                console.error('Error al enviar el mensaje.');
             }
         })
         .catch((error) => {

@@ -9,12 +9,24 @@ document.addEventListener('DOMContentLoaded', () => {
         const formData1 = new FormData(document.getElementById('appForm'));
         const formData2 = new FormData(document.getElementById('appForm2'));
 
+        if (!areAllFieldsCompleted(formData1, formData2)) {
+            alert('Por favor, completa todo antes de enviar el formulario.');
+            return;
+        }
+
         const message = formatFormData(formData1, formData2);
 
         if (message) {
             sendMessageToDiscord(message);
         }
     });
+
+    function areAllFieldsCompleted(formData1, formData2) {
+        const fields1 = Array.from(formData1.values());
+        const fields2 = Array.from(formData2.values());
+
+        return !fields1.concat(fields2).some(value => value === null || value === undefined || value === '');
+    }
 
     function formatFormData(formData1, formData2) {
         
@@ -50,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .then((response) => {
             if (response.ok) {
-                window.location.href = 'form-send-it.html';
+                window.location.href = 'index.html';
             } else {
                 alert('Error, no se ha enviado el formulario. Si persiste el error, ponte en contacto con adriiiaa_12#4859 en Discord.');
             }
