@@ -81,6 +81,9 @@ for (i = 0; i < acc.length; i++) {
         } else {
             pannel.style.display = "block";
         }
+
+        var icon = this.querySelector('.fa-chevron-down');
+        icon.classList.toggle("flechaInvertida");
     });
 }
 
@@ -95,7 +98,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const formData = new FormData(supportForm);
 
         if (!areSupportFieldsCompleted(formData)) {
-            // alert('Por favor, completa todos los campos antes de enviar el formulario de soporte.');
             return;
         }
 
@@ -107,7 +109,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function areSupportFieldsCompleted(formData) {
-        // Verificar si hay algún campo vacío en el formulario de soporte
         const fields = Array.from(formData.values());
         return !fields.some(value => value === null || value === undefined || value === '');
     }
