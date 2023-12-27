@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 **__Nueva solicitud__**
 > - __Nombre__: ${formData1.get('nombre')}
-> - __Método de contacto__: ${formData1.get('contacto')}
+> - __Método de contacto__: ${formData1.get('contacto1')} // ${formData1.get('contacto2')} // ${formData1.get('contacto3')} // ${formData1.get('contacto4')}
 > - __Plazo de entrega__: ${formData1.get('entrega')}
 > - __Tipo de aplicación__: ${formData1.get('compatibilidad')}
 > - __Propósito de la aplicación__: ${formData1.get('proposito')}
