@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const webhookUrl = 'https://discord.com/api/webhooks/1188529503031537694/6xAhWvnfg7gN0SfWcPmFD-C02YE7tFEsFnZqcrSU5l23uxiemcRi4L8TTrZdkAdsI4sE';
+    const webhookUrl = 'https://discord.com/api/webhooks/1190599720184336474/KNnX7ucUjQBEV6Y7jvvp9-azLyYrQhrMDtwM8N52v6R1Iqd2Og2Vgj3Fa_u05wDBTIrE';
 
     const sendFormsButton = document.querySelector('.sendForms');
     
