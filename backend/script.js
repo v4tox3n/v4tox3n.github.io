@@ -88,7 +88,7 @@ for (i = 0; i < acc.length; i++) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    const webhookUrl = 'https://discord.com/api/webhooks/1188551161356242964/yrgHlVasJaKetb6NalC1QmcNWwtOaUxZLfJ0t4peepVaNQ0uMbUD_t6_kefEtMEPkv-q';
+    const webhookUrl = 'https://discord.com/api/webhooks/1190595129933844540/qjk3xOfm82kwRvi7fFCI-qyC5fLmgAK3WTYqJmZoYBOxCWCdF-zW4QqMFThENXYNnslE';
 
     const supportForm = document.querySelector('.soporte form');
     
