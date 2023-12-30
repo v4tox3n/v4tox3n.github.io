@@ -338,7 +338,10 @@ body {
 }
 
 .support-input,
-.support-textarea {
+.support-textarea,
+.resena-input,
+.resena-input2,
+.resena-textarea {
     width: calc(100% - 45px);
     padding: 10px;
     margin-bottom: 15px;
@@ -351,11 +354,11 @@ body {
     color: black;
 }
 
-.support-textarea {
+.support-textarea, .resena-textarea {
     resize: vertical;
 }
 
-.support-send-button {
+.support-send-button, .resena-send-button {
     padding: 10px 20px;
     font-size: 18px;
     font-weight: bold;
@@ -368,12 +371,33 @@ body {
     cursor: pointer;
 }
 
-.support-send-button:hover {
+.support-send-button:hover, .resena-send-button:hover {
     background-color: #997a1c;
     cursor: pointer;
 }
 
-#discord-container {
+.resenas {
+    margin-top: 50px;
+}
+
+.resena-name {
+    display: flex;
+    margin-right: -45px;
+}
+
+.resena-input2 {
+    flex: 40%;
+}
+
+.resena-input,
+.resena-input2,
+.resena-textarea {
+    background: linear-gradient(90deg, #f9a7b0, violet);
+}
+
+/* 🌟🌟🌟🌟 */
+
+.discord-container {
     padding: 20px;
     border-radius: 10px;
     background-color: #7289da;
@@ -384,12 +408,12 @@ body {
     margin-left: 45px;
 }
 
-#discord-container h1 {
+.discord-container h1 {
     font-size: 24px;
     margin-bottom: 10px;
 }
 
-#discord-button {
+.discord-button {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 20px;
@@ -402,7 +426,7 @@ body {
     transition: background-color 0.3s ease;
 }
 
-#discord-button:hover {
+.discord-button:hover {
     background-color: #2980b9;
 }
 

@@ -32,17 +32,25 @@ document.addEventListener('DOMContentLoaded', () => {
         
         const message = `
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-**__Nueva solicitud__**
-> - __Nombre__: ${formData1.get('nombre')}
-> - __Método de contacto__: ${formData1.get('contacto1')} // ${formData1.get('contacto2')} // ${formData1.get('contacto3')} // ${formData1.get('contacto4')}
-> - __Plazo de entrega__: ${formData1.get('entrega')}
-> - __Tipo de aplicación__: ${formData1.get('compatibilidad')}
-> - __Propósito de la aplicación__: ${formData1.get('proposito')}
-> - __Funciones de la aplicación__: ${formData2.get('funciones')}
-> - __Diseño__: ${formData2.get('diseno')}
-> - __Comentarios__: ${formData2.get('comentarios')}
-> - __Idiomas__: ${formData2.get('idiomas')}
-> - __Algo más a añadir__: ${formData2.get('mas')}
+> - **Nombre**: ${formData1.get('nombre')}
+> 
+> - **Método de contacto**: ${formData1.get('contacto1')} // ${formData1.get('contacto2')} // ${formData1.get('contacto3')} // ${formData1.get('contacto4')}
+> 
+> - **Plazo de entrega**: ${formData1.get('entrega')}
+> 
+> - **Tipo de aplicación**: ${formData1.get('compatibilidad')}
+> 
+> - **Propósito de la aplicación**: ${formData1.get('proposito')}
+> 
+> - **Funciones de la aplicación**: ${formData2.get('funciones')}
+> 
+> - **Diseño**: ${formData2.get('diseno')}
+> 
+> - **Comentarios**: ${formData2.get('comentarios')}
+> 
+> - **Idiomas**: ${formData2.get('idiomas')}
+> 
+> - **Algo más a añadir**: ${formData2.get('mas')}
 `;
         
         return message;

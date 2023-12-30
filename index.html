@@ -160,10 +160,31 @@
 
                 <h1 class="transparent-text">...</h1>
 
-                <div id="discord-container">
-                    <h1 id="discordTitle">Únete a nuestro servidor de Discord</h1>
-                    <p id="discordP">En él se envían las dudas sobre la página / bots</p>
-                    <a id="discord-button" href="https://discord.gg/Wu3FTufMTb" target="_blank">¡Únete ahora!</a>
+                <div class="resenas">
+                    <form method="post">
+                        <h2 class="border3">Reseñas</h2>
+                        <h2 class="inside3">Reseñas</h2>
+                        <br>
+                        <div class="resena-name">
+                            <input name="resenaInput" id="resenaInput" type="text" required placeholder="Nombre" class="resena-input">
+                            <input name="resenaInput2" id="resenaInput2" type="text" required placeholder="Estrellas (1-5)" class="resena-input2">
+                        </div>
+                    
+                        <textarea name="resenaTextArea" id="resenaTextArea" cols="30" rows="5" class="resena-textarea" placeholder="Escribe tu reseña..." required></textarea>
+                
+                        <div class="resena-send">
+                            <input type="submit" value="Enviar Reseña" class="resena-send-button">
+                        </div>
+                        <br>
+                    </form>
+                </div>
+
+                <h1 class="transparent-text">...</h1>
+
+                <div class="discord-container">
+                    <h1 class="discordTitle">Únete a nuestro servidor de Discord</h1>
+                    <p class="discordP">En él se envían las dudas sobre la página / bots</p>
+                    <a class="discord-button" href="https://discord.gg/zvJwFQGav5" target="_blank">¡Únete ahora!</a>
                 </div>
 
                 <h1 class="transparent-text" id="faq">...</h1>
@@ -234,12 +255,12 @@
                     <!-- Pregunta 6 -->
                     <div class="faq">
                         <button class="accordion">
-                            -----------------------------------------------
+                            ¿Dónde puedo ver las reseñas?
                             <i class="fa-solid fa-chevron-down"></i>
                         </button>
                         <div class="pannel">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim aspernatur asperiores, quod doloribus in molestiae repellat veritatis suscipit reiciendis non explicabo, necessitatibus temporibus, maxime quidem velit aliquam culpa soluta totam!</p>
-                    </div>
+                            <p>Las reseñas son enviadas al <a href="https://discord.gg/zvJwFQGav5" target="_blank">servidor de Discord</a> de V4 Dev Solutions. Puedes ver las reseñas en un canal del servidor llamado '»「🔍」reseñas'</p>
+                        </div>
                     </div>
 
                     <!-- Pregunta 7 -->
@@ -249,7 +270,7 @@
                             <i class="fa-solid fa-chevron-down"></i>
                         </button>
                         <div class="pannel">
-                            <p>Las preguntas del apartado de <a href="#soporte">soporte</a> son respondidas en <a target="_blank " href="https://discord.gg/Wu3FTufMTb">nuestro servidor de Discord</a>. Si no tienes la aplicación de Discord, puedes decir en la parte de la pregunta al final : No tengo Discord, os dejo mi (correo / número / ...) para que me respondáis.</p>
+                            <p>Las preguntas del apartado de <a href="#soporte">soporte</a> son respondidas en <a target="_blank " href="https://discord.gg/zvJwFQGav5">nuestro servidor de Discord</a>. Si no tienes la aplicación de Discord, puedes decir en la parte de la pregunta al final : No tengo Discord, os dejo mi (correo / número / ...) para que me respondáis.</p>
                         </div>
                     </div>
                 </div>
@@ -263,7 +284,7 @@
         </div>
 
         <footer class="center">
-            <p>&copy; 2024 V4 Dev Solutions - Todos los derechos reservados.</p>
+            <p>&copy; 2023 V4 Dev Solutions - Todos los derechos reservados.</p>
         </footer>
 
         <script src="backend/script.js"></script>

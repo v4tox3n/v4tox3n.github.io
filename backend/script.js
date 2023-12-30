@@ -115,12 +115,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function formatSupportFormData(formData) {
         const message = `
+\`\`\`
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-**Formulario de Soporte**
-> - __Nombre__: ${formData.get('supportInput')}
-> - __Pregunta__: ${formData.get('supportTextArea')}
-
-> - __Respuesta__: 
+**Nueva Pregunta Enviada**
+> - **Nombre** : ${formData.get('supportInput')}
+> - **Pregunta** : ${formData.get('supportTextArea')}
+        
+> - **Respuesta** : 
+\`\`\`
         `;
         
         return message;
@@ -147,14 +149,92 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.getElementById('supportTextArea').content = '';
             } else {
                 console.error('Error al enviar el mensaje.');
+                alert('Error al enviar el mensaje');
             }
         })
         .catch((error) => {
             console.error('Error en la solicitud: ', error);
+            alert('Error en la solicitud ', error);
         });
     }
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const webhookUrl2 = 'https://discord.com/api/webhooks/1190623824841019444/OXQMhdODLQbWbLwf8vyEP22U7MFD9RqlNhGSTxnmEcUiajJWcKYkMvAlwAC-oxwHgqa_';
+
+    const supportForm2 = document.querySelector('.resenas form');
+
+    supportForm2.addEventListener('submit', (f) => {
+        f.preventDefault();
+
+        const formData2 = new FormData(supportForm2);
+
+        if (!areSupportFieldsCompleted2(formData2)) {
+            return;
+        }
+
+        const message2 = formatSupportFormData2(formData2);
+
+        if (message2) {
+            sendMessageToDiscord2(message2);
+        }
+    });
+
+    function areSupportFieldsCompleted2(formData2) {
+        const fields2 = Array.from(formData2.values());
+        return !fields2.some(value => value === null || value === undefined || value === '');
+    }
+
+    function formatSupportFormData2(formData2) {
+        const stars = formData2.get('resenaInput2');
+        let starsMessage = '';
+
+        if (stars >= 1 && stars <= 5) {
+            for (let i = 1; i <= stars; i++) {
+                starsMessage = `\`${'🌟'.repeat(stars)}\``;
+            }
+        } else {
+            console.error('Error al poner las estrellas. Debe ser un número del 1 al 5.');
+            alert('Error al poner las estrellas. Debe ser un número del 1 al 5.');
+            return null;
+        }
+
+        const message2 = `
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+> ${formData2.get('resenaInput')}     ${starsMessage}
+> ${formData2.get('resenaTextArea')}
+        `;
+
+        return message2;
+    }
+
+    function sendMessageToDiscord2(message2) {
+        const payload2 = {
+            content: message2,
+        };
+
+        fetch(webhookUrl2, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(payload2),
+        })
+            .then((response2) => {
+                if (response2.ok) {
+                    alert('Reseña enviada.');
+                    console.log('Reseña enviada');
+                } else {
+                    console.error('Error al enviar la reseña.');
+                    alert('Error al enviar la reseña');
+                }
+            })
+            .catch((error) => {
+                console.error('Error en la solicitud: ', error);
+                alert('Error al enviar la reseña: ', error);
+            });
+    }
+});
 
 function scrollToHash() {
     var hash = window.location.hash.substr(1);
@@ -171,6 +251,10 @@ function scrollToHash() {
             targetElement.scrollIntoView({ behavior: 'smooth' });
         }
         window.location.hash.substr(1);
-    }    
+    }
 }
 window.addEventListener('load', scrollToHash);
+
+function getUserIp() {
+    
+}
