@@ -66,15 +66,30 @@ button {
     background-color: #ff9999;
 }
 
-.siguiente {
+.siguiente, .final {
     background-color: rgb(104, 104, 238);
+    text-decoration: none;
+    color: white;
     display: none;
 }
 
+.final {
+    display: inline;
+}
 
+a {
+    text-decoration: none;
+}
 
-
-/* APARTADO DE PREGUNTAS */
 .panel {
     height: 100vh;
+}
+
+label {
+    margin-right: 10px;
+}
+  
+select {
+    padding: 5px;
+    font-size: 16px;
 }

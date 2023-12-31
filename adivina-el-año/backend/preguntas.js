@@ -1,5 +1,8 @@
 var panels = document.querySelectorAll('.panel');
 var nextButtons = document.querySelectorAll('.siguiente');
+var finalScoreButton = document.querySelector('.finalScore');
+
+var correctCount = 0;
 
 panels.forEach(function(panel, index) {
     var buttons = panel.querySelectorAll('.button');
@@ -43,11 +46,12 @@ panels.forEach(function(panel, index) {
 
     function verificarRespuesta() {
         if (isCorrect === 'Yes') {
-            // alert('Correcto');
-        } else if (isCorrect === 'No') {
-            // alert('Incorrecto');
-        } else {
-            alert('Error');
+            correctCount++;
         }
     }
+});
+
+finalScoreButton.addEventListener('click', function() {
+    alert('Número de respuestas correctas: ' + correctCount);
+    correctCount = 0;
 });
