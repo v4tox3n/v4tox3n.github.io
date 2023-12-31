@@ -16,6 +16,7 @@ body {
     justify-content: center;
     text-align: center;
     position: relative;
+    margin-top: -50px;
 }
 
 .form {
