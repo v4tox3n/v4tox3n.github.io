@@ -1,522 +1,326 @@
-html {
-    scroll-behavior: smooth;
-}
-
-* {
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
+    overflow: hidden;
 }
 
-body {
-    font-family: sans-serif;
-    overflow-x: hidden;
-}
-
-.fixed-header {
-    position: fixed;
-    top: 0;
+.root {
     width: 100%;
-    z-index: 10000;
-    font-family: 'Georgia', serif;
-}
-
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.back {
-    padding: 40px 0;
-    background-color: #b2d2f3;
-    border-bottom: 3px solid silver;
-}
-
-.menu {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    height: 100vh;
+    background: url('../assets/wallpapers/wallpaper4.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background-color: brown; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.349);
+    color: black;
+    display: flex;
     justify-content: space-between;
-    z-index: 1000;
+    backdrop-filter: blur(25px);
 }
 
-.logo {
-    font-size: 24px;
-    color: #53a87a;
-    font-weight: 800;
-    text-transform: uppercase;
-}
-
-.menu .navBar ul li {
-    position: relative;
-    float: left;
-}
-
-.menu .navBar ul li a {
-    font-size: 18px;
-    font-weight: bold;
-    padding: 30px;
-    color: #8db39f;
-    display: block;
-    cursor: pointer;
-}
-
-.menu .navBar ul li a:hover {
-    color: #407552;
-}
-
-#menu {
-    display: none;
-}
-
-.icon-menu {
-    width: 25px;
-}
-
-.menu label {
-    cursor: pointer;
-    display: none;
-}
-
-@media(max-width:991px) {
-    .menu {
-        padding: 20px;
-    }
-
-    .menu label {
-        display: initial;
-    }
-
-    .back {
-        padding: 40px 0;
-    }
-
-    .menu .navBar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: #222222;
-        display: none;
-        text-align: center;
-    }
-
-    .menu .navBar ul li {
-        width: 100%;
-    }
-
-    #menu:checked ~ .navBar {
-        display: initial;
-    }
-
-    ::-webkit-scrollbar {
-        opacity: 0;
-    }
-
-    .bots-container {
-        grid-template-columns: 1fr;
-    }
-
-    .safepass {
-        display: none;
-    }
-}
-
-.header-buttons::after {
-    content: '';
-    color: #53a87a;
-    position: absolute;
-    left: 0;
-    top: 75%;
-    height: 2px;
+.header {
     width: 100%;
     background-color: transparent;
-    transition: background-color 0.3s;
-}
-
-.animated-container {
-    position: relative;
-    width: 100%;
-    height: 320px;
-    margin-top: 60px;
-    background-color: #b2d2f3;
-    overflow: hidden;
-    border-bottom: 3px solid silver;
-}
-
-.bubbles {
-    position: relative;
+    color: transparent;
     display: flex;
+    text-align: left;
 }
 
-.bubbles span {
-    position: relative;
-    width: 30px;
-    height: 30px;
+.left, .right {
+    display: flex;
+    gap: 7px;
+}
+
+.left {
+    margin-left: 20px;
+}
+
+.right {
+    margin-right: 15px;
+    padding: 5px;
+    gap: 15px;
+    font-size: 14px;
+}
+
+/* ---------------------------- */
+.apple-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.apple-logo img {
+    width: 20px;
+    height: 20px;
+    margin-top: -1px;
+}
+/* ---------------------------- */
+
+.left button:hover {
+    background-color: rgba(255, 255, 255, 0.493);
+    border-radius: 7px;
+}
+
+.left button {
+    transition: background-color 0.5s;
+    border: none;
+    background-color: transparent;
+    padding: 5px;
+    color: black;
+}
+
+.options-header-button {
+    background-color: rgba(255, 255, 255, 0.349);
+    border-radius: 7px;
+    border: 1px solid silver;
+    padding: 5px;
+    width: 150px;
+    margin-left: 55px;
+    align-items: left;
+    backdrop-filter: blur(25px);
+    display: none;
+    place-items: left;
+    margin-top: 0.5px;
+    text-align: left;
+}
+
+.normal, .no-accesible {
+    border: none;
+    background-color: transparent;
+    color: black;
+    width: 100%;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.underline {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid silver;
+    margin-top: -100px;
+}
+
+.normal {
+    color: black;
+}
+
+.no-accesible {
+    color: silver;
+}
+
+.normal:hover, .normal1:hover {
+    background-color: rgba(5, 174, 196, 0.705);
+    border-radius: 5px;
+}
+
+/* ----------------------------------------------------------- */
+.fil {
+    left: 0;
+    margin-left: 110px;
+}
+
+.ed {
+    left: 0;
+    margin-left: 150px;
+}
+
+.vi {
+    left: 0;
+    margin-left: 190px;
+}
+
+.g {
+    left: 0;
+    margin-left: 235px;
+}
+
+.win {
+    left: 0;
+    margin-left: 270px;
+}
+
+.hel {
+    left: 0;
+    margin-left: 333px;
+}
+/* ----------------------------------------------------------- */
+
+footer {
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
+
+footer div {
+    display: flex;
+    gap: 10px;
+    left: 50%;
+    transform: translateX(50%);
+    background-color: rgba(255, 255, 255, 0.349);
+    backdrop-filter: blur(25px);
+    padding: 10px;
+    border-radius: 25px;
+    transition: gap 0.4s;
+}
+
+footer img {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.1s;
+}
+
+footer img:hover {
+    cursor: pointer;
+    transform: scale(1.2) translateY(-30px);
+}
+
+footer img:active {
+    animation: special-click 0.6s ease;
+}
+
+.img-special-hover-efect {
+    transform: scale(1.1) translateY(-15px);
+}
+
+@keyframes special-click {
+    25%, 75% {
+      transform: translateY(-60px);
+    }
+    50% {
+      transform: translateY(-70px);
+    }
+    100% {
+      transform: translateY(-30px);
+    }
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 12px;
+    /* padding: 20px; */
+    width: fit-content;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin-top: 50px;
+    margin-left: 80px;
+    position: absolute;
+}
+
+.navbar {
+    width: 100%;
+    /* height: 30px; */
+    padding: 7px;
+    border-radius: 12px;
+    background-color: transparent;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.options {
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
-    background: #4fc3dc;
-    margin: 0 4px;
-    box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px #4fc3dc;
-    animation: animateBubbles 15s linear infinite;
-    animation-duration: calc(125s / var(--i));
-    z-index: 4;
 }
 
-.bubbles span:nth-child(even) {
-    z-index: 4;
-    background: #53a87a;
-    box-shadow: 0 0 0 10px #53a87a44, 0 0 50px #53a87a, 0 0 100px #53a87a;
-    /* animation: animateBubblesImpares 15s linear infinite;
-    animation-duration: calc(125s / var(--i)); */
+.galery-content {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    display: flex;
+    gap: 10px;
 }
 
-@keyframes animateBubbles {
-    0% {
-        transform: translateY(320px) scale(0);
-    }
-    100% {
-        transform: translateY(-10px) scale(1);
-    }
+.galery-content img {
+    height: 80px;
+    width: 80px;
+    border-radius: 15px;
 }
 
-@keyframes animateBubblesImpares {
-    0% {
-        transform: translateY(-10px) scale(0);
-    }
-    100% {
-        transform: translateY(320px) scale(1);
-    }
+.galery-section {
+    display: none;
+    height: 50%;
+    margin-left: 50%;
 }
 
-.bubblesSpan {
+.calculator-section {
     display: none;
 }
 
-.title h2 {
-    color: #4fc3dc;
-    z-index: 5;
-    font-size: 28px;
+.content {
+    padding: 20px;
 }
 
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-.border1, .border2, .border3, .border4 {
-    color: white;
-    text-shadow: -1px -1px 0 black, 1px -1px 0 black, 1px 1px 0 black, -1px 1px 0 black;
-}
-
-.inside1 {
-    color: #4fc3dc
-}
-
-.border1, .inside1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -50px;
-    transform: translate(-50%, -50%);
-}
-
-.border2, .inside2 {
-    position: absolute;
-    margin-left: 45px;
-}
-
-.border3, .inside3 {
-    position: absolute;
-    margin-left: 45px;
-    margin-top: -25px;
-}
-
-.border4, .inside4 {
-    position: absolute;
-    margin-top: -25px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.text-container {
-    z-index: 5;
-    margin-top: -40px;
-    font-size: 18px;
-    backdrop-filter: blur(5px);
-}
-
-.allElements {
+.result {
+    backdrop-filter: blur(25px);
     width: 100%;
-    /* height: 320vh; */
-    background: linear-gradient(to bottom, #b2d2f3, #a2d39c, #6cb4e5);
-}
-
-.main-container {
-    height: 100%;
-}
-
-.text-container1 {
-    z-index: 5;
-    font-size: 18px;
-    margin-top: 35px;
-    margin-left: 45px;
-}
-
-.safepass .inside2, .inside3, .inside4 {
-    color: #6cb4e5;
-}
-
-.safepass {
-    margin-top: 100px;
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 5px;
-}
-
-.safepass img {
-    transform: scale(0.7);
-    top: 0;
-    margin-top: -90px;
-}
-
-.text-container1 a {
-    text-decoration: none;
-}
-
-.text-container1 a:hover {
-    text-decoration: underline;
-}
-
-.formulario, .steps, .soporte, .wrapper {
-    margin-top: 120px;
-}
-
-.img-steps img {
-    margin-top: 100px;
-    transform: scale(1.5);
-    margin-bottom: 100px;
-}
-
-.formulario button {
-    padding: 20px;
-    margin-top: 5px;
-    margin-left: 45px;
-    font-size: 20px;
-    background-color: #53a87a;
-    border-radius: 10px;
-    cursor: pointer;
+    text-align: right;
+    font-size: 30px;
     color: black;
-    transition: background-color 0.3s, transform 0.3s, color 0.3s;
 }
 
-.formulario button:hover {
-    background-color: #407552;
-    transform: scale(1.1);
+.calculator-section .content2 div {
+    display: flex;
+}
+
+.calculator-section .content2 div button {
+    width: 60px;
+    height: 70px;
+    background-color: #a1a1a1;
+    font-size: 20px;
     color: white;
 }
 
-#support-form-container {
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: #fff;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.calculator-section {
+    padding: 0;
 }
 
-.support-label {
-    font-size: 24px;
-    margin-bottom: 10px;
+.calculator-section .content2 div button.special {
+    width: 120px;
+}
+
+.calculator-section .content2 div button.orange {
+    background-color: orange;
+}
+
+.calculator-section .content2 div button.gray {
+    background-color: gray;
+}
+
+
+/* ---------------------------------------------------------- */
+.active {
     display: block;
 }
 
-.support-input,
-.support-textarea,
-.resena-input,
-.resena-input2,
-.resena-textarea {
-    width: calc(100% - 45px);
-    padding: 10px;
-    margin-bottom: 15px;
-    margin-left: 45px;
-    margin-right: 45px;
-    border: none;
-    border-radius: 5px;
-    background: linear-gradient(45deg, #FFF176, #FFCC80);
-    border: 3px solid black;
-    color: black;
-}
-
-.support-textarea, .resena-textarea {
-    resize: vertical;
-}
-
-.support-send-button, .resena-send-button {
-    padding: 10px 20px;
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #fff;
-    background-color: #d4af37;
-    border-radius: 5px;
-    margin-left: 45px;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-}
-
-.support-send-button:hover, .resena-send-button:hover {
-    background-color: #997a1c;
-    cursor: pointer;
-}
-
-.resenas {
-    margin-top: 50px;
-}
-
-.resena-name {
-    display: flex;
-    margin-right: -45px;
-}
-
-.resena-input2 {
-    flex: 40%;
-}
-
-.resena-input,
-.resena-input2,
-.resena-textarea {
-    background: linear-gradient(90deg, #f9a7b0, violet);
-}
-
-/* 🌟🌟🌟🌟 */
-
-.discord-container {
-    padding: 20px;
-    border-radius: 10px;
-    background-color: #7289da;
-    color: #fff;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 20px;
-    margin-left: 45px;
-}
-
-.discord-container h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.discord-button {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #fff;
-    background-color: #3498db;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.discord-button:hover {
-    background-color: #2980b9;
-}
-
-.wrapper {
-    max-width: 75%;
-    margin: auto;
-    margin-top: 100px;
-}
-
-.accordion {
-    background-color: white;
-    color: rgba(0, 0, 0, 0.8);
-    cursor: pointer;
-    font-size: 1.2rem;
-    width: 100%;
-    padding: 2rem 2.5rem;
-    border: none;
-    outline: none;
-    transition: display 0.4s;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: bold;
-}
-
-.accordion i {
-    font-size: 1.6rem;
-}
-
-.active, .accordion:hover {
-    background-color: #f1f7f5;
-}
-
-.pannel {
-    padding: 0 2rem 2.5rem 2rem;
-    background-color: white;
-    overflow: hidden;
-    background-color: #f1f7f5;
-    display: none;
-}
-
-.pannel p {
-    color: rgba(0, 0, 0, 0.7);
-    font-size: 1.2rem;
-    line-height: 1.4;
-}
-
-.faq {
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    margin: 10px 0;
-}
-
-.faq.active {
-    border: none;
-}
-
-.flechaInvertida {
-    transition: transform 0.5s;
-    transform: rotate(180deg);
-}
-
-.transparent-text {
-    color: transparent;
-}
-
-footer {
-    width: 100%;
-    background-color: #222222;
-    color: white;
-    border-top: 3px solid silver;
-}
-
-footer p {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-::-webkit-scrollbar {
+section::-webkit-scrollbar {
     width: 12px;
 }
 
-::-webkit-scrollbar-thumb {
+section::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+section::-webkit-scrollbar-thumb {
     background-color: #888;
     border-radius: 6px;
 }
 
-::-webkit-scrollbar-thumb:hover {
+section::-webkit-scrollbar-thumb:hover {
     background-color: #555;
 }
-
-::-webkit-scrollbar {
-    opacity: 100;
-}
+/* ---------------------------------------------------------- */

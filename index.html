@@ -3,290 +3,204 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>V4 Dev Solutions</title>
+        <title>Mac OS - Simulator</title>
         <link rel="stylesheet" href="styles/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" href="assets/icons/finder.png">
     </head>
 
     <body>
-        <div id="inicio">Puto si lo lees xd :)</div>
+        <div class="root">
+            <header>
+                <div class="left">
+                    <!-- <div class="apple-logo"><img src="assets/icons/apple.png"></div> -->
+                    <div class="apple-logo"><img src="assets/icons/apple.png"></div>
+                    <button class="finder">Finder</button>
+                    <button class="file">File</button>
+                    <button class="edit">Edit</button>
+                    <button class="view">View</button>
+                    <button class="go">Go</button>
+                    <button class="window">Window</button>
+                    <button class="help">Help</button>
+                </div>
 
-        <header class="fixed-header">
-            <div class="back">
-                <div class="menu container">
-                    <a href="index.html" class="logo">V4 Dev Solutions</a>
-                    <input type="checkbox" id="menu">   
-                    <label for="menu">
-                        <img onclick="showNavBar()" src="assets/menu.png" class="icon-menu">
-                    </label>
-                    <nav class="navBar">
-                        <ul>
-                            <li><a onclick="quitNavBar()" class = "header-buttons" href="#inicio">INICIO</a></li>
-                            <li><a onclick="quitNavBar()" class = "header-buttons" href="#solicitar-aplicación">SOLICITAR APLICACIÓN</a></li>
-                            <li><a onclick="quitNavBar()" class = "header-buttons" href="#soporte">SOPORTE</a></li>
-                            <li><a onclick="quitNavBar()" class = "header-buttons" href="#faq">FAQ</a></li>
-                        </ul>
-                    </nav>
+                <div class="right">
+                    <div class="date">Sat Jan 20</div>
+                    <div class="hour">12:30 AM</div>
+                </div>
+            </header>
+
+            <div class="header">
+                <div class="options-header-button fin">
+                    <button class="normal">About Finder</button>
+                    <button class="normal">Prefereces</button>
+                    <button class="normal">Empty Trash</button>
+                    <button class="normal">Hide Finder</button>
+                    <button class="normal">Hide Others</button>
+                    <button class="no-accesible">Show All</button>
+                </div>
+                <div class="options-header-button fil">
+                    <button class="normal">About Finder</button>
+                    <button class="normal">Prefereces</button>
+                    <button class="normal">Empty Trash</button>
+                    <button class="normal">Hide Finder</button>
+                    <button class="normal">Hide Others</button>
+                    <button class="no-accesible">Show All</button>
+                </div>
+                <div class="options-header-button ed">
+                    <button class="normal">About Finder</button>
+                    <button class="normal">Prefereces</button>
+                    <button class="normal">Empty Trash</button>
+                    <button class="normal">Hide Finder</button>
+                    <button class="normal">Hide Others</button>
+                    <button class="no-accesible">Show All</button>
+                </div>
+                <div class="options-header-button vi">
+                    <button class="normal">About Finder</button>
+                    <button class="normal">Prefereces</button>
+                    <button class="normal">Empty Trash</button>
+                    <button class="normal">Hide Finder</button>
+                    <button class="normal">Hide Others</button>
+                    <button class="no-accesible">Show All</button>
+                </div>
+                <div class="options-header-button g">
+                    <button class="normal">About Finder</button>
+                    <button class="normal">Prefereces</button>
+                    <button class="normal">Empty Trash</button>
+                    <button class="normal">Hide Finder</button>
+                    <button class="normal">Hide Others</button>
+                    <button class="no-accesible">Show All</button>
+                </div>
+                <div class="options-header-button win">
+                    <button class="normal">About Finder</button>
+                    <button class="normal">Prefereces</button>
+                    <button class="normal">Empty Trash</button>
+                    <button class="normal">Hide Finder</button>
+                    <button class="normal">Hide Others</button>
+                    <button class="no-accesible">Show All</button>
+                </div>
+                <div class="options-header-button hel">
+                    <button class="normal">About Finder</button>
+                    <button class="normal">Prefereces</button>
+                    <button class="normal">Empty Trash</button>
+                    <button class="normal">Hide Finder</button>
+                    <button class="normal">Hide Others</button>
+                    <button class="no-accesible">Show All</button>
                 </div>
             </div>
-        </header>
 
-        <div class="animated-container">
-            <div class="bubbles">
-                <span style="--i:11;"></span>
-                <span style="--i:12;"></span>
-                <span style="--i:24;"></span>
-                <span style="--i:10;"></span>
-                <span style="--i:14;"></span>
-                <span style="--i:23;"></span>
-                <span style="--i:18;"></span>
-                <span style="--i:16;"></span>
-                <span style="--i:19;"></span>
-                <span style="--i:20;"></span>
-                <span style="--i:22;"></span>
-                <span style="--i:25;"></span>
-                <span style="--i:18;"></span>
-                <span class="bubblesSpan" style="--i:21;"></span>
-                <span class="bubblesSpan" style="--i:15;"></span>
-                <span class="bubblesSpan" style="--i:13;"></span>
-                <span class="bubblesSpan" style="--i:26;"></span>
-                <span class="bubblesSpan" style="--i:17;"></span>
-                <span class="bubblesSpan" style="--i:13;"></span>
-                <span class="bubblesSpan" style="--i:28;"></span>
+            <div class="allSections">
+                <section class="galery-section">
+                    <div class="navbar" draggable="true">
+                        <div class="red options" style="background-color: orangered;"></div>
+                        <div class="orange options" style="background-color: orange;"></div>
+                        <div class="green options" style="background-color: lime;"></div>
+                    </div>
+                    <div class="content">
+                        <div class="row1">
+                            <div class="date">July 2023</div>
+                            <div class="galery-content">
+                                <img src="assets/galery/row1/montana1.png">
+                                <img src="assets/galery/row1/playa.png">
+                                <img src="assets/galery/row1/montana2.png">
+                                <img src="assets/galery/row1/piscina.png">
+                            </div>
+                        </div>
+                        <div class="row2">
+                            <div class="date">May 2023</div>
+                            <div class="galery-content">
+                                <img src="assets">
+                                <img src="assets">
+                                <img src="assets">
+                                <img src="assets">
+                            </div>
+                        </div>
+                        <div class="row3">
+                            <div class="date">April 2023</div>
+                            <div class="galery-content">
+                                <img src="assets/galery/row3/arboles.png">
+                                <img src="assets/galery/row3/ciudad.png">
+                                <img src="assets">
+                                <img src="assets/galery/row3/flores.png">
+                            </div>
+                        </div>
+                        <div class="row4">
+                            <div class="date">Decembre 2022</div>
+                            <div class="galery-content">
+                                <img src="assets/galery/row4/navidad.png">
+                                <img src="assets/galery/row4/nieve.png">
+                                <img src="assets">
+                                <img src="assets">
+                            </div>
+                        </div>
+                        <div class="row5">
+                            <div class="date">Septembre 2022</div>
+                            <div class="galery-content">
+                                <img src="assets">
+                                <img src="assets">
+                                <img src="assets">
+                                <img src="assets">
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-                <span class="bubblesSpan" style="--i:11;"></span>
-                <span class="bubblesSpan" style="--i:12;"></span>
-                <span class="bubblesSpan" style="--i:24;"></span>
-                <span class="bubblesSpan" style="--i:10;"></span>
-                <span class="bubblesSpan" style="--i:14;"></span>
-                <span class="bubblesSpan" style="--i:23;"></span>
-                <span class="bubblesSpan" style="--i:18;"></span>
-                <span class="bubblesSpan" style="--i:16;"></span>
-                <span class="bubblesSpan" style="--i:19;"></span>
-                <span class="bubblesSpan" style="--i:20;"></span>
-                <span class="bubblesSpan" style="--i:22;"></span>
-                <span class="bubblesSpan" style="--i:25;"></span>
-                <span class="bubblesSpan" style="--i:18;"></span>
-                <span class="bubblesSpan" style="--i:21;"></span>
-                <span class="bubblesSpan" style="--i:15;"></span>
-                <span class="bubblesSpan" style="--i:13;"></span>
-                <span class="bubblesSpan" style="--i:26;"></span>
-                <span class="bubblesSpan" style="--i:17;"></span>
-                <span class="bubblesSpan" style="--i:13;"></span>
-                <span class="bubblesSpan" style="--i:28;"></span>
-
-                <span class="bubblesSpan" style="--i:15;"></span>
-                <span class="bubblesSpan" style="--i:13;"></span>
-                <span class="bubblesSpan" style="--i:26;"></span>
-                <span class="bubblesSpan" style="--i:17;"></span>
-                <span class="bubblesSpan" style="--i:13;"></span>
-
-                <span class="bubblesSpan" style="--i:15;"></span>
-                <span class="bubblesSpan" style="--i:13;"></span>
-                <span class="bubblesSpan" style="--i:26;"></span>
-                <span class="bubblesSpan" style="--i:17;"></span>
-                <span class="bubblesSpan" style="--i:13;"></span>
+                <section class="calculator-section">
+                    <div class="navbar" draggable="true" style="background-color: #a1a1a1; border-radius: 0px;">
+                        <div class="red options" style="background-color: orangered;"></div>
+                        <div class="orange options" style="background-color: orange;"></div>
+                        <div class="green options" style="background-color: lime;"></div>
+                    </div>
+                    <div class="result" style="background-color: #a1a1a1;">0</div>
+                    <div class="content2">
+                        <div class="row0">
+                            <button class="gray">AC</button>
+                            <button class="gray">+</button>
+                            <button class="gray">%</button>
+                            <button class="orange">/</button>
+                        </div>
+                        <div class="row1">
+                            <button>7</button>
+                            <button>8</button>
+                            <button>9</button>
+                            <button class="orange">x</button>
+                        </div>
+                        <div class="row2">
+                            <button>4</button>
+                            <button>5</button>
+                            <button>6</button>
+                            <button class="orange">-</button>
+                        </div>
+                        <div class="row3">
+                            <button>1</button>
+                            <button>2</button>
+                            <button>3</button>
+                            <button class="orange">+</button>
+                        </div>
+                        <div class="row4">
+                            <button class="special">0</button>
+                            <button>.</button>
+                            <button class="orange">=</button>
+                        </div>
+                    </div>
+                </section>
             </div>
 
-            <div class="title center">
-                <h2 class="border1">V4 Dev Solutions</h2>
-                <h2 class="inside1">V4 Dev Solutions</h2>
-                <div class="text-container">
-                    <p>¿Necesitas alguna aplicación específicamente</p>
-                    <p>para alguna cosa? Nosotros te podemos proporcionar</p>
-                    <p>tu aplicación deseada estrechándonos a tus gustos</p>
-                    <p>y a tus gustos. Solo debes completar un formulario.</p>
+            <footer>
+                <div class="container">
+                    <img src="assets/icons/finder.png" class="finder-img">
+                    <img src="assets/icons/wallpaper.png" class="wallpaper-img">
+                    <img src="assets/icons/calculator.png" class="calculator-img">
+                    <img src="assets/icons/calendar.png" class="calendar-img">
+                    <img src="assets/icons/vscode.png" class="vscode-img">
+                    <img src="assets/icons/apple-store.png" class="apple-store-img">
+                    <img src="assets/icons/galery.png" class="galery-img">
+                    <img src="assets/icons/github.png" class="github-img">
+                    <img src="assets/icons/messenger.png" class="messenger-img">
+                    <img src="assets/icons/safary.png" class="safary-img">
                 </div>
-            </div>
+            </footer>
         </div>
 
-        <div class="allElements center">
-            <div class="main-container">
-                <div class="safepass centrado">
-                    <h2 class="border2">¿Aún no conoces SafePass?</h2>
-                    <h2 class="inside2">¿Aún no conoces SafePass?</h2>
-                    <div class="text-container1">
-                        SafePass es una herramienta muy útil para aquellas personas que siempre se olvidan de sus contraseñas y tienen que reestablecerla y hacer una nueva. Con SafePass guarda tus contraseñas en la aplicación y no volverás a olvidar ninguna otra contraseña. Tiene una interfaz sencilla de entender. <a href="descargar-safepass.html">Descargar</a>
-                    </div>
-
-                    <img src="assets/SafePass.png">
-                </div>
-
-                <h1 class="transparent-text" id="solicitar-aplicación">...</h1>
-
-                <div class="formulario">
-                    <h2 class="border3">Formulario Solicitud Aplicación</h2>
-                    <h2 class="inside3">Formulario Solicitud Aplicación</h2>
-                    <div class="text-container1">
-                        ¿Quieres tener una aplicación para ti personalizada? Rellenando el siguiente <a href="formulario.html">formulario</a> vas a enviar una solicitud al equipo de V4 Dev Solutions para que hagan tu aplicación. No obstante, también existe la posibilidad de que no hagan tu aplicación, en ese caso, serás contactado y avisado. En caso de que sí hagamos tu aplicación personalizada, también serás avisado, y cuando la tengamos terminada, será entregada al destinatario. Nota : Si en el formulario no dejas ninguna manera de contactar contigo, no se hará esa aplicación.
-                    </div>
-                    <a href="formulario.html">
-                        <button>Formulario</button>
-                    </a>
-                </div>
-
-                <h1 class="transparent-text">...</h1>
-
-                <br>
-                <br>
-                <br>
-
-                <div class="steps">
-                    <h2 class="border3">Pasos a seguir</h2>
-                    <h2 class="inside3">Pasos a seguir</h2>
-                    <div class="img-steps center">
-                        <img src="assets/steps-to-follow.png">
-                    </div>
-                </div>
-
-                <h1 class="transparent-text" id="soporte">...</h1>
-
-                <div class="soporte">
-                    <form method="post">
-                        <h2 class="border3">Soporte</h2>
-                        <h2 class="inside3">Soporte</h2>
-                        <br>
-                        <div class="support-name">
-                            <input name="supportInput" id="supportInput" type="text" required placeholder="Nombre" class="support-input">
-                        </div>
-                    
-                        <textarea name="supportTextArea" id="supportTextArea" cols="30" rows="12" class="support-textarea" placeholder="Escribe tu pregunta..." required></textarea>
-                    
-                        <div class="support-send">
-                            <input type="submit" value="Enviar" class="support-send-button">
-                        </div>
-                    </form>
-                </div>
-
-                <h1 class="transparent-text">...</h1>
-
-                <div class="resenas">
-                    <form method="post">
-                        <h2 class="border3">Reseñas</h2>
-                        <h2 class="inside3">Reseñas</h2>
-                        <br>
-                        <div class="resena-name">
-                            <input name="resenaInput" id="resenaInput" type="text" required placeholder="Nombre" class="resena-input">
-                            <input name="resenaInput2" id="resenaInput2" type="text" required placeholder="Estrellas (1-5)" class="resena-input2">
-                        </div>
-                    
-                        <textarea name="resenaTextArea" id="resenaTextArea" cols="30" rows="5" class="resena-textarea" placeholder="Escribe tu reseña..." required></textarea>
-                
-                        <div class="resena-send">
-                            <input type="submit" value="Enviar Reseña" class="resena-send-button">
-                        </div>
-                        <br>
-                    </form>
-                </div>
-
-                <h1 class="transparent-text">...</h1>
-
-                <div class="discord-container">
-                    <h1 class="discordTitle">Únete a nuestro servidor de Discord</h1>
-                    <p class="discordP">En él se envían las dudas sobre la página / bots</p>
-                    <a class="discord-button" href="https://discord.gg/zvJwFQGav5" target="_blank">¡Únete ahora!</a>
-                </div>
-
-                <h1 class="transparent-text" id="faq">...</h1>
-
-                <div class="wrapper">
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <h2 class="border4">FAQ</h2>
-                    <h2 class="inside4">FAQ</h2>
-
-                    <!-- Pregunta 1 -->
-                    <div class="faq">
-                        <button class="accordion">
-                            ¿Qué es V4 Dev Solutions?
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </button>
-                        <div class="pannel">
-                            <p>V4 Dev Solutions crea aplicaciones a tu gusto adaptándolas a tus gustos y necesidades.</p>
-                        </div>
-                    </div>
-
-                    <!-- Pregunta 2 -->
-                    <div class="faq">
-                        <button class="accordion">
-                            ¿Qué tengo que hacer para que hagáis mi aplicación?
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </button>
-                        <div class="pannel">
-                            <p>Debes rellenar el <a href="#solicitar-aplicación">formulario de solicitud</a> que tienes más arriba. Con eso nos llega tu aplicación deseada y podremos hacerla.</p>
-                        </div>
-                    </div>
-
-                    <!-- Pregunta 3 -->
-                    <div class="faq">
-                        <button class="accordion">
-                            ¿Cúanto tiempo tardáis en acabar la aplicación / web?
-                            <i class="i fa-solid fa-chevron-down"></i>
-                        </button>
-                        <div class="pannel">
-                            <p>El tiempo depende mucho del tipo de aplicación / web que quieras tener. Para un proyecto normal, aproximadamente 1 semana.</p>
-                        </div>
-                    </div>
-
-                    <!-- Pregunta 4 -->
-                    <div class="faq">
-                        <button class="accordion">
-                            -----------------------------------------------
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </button>
-                        <div class="pannel">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam modi sequi, dolorem quod incidunt molestiae sit at deserunt ratione, possimus officiis cupiditate repellendus harum in illo vel sint eligendi ipsa?</p>
-                        </div>
-                    </div>
-
-                    <!-- Pregunta 5 -->
-                    <div class="faq">
-                        <button class="accordion">
-                            -----------------------------------------------
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </button>
-                        <div class="pannel">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ex ratione dignissimos perspiciatis commodi obcaecati facere asperiores ullam, minima sed nostrum voluptatum voluptatibus laborum! Ut veritatis obcaecati ducimus? Molestiae, voluptate!</p>
-                        </div>
-                    </div>
-
-                    <!-- Pregunta 6 -->
-                    <div class="faq">
-                        <button class="accordion">
-                            ¿Dónde puedo ver las reseñas?
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </button>
-                        <div class="pannel">
-                            <p>Las reseñas son enviadas al <a href="https://discord.gg/zvJwFQGav5" target="_blank">servidor de Discord</a> de V4 Dev Solutions. Puedes ver las reseñas en un canal del servidor llamado '»「🔍」reseñas'</p>
-                        </div>
-                    </div>
-
-                    <!-- Pregunta 7 -->
-                    <div class="faq">
-                        <button class="accordion">
-                            ¿Dónde respondéis las preguntas del apartado de soporte de esta página?
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </button>
-                        <div class="pannel">
-                            <p>Las preguntas del apartado de <a href="#soporte">soporte</a> son respondidas en <a target="_blank " href="https://discord.gg/zvJwFQGav5">nuestro servidor de Discord</a>. Si no tienes la aplicación de Discord, puedes decir en la parte de la pregunta al final : No tengo Discord, os dejo mi (correo / número / ...) para que me respondáis.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <br>
-                <br>
-                <br>
-                <br>
-                <!-- copyright -->
-            </div>
-        </div>
-
-        <footer class="center">
-            <p>&copy; 2023 V4 Dev Solutions - Todos los derechos reservados.</p>
-        </footer>
-
-        <script src="backend/script.js"></script>
+        <script src="scr/script.js"></script>
     </body>
 </html>
