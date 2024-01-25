@@ -16,7 +16,7 @@ document.querySelector('.finder').addEventListener('click', function() {
         allPanels[i].classList.remove('active');
     }
 
-    finderPanel.classList.add('active');
+    finderPanel.classList.toggle('active');
 });
 
 document.querySelector('.file').addEventListener('click', function() {
@@ -24,7 +24,7 @@ document.querySelector('.file').addEventListener('click', function() {
         allPanels[i].classList.remove('active');
     }
 
-    filePanel.classList.add('active');
+    filePanel.classList.toggle('active');
 });
 
 document.querySelector('.edit').addEventListener('click', function() {
@@ -32,7 +32,7 @@ document.querySelector('.edit').addEventListener('click', function() {
         allPanels[i].classList.remove('active');
     }
 
-    editPanel.classList.add('active');
+    editPanel.classList.toggle('active');
 });
 
 document.querySelector('.view').addEventListener('click', function() {
@@ -40,7 +40,7 @@ document.querySelector('.view').addEventListener('click', function() {
         allPanels[i].classList.remove('active');
     }
 
-    viewPanel.classList.add('active');
+    viewPanel.classList.toggle('active');
 });
 
 document.querySelector('.go').addEventListener('click', function() {
@@ -48,7 +48,7 @@ document.querySelector('.go').addEventListener('click', function() {
         allPanels[i].classList.remove('active');
     }
 
-    goPanel.classList.add('active');
+    goPanel.classList.toggle('active');
 });
 
 document.querySelector('.window').addEventListener('click', function() {
@@ -56,7 +56,7 @@ document.querySelector('.window').addEventListener('click', function() {
         allPanels[i].classList.remove('active');
     }
 
-    windowPanel.classList.add('active');
+    windowPanel.classList.toggle('active');
 });
 
 document.querySelector('.help').addEventListener('click', function() {
@@ -64,7 +64,20 @@ document.querySelector('.help').addEventListener('click', function() {
         allPanels[i].classList.remove('active');
     }
 
-    helpPanel.classList.add('active');
+    helpPanel.classList.toggle('active');
+});
+
+// QUIT PANELS WHEN USER CLICK OUTSIDE PANELS
+document.querySelector('.allSections').addEventListener('mouseover', function () {
+    document.addEventListener('click', function () {
+        allPanels[0].classList.remove('active');
+        allPanels[1].classList.remove('active');
+        allPanels[2].classList.remove('active');
+        allPanels[3].classList.remove('active');
+        allPanels[4].classList.remove('active');
+        allPanels[5].classList.remove('active');
+        allPanels[6].classList.remove('active');
+    });
 });
 
 
@@ -81,13 +94,13 @@ var githubImg = document.querySelector('.github-img');
 var messengerImg = document.querySelector('.messenger-img');
 var safaryImg = document.querySelector('.safary-img');
 
-container.addEventListener('mouseover', function() {
-    container.style.gap = '25px';
-});
+// container.addEventListener('mouseover', function() {
+//     container.style.gap = '25px';
+// });
 
-container.addEventListener('mouseout', function() {
-    container.style.gap = '10px';
-});
+// container.addEventListener('mouseout', function() {
+//     container.style.gap = '10px';
+// });
 
 finderImg.addEventListener('mouseover', function() {
     wallpaperImg.classList.add('img-special-hover-efect');
@@ -186,25 +199,6 @@ safaryImg.addEventListener('mouseout', function() {
 });
 
 
-// SPECIAL CLICK ANIMATION ON ICON APLICATIONS
-// var allIcons = [finderImg, wallpaperImg, calculatorImg, calendarImg, vscodeImg, appleStoreImg, galeryImg, githubImg, messengerImg, safaryImg];
-// allIcons[0].addEventListener('click', function() {
-//     // allIcons[0].classList.remove('special-click');
-//     // allIcons[0].classList.add('special-click'); 
-//     if (allIcons[0].classList.contains('special-click')){
-//         allIcons[0].classList.remove('special-click');
-//         allIcons[0].classList.add('special-click2');
-//     } else {
-//         allIcons[0].classList.remove('special-click2');
-//         allIcons[0].classList.add('special-click');
-//     }
-// });
-
-// allIcons[Element].addEventListener('click', function() {
-//     allIcons[Element].classList.add('special-click');
-// });
-
-
 // OPEN APPLICATIONS WHEN ICON IS CLICKED
 galeryImg.addEventListener('click', function() {
     document.querySelector('.galery-section').classList.toggle('active');
@@ -214,6 +208,110 @@ calculatorImg.addEventListener('click', function() {
     document.querySelector('.calculator-section').classList.toggle('active');
 });
 
+safaryImg.addEventListener('click', function () {
+    document.querySelector('.safary-section').classList.toggle('active');
+});
 
 
 // MOVE APPLICATIONS THROW THE SCREEN (DRAG AND DROP)
+// (code...)
+
+
+// FUNCTIONS OF THE CALCULATOR
+document.addEventListener("DOMContentLoaded", function () {
+    let operand1 = "";
+    let operand2 = "";
+    let operator = "";
+
+    const resultElement = document.querySelector(".result");
+    const buttons = document.querySelectorAll(".content2 button");
+
+    function updateResult() {
+        resultElement.textContent = operand2 || operand1 || "0";
+    }
+
+    function handleButtonClick(event) {
+        const buttonValue = event.target.textContent;
+
+        if (!isNaN(buttonValue) || buttonValue === ".") {
+            if (operator) {
+                operand2 += buttonValue;
+            } else {
+                operand1 += buttonValue;
+            }
+        }
+
+        if (["+", "-", "x", "/"].includes(buttonValue)) {
+            operator = buttonValue;
+        }
+
+        if (buttonValue === "=") {
+            switch (operator) {
+                case "+":
+                    operand1 = (parseFloat(operand1) + parseFloat(operand2)).toString();
+                    break;
+                case "-":
+                    operand1 = (parseFloat(operand1) - parseFloat(operand2)).toString();
+                    break;
+                case "x":
+                    operand1 = (parseFloat(operand1) * parseFloat(operand2)).toString();
+                    break;
+                case "/":
+                    operand1 = (parseFloat(operand1) / parseFloat(operand2)).toString();
+                    break;
+            }
+
+            operand2 = "";
+            operator = "";
+        }
+
+        if (buttonValue === "AC") {
+            operand1 = "";
+            operand2 = "";
+            operator = "";
+        }
+
+        updateResult();
+    }
+
+    buttons.forEach(function (button) {
+        button.addEventListener("click", handleButtonClick);
+    });
+});
+
+
+// SEARCH INFORMATION IN SAFARY
+function searchSafaryInGoogle() {
+    var searchInformation = document.querySelector('.search-input').value;
+
+    if (searchInformation.trim() != '') {
+        searchInformation.value === '';
+        var urlSearch = 'https://www.google.com/search?q=' + encodeURIComponent(searchInformation);
+        window.open(urlSearch, '_blank');
+    } else {
+        alert('No has introducido nada de texto en la barra del buscador.')
+    }
+}
+
+var searchInput = document.querySelector('.search-input');
+var safarySection = document.querySelector('.safary-section');
+
+searchInput.addEventListener('keypress', function(event) {
+    if (event.key === 'Enter' && safarySection.classList.contains('active')) {
+        searchSafaryInGoogle();
+    }
+});
+
+
+// CLOSE WINDOWS WITH RED BUTTON OF THE APLICATION
+function cerrarVentanaGall() {
+    document.querySelector('.galery-section').classList.toggle('active');
+}
+
+function cerrarVentanaCalc() {
+    document.querySelector('.calculator-section').classList.toggle('active');
+}
+
+function cerrarVentanaSaf() {
+    document.querySelector('.safary-section').classList.toggle('active');
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Safari Browser</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .browser {
+            width: 800px;
+            height: 600px;
+            margin: 50px auto;
+            border: 16px solid #d2d2d7;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .navbar {
+            background-color: #f8f8f8;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .button {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+        
+        .close {
+            background-color: #ff5f56;
+        }
+        
+        .minimize {
+            background-color: #ffbd2e;
+        }
+        
+        .maximize {
+            background-color: #27c93f;
+        }
+        
+        .address-input {
+            flex: 1;
+            margin: 0 10px;
+            padding: 6px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: none;
+        }
+        
+        .go {
+            width: 20px;
+            height: 20px;
+            background-color: #007aff;
+        }
+        
+        .content {
+            height: calc(100% - 40px);
+            background-color: #fff;
+            overflow: auto;
+            padding: 20px;
+        }        
+    </style>
+</head>
+<body>
+    <div class="browser">
+        <div class="address-bar">
+            <div class="button close"></div>
+            <div class="button minimize"></div>
+            <div class="button maximize"></div>
+            <input type="text" class="address-input" placeholder="Search or enter website">
+            <div class="button go"></div>
+        </div>
+        <div class="content">
+            <!-- Contenido de la página aquí -->
+        </div>
+    </div>
+</body>
+</html>

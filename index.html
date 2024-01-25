@@ -91,7 +91,7 @@
             <div class="allSections">
                 <section class="galery-section">
                     <div class="navbar" draggable="true">
-                        <div class="red options" style="background-color: orangered;"></div>
+                        <div onclick="cerrarVentanaGall()" class="red options" style="background-color: orangered;"></div>
                         <div class="orange options" style="background-color: orange;"></div>
                         <div class="green options" style="background-color: lime;"></div>
                     </div>
@@ -146,7 +146,7 @@
 
                 <section class="calculator-section">
                     <div class="navbar" draggable="true" style="background-color: #a1a1a1; border-radius: 0px;">
-                        <div class="red options" style="background-color: orangered;"></div>
+                        <div onclick="cerrarVentanaCalc()" class="red options" style="background-color: orangered;"></div>
                         <div class="orange options" style="background-color: orange;"></div>
                         <div class="green options" style="background-color: lime;"></div>
                     </div>
@@ -183,6 +183,36 @@
                         </div>
                     </div>
                 </section>
+
+                <section class="safary-section">
+                    <div class="browser">
+                        <div class="navbar">
+                            <div onclick="cerrarVentanaSaf()" class="red options" style="background-color: orangered;"></div>
+                            <div class="orange options" style="background-color: orange;"></div>
+                            <div class="green options" style="background-color: lime;"></div>
+                            <input type="text" class="search-input" placeholder="Search...">
+                            <button onclick="searchSafaryInGoogle()" class="button go"></button>
+                        </div>
+                        <div class="browser-content">
+                            <br>
+                            <br>
+                            <br>
+                            <div class="notice-safary">
+                                <div class="notice-title">Aún no hay noticias</div>
+                                <div class="notice-content"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="messenger-section">
+                    <div class="contacts">
+
+                    </div>
+                    <div class="messages">
+                        
+                    </div>
+                </section>
             </div>
 
             <footer>
@@ -194,7 +224,7 @@
                     <img src="assets/icons/vscode.png" class="vscode-img">
                     <img src="assets/icons/apple-store.png" class="apple-store-img">
                     <img src="assets/icons/galery.png" class="galery-img">
-                    <img src="assets/icons/github.png" class="github-img">
+                    <a href="https://github.com/adriiiaa12" target="_blank"><img src="assets/icons/github.png" class="github-img"></a>                    
                     <img src="assets/icons/messenger.png" class="messenger-img">
                     <img src="assets/icons/safary.png" class="safary-img">
                 </div>

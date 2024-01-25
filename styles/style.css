@@ -287,6 +287,7 @@ section {
 
 .calculator-section {
     padding: 0;
+    overflow-y: hidden;
 }
 
 .calculator-section .content2 div button.special {
@@ -299,6 +300,77 @@ section {
 
 .calculator-section .content2 div button.gray {
     background-color: gray;
+}
+
+.safary-section {
+    overflow-y: hidden;
+    background-color: transparent;
+    margin-left: 20%;
+    display: none;
+}
+
+.browser {
+    margin: 50px auto;
+    border: 16px solid #d2d2d7;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    background-color: #f8f8f8;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 0;
+}
+
+.button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.search-input {
+    flex: 1;
+    margin: 0 10px;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.go {
+    width: 20px;
+    height: 20px;
+    background-color: #007aff;
+    margin-right: 25px;
+}
+
+.browser-content {
+    height: calc(100% - 40px);
+    background-color: #fff;
+    overflow: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+}
+
+.notice-safary {
+    border-radius: 14px;
+    border: 10px solid #d2d2d7;
+    padding: 7px;
+    margin-top: 20px;
+}
+
+.notice-title {
+    font-weight: bold;
+    border: 0;
+    border-bottom: 1px solid silver;
+    padding-top: 5px;
+    padding-bottom: 7px;
 }
 
 
