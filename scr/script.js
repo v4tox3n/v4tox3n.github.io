@@ -530,36 +530,6 @@ function changeBackground(imageUrl) {
 }
 
 
-// LOAD ALL COMPONENTS WHEN WEB PAGE IS OPPENED
-document.addEventListener("DOMContentLoaded", function () {
-    var loaderBar = document.querySelector(".loader-bar");
-    var loaderContainer = document.querySelector(".loader-container");
-
-    var loadProgress = 0;
-    var duration = 2000;
-    var intervalTime = 20;
-
-    var startTime = Date.now();
-
-    var interval = setInterval(function () {
-        var elapsedTime = Date.now() - startTime;
-        var progressPercentage = (elapsedTime / duration) * 100;
-
-        if (progressPercentage > loadProgress) {
-            loadProgress = progressPercentage;
-            loaderBar.style.width = loadProgress + "%";
-        }
-
-        if (elapsedTime >= duration) {
-            clearInterval(interval);
-            loaderContainer.style.display = "none";
-            document.body.style.overflow = "visible";
-        }
-    }, intervalTime);
-    intervalfunction()
-});
-
-
 // UPDATE DAY AND HOUR OF THE WEB PAGE
 function updateDate() {
     var actualDate = new Date();
