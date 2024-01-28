@@ -12,7 +12,6 @@
         <div class="root">
             <header>
                 <div class="left">
-                    <!-- <div class="apple-logo"><img src="assets/icons/apple.png"></div> -->
                     <div class="apple-logo"><img src="assets/icons/apple.png"></div>
                     <button class="finder">Finder</button>
                     <button class="file">File</button>
@@ -191,7 +190,7 @@
                             <div class="orange options" style="background-color: orange;"></div>
                             <div class="green options" style="background-color: lime;"></div>
                             <input type="text" class="search-input" placeholder="Search...">
-                            <button onclick="searchSafaryInGoogle()" class="button go"></button>
+                            <button onclick="searchSafaryInGoogle()" class="button go-button"></button>
                         </div>
                         <div class="browser-content">
                             <br>
@@ -206,11 +205,280 @@
                 </section>
 
                 <section class="messenger-section">
-                    <div class="contacts">
-
+                    <div class="navbar">
+                        <div onclick="cerrarVentanaMes()" class="red options" style="background-color: orangered;"></div>
+                        <div class="orange options" style="background-color: orange;"></div>
+                        <div class="green options" style="background-color: lime;"></div>
                     </div>
-                    <div class="messages">
+
+                    <div class="messenger-content">
+                        <div class="allContacts">
+                            <div class="contact david-contact">
+                                <img src="assets/messenger/icon-contact.jpg" class="photo-icon">
+                                <p>David</p>
+                            </div>
+                            <div class="contact max-contact">
+                                <img src="assets/messenger/icon-contact.jpg" class="photo-icon">
+                                <p>Max</p>
+                            </div>
+
+                            <div class="contact clara-contact">
+                                <img src="assets/messenger/icon-contact.jpg" class="photo-icon">
+                                <p>Clara</p>
+                            </div>
+                            <div class="contact lara-contact">
+                                <img src="assets/messenger/icon-contact.jpg" class="photo-icon">
+                                <p>Lara</p>
+                            </div>
+                            <div class="contact paul-contact">
+                                <img src="assets/messenger/icon-contact.jpg" class="photo-icon">
+                                <p>Paul</p>
+                            </div>
+                            <div class="contact petter-contact">
+                                <img src="assets/messenger/icon-contact.jpg" class="photo-icon">
+                                <p>Petter</p>
+                            </div>
+                            <div class="contact joanne-contact">
+                                <img src="assets/messenger/icon-contact.jpg" class="photo-icon">
+                                <p>Joanne</p>
+                            </div>
+                        </div>
+
+                        <div class="chats">
+                            <div class="c david active">
+                                <div class="contact-name">
+                                    <p>David</p>
+                                    <div>
+                                        <img src="assets/messenger/normal-call.png">
+                                        <img src="assets/messenger/videocall.png">
+                                        <img src="assets/messenger/three-points.png">
+                                    </div>
+                                </div>
+
+                                <div class="text-space">
+                                    <div class="you">Do you want to meet on Sunday</div>
+                                    <div class="other">I'll go to London on Sunday, so cannot meet you on Sunday.</div>
+                                    <div class="other">The next Tuesday I'm able to meet, do you want to see each other on Tuesday?</div>
+                                    <div class="you">Ok, I'm able on Tuesday. Let's meet at 6pm at the sports center.</div>
+                                    <div class="other">Sure, find! :)</div>
+                                </div>
+                            </div>
+
+                            <div class="c max">
+                                <div class="contact-name">
+                                    <p>Max</p>
+                                    <div>
+                                        <img src="assets/messenger/normal-call.png">
+                                        <img src="assets/messenger/videocall.png">
+                                        <img src="assets/messenger/three-points.png">
+                                    </div>
+                                </div>
+
+                                <div class="text-space">
+                                    <div class="you">Hey Max! What's up?</div>
+                                    <div class="other">Max? Are u there??</div>
+                                    <div class="other">Hello??????</div>
+                                    <div class="you">Why you see my messages and you don't answer me!!??</div>
+                                    <div class="other">I don't want to be your friend anymore, don't text me!</div>
+                                </div>
+                            </div>
+
+                            <div class="c clara">
+                                <div class="contact-name">
+                                    <p>Clara</p>
+                                    <div>
+                                        <img src="assets/messenger/normal-call.png">
+                                        <img src="assets/messenger/videocall.png">
+                                        <img src="assets/messenger/three-points.png">
+                                    </div>
+                                </div>
+
+                                <div class="text-space">
+                                    <div class="other">Hi! Do u know what do we have to do for French homework?</div>
+                                    <div class="you">Yes, in 5 minutes I arrive home and I say you what you have to do for homework.</div>
+                                    <div class="other">No problem.</div>
+                                    <div class="you">Page 35 exercise 4, 5 and 8.</div>
+                                    <div class="other">Thank u very much!!</div>
+                                </div>
+                            </div>
+
+                            <div class="c lara">
+                                <div class="contact-name">
+                                    <p>Lara</p>
+                                    <div>
+                                        <img src="assets/messenger/normal-call.png">
+                                        <img src="assets/messenger/videocall.png">
+                                        <img src="assets/messenger/three-points.png">
+                                    </div>
+                                </div>
+
+                                <div class="text-space">
+                                    <div class="other"></div>
+                                    <div class="you"></div>
+                                    <div class="other"></div>
+                                    <div class="you"></div>
+                                    <div class="other"></div>
+                                </div>
+                            </div>
+
+                            <div class="c paul">
+                                <div class="contact-name">
+                                    <p>Paul</p>
+                                    <div>
+                                        <img src="assets/messenger/normal-call.png">
+                                        <img src="assets/messenger/videocall.png">
+                                        <img src="assets/messenger/three-points.png">
+                                    </div>
+                                </div>
+
+                                <div class="text-space">
+                                    <div class="other"></div>
+                                    <div class="you"></div>
+                                    <div class="other"></div>
+                                    <div class="you"></div>
+                                    <div class="other"></div>
+                                </div>
+                            </div>
+
+                            <div class="c petter">
+                                <div class="contact-name">
+                                    <p>Petter</p>
+                                    <div>
+                                        <img src="assets/messenger/normal-call.png">
+                                        <img src="assets/messenger/videocall.png">
+                                        <img src="assets/messenger/three-points.png">
+                                    </div>
+                                </div>
+
+                                <div class="text-space">
+                                    <div class="other"></div>
+                                    <div class="you"></div>
+                                    <div class="other"></div>
+                                    <div class="you"></div>
+                                    <div class="other"></div>
+                                </div>
+                            </div>
+
+                            <div class="c joanne">
+                                <div class="contact-name">
+                                    <p>Joanne</p>
+                                    <div>
+                                        <img src="assets/messenger/normal-call.png">
+                                        <img src="assets/messenger/videocall.png">
+                                        <img src="assets/messenger/three-points.png">
+                                    </div>
+                                </div>
+
+                                <div class="text-space">
+                                    <div class="other"></div>
+                                    <div class="you"></div>
+                                    <div class="other"></div>
+                                    <div class="you"></div>
+                                    <div class="other"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="calendar-section">
+                    <div class="special-navbar navbar">
+                        <div class="ocmm">
+                            <div onclick="cerrarVentanaCal()" class="red options" style="background-color: orangered;"></div>
+                            <div class="orange options" style="background-color: orange;"></div>
+                            <div class="green options" style="background-color: lime;"></div>
+                        </div>
                         
+                        <div class="bf">
+                            <button onclick="mostrarMesAnterior()" class="day-before"><</button>
+                            <button class="month" id="currentMonth">Enero</button>
+                            <button onclick="mostrarMesSiguiente()" class="day-after">></button>
+                        </div>
+                    </div>
+
+                    <div class="calendar-content">
+                        <table class="table-calendar">
+                            <thead>
+                                <tr>
+                                    <th>Mon</th>
+                                    <th>Tue</th>
+                                    <th>Wed</th>
+                                    <th>Thu</th>
+                                    <th>Fri</th>
+                                    <th>Sat</th>
+                                    <th>Sun</th>
+                                </tr>
+                            </thead>
+                            <tbody id="calendarBody"></tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section class="wallpaper-section">
+                    <div class="navbar">
+                        <div onclick="cerrarVentanaWal()" class="red options" style="background-color: orangered;"></div>
+                        <div class="orange options" style="background-color: orange;"></div>
+                        <div class="green options" style="background-color: lime;"></div>
+                    </div>
+
+                    <div class="wallpaper-content">
+                        <h3>Select your wallpaper</h3>
+                        <div class="allWallpapers">
+                            <div class="wall-row1">
+                                <img src="assets/wallpapers/wallpaper1.png" onclick="changeBackground('assets/wallpapers/wallpaper1.png')">
+                                <img src="assets/wallpapers/wallpaper2.png" onclick="changeBackground('assets/wallpapers/wallpaper2.png')">
+                                <img src="assets/wallpapers/wallpaper3.png" onclick="changeBackground('assets/wallpapers/wallpaper3.png')">
+                            </div>
+                            <div class="wall-row2">
+                                <img src="assets/wallpapers/wallpaper4.png" onclick="changeBackground('assets/wallpapers/wallpaper4.png')">
+                                <img src="assets/wallpapers/wallpaper5.png" onclick="changeBackground('assets/wallpapers/wallpaper5.png')">
+                                <img src="assets/wallpapers/wallpaper6.png" onclick="changeBackground('assets/wallpapers/wallpaper6.png')">
+                            </div>
+                            <div class="wall-row3">
+                                <img src="assets/wallpapers/wallpaper7.png" onclick="changeBackground('assets/wallpapers/wallpaper7.png')">
+                                <img src="assets/wallpapers/wallpaper8.png" onclick="changeBackground('assets/wallpapers/wallpaper8.png')">
+                                <img src="assets/wallpapers/wallpaper9.png" onclick="changeBackground('assets/wallpapers/wallpaper9.png')">
+                            </div>
+                            <div class="wall-row4">
+                                <img src="assets/wallpapers/wallpaper10.png" onclick="changeBackground('assets/wallpapers/wallpaper10.png')">
+                                <img src="assets/wallpapers/wallpaper11.png" onclick="changeBackground('assets/wallpapers/wallpaper11.png')">
+                                <img src="assets/wallpapers/wallpaper12.png" onclick="changeBackground('assets/wallpapers/wallpaper12.png')">
+                            </div>
+                            <div class="wall-row5">
+                                <img src="assets/wallpapers/wallpaper13.png" onclick="changeBackground('assets/wallpapers/wallpaper13.png')">
+                                <img src="assets/wallpapers/wallpaper14.png" onclick="changeBackground('assets/wallpapers/wallpaper14.png')">
+                                <img src="assets/wallpapers/wallpaper15.png" onclick="changeBackground('assets/wallpapers/wallpaper15.png')">
+                            </div>
+                            <div class="wall-row6">
+                                <img src="assets/wallpapers/wallpaper16.png" onclick="changeBackground('assets/wallpapers/wallpaper16.png')">
+                                <img src="assets/wallpapers/wallpaper17.png" onclick="changeBackground('assets/wallpapers/wallpaper17.png')">
+                                <img src="assets/wallpapers/wallpaper18.png" onclick="changeBackground('assets/wallpapers/wallpaper18.png')">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="apple-store-section">
+                    <div class="navbar">
+                        <div onclick="cerrarVentanaAPS()" class="red options" style="background-color: orangered;"></div>
+                        <div class="orange options" style="background-color: orange;"></div>
+                        <div class="green options" style="background-color: lime;"></div>
+                    </div>
+
+                    <div class="apple-store-content">
+                        <h3>Nothing here yet!</h3>
+                    </div>
+                </section>
+
+                <section class="vscode-section">
+                    <div class="navbar">
+                        <div onclick="cerrarVentanaVSC()" class="red options" style="background-color: orangered;"></div>
+                        <div class="orange options" style="background-color: orange;"></div>
+                        <div class="green options" style="background-color: lime;"></div>
+                    </div>
+
+                    <div class="vscode-content">
+                        <h3>Nothing here yet!</h3>
                     </div>
                 </section>
             </div>

@@ -67,8 +67,9 @@ document.querySelector('.help').addEventListener('click', function() {
     helpPanel.classList.toggle('active');
 });
 
+
 // QUIT PANELS WHEN USER CLICK OUTSIDE PANELS
-document.querySelector('.allSections').addEventListener('mouseover', function () {
+document.querySelector('.allSections').addEventListener('mouseout', function () {
     document.addEventListener('click', function () {
         allPanels[0].classList.remove('active');
         allPanels[1].classList.remove('active');
@@ -78,6 +79,16 @@ document.querySelector('.allSections').addEventListener('mouseover', function ()
         allPanels[5].classList.remove('active');
         allPanels[6].classList.remove('active');
     });
+});
+
+document.querySelector('.apple-logo').addEventListener('click', function() {
+    allPanels[0].classList.remove('active');
+    allPanels[1].classList.remove('active');
+    allPanels[2].classList.remove('active');
+    allPanels[3].classList.remove('active');
+    allPanels[4].classList.remove('active');
+    allPanels[5].classList.remove('active');
+    allPanels[6].classList.remove('active');
 });
 
 
@@ -212,6 +223,27 @@ safaryImg.addEventListener('click', function () {
     document.querySelector('.safary-section').classList.toggle('active');
 });
 
+messengerImg.addEventListener('click', function() {
+    document.querySelector('.messenger-section').classList.toggle('active');
+});
+
+calendarImg.addEventListener('click', function() {
+    mostrarCalendario()
+    document.querySelector('.calendar-section').classList.toggle('active');
+});
+
+wallpaperImg.addEventListener('click', function() {
+    document.querySelector('.wallpaper-section').classList.toggle('active');
+});
+
+appleStoreImg.addEventListener('click', function() {
+    document.querySelector('.apple-store-section').classList.toggle('active');
+});
+
+vscodeImg.addEventListener('click', function() {
+    document.querySelector('.vscode-section').classList.toggle('active');
+});
+
 
 // MOVE APPLICATIONS THROW THE SCREEN (DRAG AND DROP)
 // (code...)
@@ -315,3 +347,255 @@ function cerrarVentanaCalc() {
 function cerrarVentanaSaf() {
     document.querySelector('.safary-section').classList.toggle('active');
 }
+
+function cerrarVentanaMes() {
+    document.querySelector('.messenger-section').classList.toggle('active');
+}
+
+function cerrarVentanaCal() {
+    document.querySelector('.calendar-section').classList.toggle('active');
+}
+
+function cerrarVentanaWal() {
+    document.querySelector('.wallpaper-section').classList.toggle('active');
+}
+
+function cerrarVentanaAPS() {
+    document.querySelector('.apple-store-section').classList.toggle('active');
+}
+
+function cerrarVentanaVSC() {
+    document.querySelector('.vscode-section').classList.toggle('active');
+}
+
+
+// ALL MESSENGER SECTION CONFIGURATION
+var davidConversation = document.querySelector('.david');
+var maxConversation = document.querySelector('.max');
+var claraConversation = document.querySelector('.clara');
+var laraConversation = document.querySelector('.lara');
+var paulConversation = document.querySelector('.paul');
+var petterConversation = document.querySelector('.petter');
+var joanneConversation = document.querySelector('.joanne');
+
+var davidContact = document.querySelector('.david-contact');
+var maxContact = document.querySelector('.max-contact');
+var claraContact = document.querySelector('.clara-contact');
+var laraContact = document.querySelector('.lara-contact');
+var paulContact = document.querySelector('.paul-contact');
+var petterContact = document.querySelector('.petter-contact');
+var joanneContact = document.querySelector('.joanne-contact');
+
+// var allContacts = [
+//     davidContact,
+//     maxContact,
+//     claraContact,
+//     laraContact,
+//     paulContact,
+//     petterContact,
+//     joanneContact
+// ];
+
+davidContact.addEventListener('click', function() {
+    davidConversation.classList.add('active');
+    maxConversation.classList.remove('active');
+    claraConversation.classList.remove('active');
+    laraConversation.classList.remove('active');
+    paulConversation.classList.remove('active');
+    petterConversation.classList.remove('active');
+    joanneConversation.classList.remove('active')
+});
+
+maxContact.addEventListener('click', function() {
+    davidConversation.classList.remove('active');
+    maxConversation.classList.add('active');
+    claraConversation.classList.remove('active');
+    laraConversation.classList.remove('active');
+    paulConversation.classList.remove('active');
+    petterConversation.classList.remove('active');
+    joanneConversation.classList.remove('active')
+});
+
+claraContact.addEventListener('click', function() {
+    davidConversation.classList.remove('active');
+    maxConversation.classList.remove('active');
+    claraConversation.classList.add('active');
+    laraConversation.classList.remove('active');
+    paulConversation.classList.remove('active');
+    petterConversation.classList.remove('active');
+    joanneConversation.classList.remove('active')
+});
+
+laraContact.addEventListener('click', function() {
+    davidConversation.classList.remove('active');
+    maxConversation.classList.remove('active');
+    claraConversation.classList.remove('active');
+    laraConversation.classList.add('active');
+    paulConversation.classList.remove('active');
+    petterConversation.classList.remove('active');
+    joanneConversation.classList.remove('active')
+});
+
+paulContact.addEventListener('click', function() {
+    davidConversation.classList.remove('active');
+    maxConversation.classList.remove('active');
+    claraConversation.classList.remove('active');
+    laraConversation.classList.remove('active');
+    paulConversation.classList.add('active');
+    petterConversation.classList.remove('active');
+    joanneConversation.classList.remove('active')
+});
+
+petterContact.addEventListener('click', function() {
+    davidConversation.classList.remove('active');
+    maxConversation.classList.remove('active');
+    claraConversation.classList.remove('active');
+    laraConversation.classList.remove('active');
+    paulConversation.classList.remove('active');
+    petterConversation.classList.add('active');
+    joanneConversation.classList.remove('active')
+});
+
+joanneContact.addEventListener('click', function() {
+    davidConversation.classList.remove('active');
+    maxConversation.classList.remove('active');
+    claraConversation.classList.remove('active');
+    laraConversation.classList.remove('active');
+    paulConversation.classList.remove('active');
+    petterConversation.classList.remove('active');
+    joanneConversation.classList.add('active')
+});
+
+
+// APPLE CALENDAR CONFIGURATION
+let currentMonth = 0;
+const months = ['Enero 2024', 'Febrero 2024', 'Marzo 2024', 'Abril 2024', 'Mayo 2024', 'Junio 2024', 'Julio 2024', 'Agosto 2024', 'Septiembre 2024', 'Octubre 2024', 'Noviembre 2024', 'Diciembre 2024'];
+
+function mostrarCalendario() {
+    const calendarBody = document.getElementById('calendarBody');
+    calendarBody.innerHTML = '';
+
+    const currentDate = new Date();
+    const firstDay = new Date(new Date().getFullYear(), currentMonth, 0).getDay();
+    const daysInMonth = new Date(new Date().getFullYear(), currentMonth + 1, 0).getDate();
+
+    let dayCounter = 1;
+
+    for (let i = 0; i < 6; i++) {
+        const row = document.createElement('tr');
+
+        for (let j = 0; j < 7; j++) {
+            if (i === 0 && j < firstDay) {
+                const cell = document.createElement('td');
+                row.appendChild(cell);
+            } else if (dayCounter <= daysInMonth) {
+                const cell = document.createElement('td');
+                cell.textContent = dayCounter;
+                
+                if (dayCounter === currentDate.getDate() && currentMonth === currentDate.getMonth()) {
+                    cell.classList.add('current-day');
+                }
+                row.appendChild(cell);
+                dayCounter++;
+            }
+        }
+
+        calendarBody.appendChild(row);
+
+        if (dayCounter > daysInMonth) {
+            break;
+        }
+    }
+
+    document.getElementById('currentMonth').textContent = months[currentMonth];
+}
+
+function mostrarMesAnterior() {
+    currentMonth = (currentMonth - 1 + 12) % 12;
+    mostrarCalendario();
+}
+
+function mostrarMesSiguiente() {
+    currentMonth = (currentMonth + 1) % 12;
+    mostrarCalendario();
+}
+
+
+// WALLPAPER CODE
+function changeBackground(imageUrl) {
+    var root = document.querySelector('.root');
+    root.style.background = 'url(' + imageUrl + ')';
+    root.style.backgroundSize = 'cover';
+    root.style.backgroundRepeat = 'no-repeat';
+}
+
+
+// LOAD ALL COMPONENTS WHEN WEB PAGE IS OPPENED
+document.addEventListener("DOMContentLoaded", function () {
+    var loaderBar = document.querySelector(".loader-bar");
+    var loaderContainer = document.querySelector(".loader-container");
+
+    var loadProgress = 0;
+    var duration = 2000;
+    var intervalTime = 20;
+
+    var startTime = Date.now();
+
+    var interval = setInterval(function () {
+        var elapsedTime = Date.now() - startTime;
+        var progressPercentage = (elapsedTime / duration) * 100;
+
+        if (progressPercentage > loadProgress) {
+            loadProgress = progressPercentage;
+            loaderBar.style.width = loadProgress + "%";
+        }
+
+        if (elapsedTime >= duration) {
+            clearInterval(interval);
+            loaderContainer.style.display = "none";
+            document.body.style.overflow = "visible";
+        }
+    }, intervalTime);
+    intervalfunction()
+});
+
+
+// UPDATE DAY AND HOUR OF THE WEB PAGE
+function updateDate() {
+    var actualDate = new Date();
+    var optionsDate = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
+    var optionsHour = { hour: '2-digit', minute: '2-digit', hour12: true };
+
+    var fechaFormateada = actualDate.toLocaleDateString('es-ES', optionsDate);
+    var horaFormateada = actualDate.toLocaleTimeString('es-ES', optionsHour);
+
+    document.querySelector('.date').textContent = fechaFormateada;
+    document.querySelector('.hour').textContent = horaFormateada;
+}
+
+function intervalfunction() {
+    setInterval(updateDate, 1000);
+    updateDate();
+}
+
+
+// ------------------------------------------------------------------------- //
+// ---------------------------- ALL JS SECTIONS ---------------------------- //
+// ------------------------------------------------------------------------- // 
+
+// SET BUTTON'S PANELS VARIABLES
+// EVENT SHOW BUTTON'S PANELS
+// QUIT PANELS WHEN USER CLICK OUTSIDE PANELS
+// SPECIAL HOVER ON IMAGES
+// OPEN APPLICATIONS WHEN ICON IS CLICKED
+// MOVE APPLICATIONS THROW THE SCREEN (DRAG AND DROP)
+// FUNCTIONS OF THE CALCULATOR
+// SEARCH INFORMATION IN SAFARY
+// CLOSE WINDOWS WITH RED BUTTON OF THE APLICATION
+// ALL MESSENGER SECTION CONFIGURATION
+// APPLE CALENDAR CONFIGURATION
+// WALLPAPER CODE
+// UPDATE DAY AND HOUR OF THE WEB PAGE
+// ------------------------------------------------------------------------- //
+// ---------------------------- ALL JS SECTIONS ---------------------------- //
+// ------------------------------------------------------------------------- // 
