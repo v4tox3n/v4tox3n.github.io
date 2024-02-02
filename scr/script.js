@@ -105,14 +105,6 @@ var githubImg = document.querySelector('.github-img');
 var messengerImg = document.querySelector('.messenger-img');
 var safaryImg = document.querySelector('.safary-img');
 
-// container.addEventListener('mouseover', function() {
-//     container.style.gap = '25px';
-// });
-
-// container.addEventListener('mouseout', function() {
-//     container.style.gap = '10px';
-// });
-
 finderImg.addEventListener('mouseover', function() {
     wallpaperImg.classList.add('img-special-hover-efect');
 });
@@ -386,16 +378,6 @@ var paulContact = document.querySelector('.paul-contact');
 var petterContact = document.querySelector('.petter-contact');
 var joanneContact = document.querySelector('.joanne-contact');
 
-// var allContacts = [
-//     davidContact,
-//     maxContact,
-//     claraContact,
-//     laraContact,
-//     paulContact,
-//     petterContact,
-//     joanneContact
-// ];
-
 davidContact.addEventListener('click', function() {
     davidConversation.classList.add('active');
     maxConversation.classList.remove('active');
@@ -530,6 +512,41 @@ function changeBackground(imageUrl) {
 }
 
 
+// APPLE STORE CODE
+const downloadButtonStore = document.querySelectorAll('.apple-store-content div button');
+var alertTextAppleStore = '';
+
+downloadButtonStore.forEach((downloadButton, index) => {
+    downloadButton.addEventListener('click', () => {
+        function alertTextFunction(textStore) {
+            if (index === 1) {
+                textStore = 'No se a podido descargar la aplicación "Instagram"';
+            } else if (index === 2) {
+                textStore = 'No se a podido descargar la aplicación "Twitch"';
+            } else if (index === 3) {
+                textStore = 'No se a podido descargar la aplicación "Google Maps"';
+            } else if (index === 4) {
+                textStore = 'No se a podido descargar la aplicación "Suika Game"';
+            } else if (index === 5) {
+                textStore = 'No se a podido descargar la aplicación "Minecraft"';
+            } else if (index === 6) {
+                textStore = 'No se a podido descargar la aplicación "Photoshop"';
+            } else if (index === 7) {
+                textStore = 'No se a podido descargar la aplicación "Spotify"';
+            } else {
+                textStore = 'No se a podido descargar la aplicación "Tik Tok"';
+            }
+            return textStore;
+        }
+
+        alert(alertTextFunction(alertTextAppleStore));
+    }) 
+});
+
+
+// VSCODE CODE
+Prism.highlightAll();
+
 // UPDATE DAY AND HOUR OF THE WEB PAGE
 function updateDate() {
     var actualDate = new Date();
@@ -548,11 +565,11 @@ function intervalfunction() {
     updateDate();
 }
 
+intervalfunction();
 
 // ------------------------------------------------------------------------- //
 // ---------------------------- ALL JS SECTIONS ---------------------------- //
 // ------------------------------------------------------------------------- // 
-
 // SET BUTTON'S PANELS VARIABLES
 // EVENT SHOW BUTTON'S PANELS
 // QUIT PANELS WHEN USER CLICK OUTSIDE PANELS
@@ -565,6 +582,8 @@ function intervalfunction() {
 // ALL MESSENGER SECTION CONFIGURATION
 // APPLE CALENDAR CONFIGURATION
 // WALLPAPER CODE
+// APPLE STORE CODE
+// VSCODE CODE
 // UPDATE DAY AND HOUR OF THE WEB PAGE
 // ------------------------------------------------------------------------- //
 // ---------------------------- ALL JS SECTIONS ---------------------------- //

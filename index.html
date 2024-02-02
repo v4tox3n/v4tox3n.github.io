@@ -4,8 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mac OS - Simulator</title>
-        <link rel="stylesheet" href="styles/style.css">
         <link rel="icon" href="assets/icons/finder.png">
+        <link rel="stylesheet" href="styles/prism.css">
+        <link rel="stylesheet" href="styles/style.css">
     </head>
 
     <body>
@@ -466,8 +467,69 @@
                     </div>
 
                     <div class="apple-store-content">
-                        <h3>Nothing here yet!</h3>
-                    </div>
+                        <div>
+                            <div>
+                                <img src="assets/apple-store/tiktok-icon.png">
+                                <h5>Tik Tok</h5>
+                            </div>
+                            <button>Obtener</button>
+                        </div>
+
+                        <div>
+                            <div>
+                                <img src="assets/apple-store/instagram-icon.jpeg">
+                                <h5>Instagram</h5>
+                            </div>
+                            <button>Obtener</button>
+                        </div>
+
+                        <div>
+                            <div>
+                                <img src="assets/apple-store/twitch-icon.png">
+                                <h5>Twitch</h5>
+                            </div>
+                            <button>Obtener</button>
+                        </div>
+
+                        <div>
+                            <div>
+                                <img src="assets/apple-store/google-maps-icon.png">
+                                <h5>Google Maps</h5>
+                            </div>
+                            <button>Obtener</button>
+                        </div>
+
+                        <div>
+                            <div>
+                                <img src="assets/apple-store/suika-icon.jpeg">
+                                <h5>Suika Game</h5>
+                            </div>
+                            <button>Obtener</button>
+                        </div>
+
+                        <div>
+                            <div>
+                                <img src="assets/apple-store/minecraft-icon.jpeg">
+                                <h5>Minecraft</h5>
+                            </div>
+                            <button>Obtener</button>
+                        </div>
+
+                        <div>
+                            <div>
+                                <img src="assets/apple-store/photoshop-icon.png">
+                                <h5>Photoshop</h5>
+                            </div>
+                            <button>Obtener</button>
+                        </div>
+
+                        <div>
+                            <div>
+                                <img src="assets/apple-store/spotify.png">
+                                <h5>Spotify</h5>
+                            </div>
+                            <button>Obtener</button>
+                        </div>
                 </section>
 
                 <section class="vscode-section">
@@ -478,7 +540,60 @@
                     </div>
 
                     <div class="vscode-content">
-                        <h3>Nothing here yet!</h3>
+                        <div class="editor" contenteditable="true" spellcheck="false">
+                            <pre>
+                                <code class="language-javascript">
+// Puedes editar el documento
+// Para saltar de línea para escribir pulsa mayus + enter
+// Si pulsas solo enter saldrá una línea que queda muy mal
+
+import { tick } from 'svelte';
+export function portal(el: HTMLElement, target: HTMLElement | string = 'body') {
+  let targetEl: HTMLElement;
+
+  async function update(newTarget: HTMLElement | string) {
+    target = newTarget;
+
+    if (typeof target === 'string') {
+      targetEl = document.querySelector(target);
+
+      if (targetEl === null) {
+        await tick();
+        targetEl = document.querySelector(target);
+      }
+
+      if (targetEl === null) {
+        throw new Error(`No element found matching css selector: "${target}"`);
+      }
+    } else if (target instanceof HTMLElement) {
+      targetEl = target;
+    } else {
+      throw new TypeError(
+        `Unknown portal target type: ${
+          target === null ? 'null' : typeof target
+        }. Allowed types: string (CSS selector) or HTMLElement.`,
+      );
+    }
+    targetEl.appendChild(el);
+    el.hidden = false;
+  }
+
+  function destroy() {
+    if (el.parentNode) {
+      el.parentNode.removeChild(el);
+    }
+  }
+
+  update(target);
+
+  return {
+    update,
+    destroy,
+  };
+}
+                                </code>
+                            </pre>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -499,6 +614,7 @@
             </footer>
         </div>
 
+        <script src="scr/prism.js"></script> 
         <script src="scr/script.js"></script>
     </body>
 </html>

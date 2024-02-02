@@ -51,7 +51,6 @@ header {
     font-size: 14px;
 }
 
-/* ---------------------------- */
 .apple-logo {
     display: flex;
     flex-direction: column;
@@ -63,7 +62,6 @@ header {
     height: 20px;
     margin-top: -1px;
 }
-/* ---------------------------- */
 
 .left button:hover {
     background-color: rgba(255, 255, 255, 0.493);
@@ -122,7 +120,6 @@ header {
     border-radius: 5px;
 }
 
-/* ----------------------------------------------------------- */
 .fil {
     left: 0;
     margin-left: 110px;
@@ -152,20 +149,25 @@ header {
     left: 0;
     margin-left: 333px;
 }
-/* ----------------------------------------------------------- */
 
 footer {
     padding: 10px;
     text-align: center;
     position: fixed;
     bottom: 0;
+
+    /* NEW FROM HERE */
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 footer div {
     display: flex;
     gap: 10px;
-    left: 50%;
-    transform: translateX(50%);
+
+    /* NEW FROM HERE */
+    /* left: 50%;
+    transform: translateX(50%); */
     background-color: rgba(255, 255, 255, 0.349);
     backdrop-filter: blur(25px);
     padding: 10px;
@@ -209,7 +211,6 @@ section {
     flex-direction: column;
     background-color: white;
     border-radius: 12px;
-    /* padding: 20px; */
     width: fit-content;
     overflow-x: hidden;
     overflow-y: scroll;
@@ -220,7 +221,6 @@ section {
 
 .navbar {
     width: 100%;
-    /* height: 30px; */
     padding: 7px;
     border-radius: 12px;
     background-color: transparent;
@@ -602,15 +602,51 @@ td {
     transform: translate(-50%, -50%);
 }
 
-/* ---------------------------------------------------------------- */
 .apple-store-section {
     display: none;
     overflow: hidden;
-    margin-left: 45%;
+    margin-left: 50%;
+}
+
+.apple-store-content div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.apple-store-content div div {
+    display: flex;
+    gap: 10px;
+    justify-content: left;
+    text-align: center;
+}
+
+.apple-store-content div img {
+    height: 50px;
+    width: auto;
+    border-radius: 5px;
+}
+
+.apple-store-content div button {
+    border-radius: 15px;
+    background-color: #007AFF;
+    color: white;
+    transition: background-color 0.3s;
+    height: fit-content;
+    cursor: pointer;
+    padding: 3px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.apple-store-content div button:hover {
+    background-color: #0455ac;
 }
 
 .apple-store-content {
     padding: 10px 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 200px;
 }
 
 .vscode-section {
@@ -620,9 +656,31 @@ td {
 }
 
 .vscode-content {
-    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #f8f8f8;
 }
-/* ---------------------------------------------------------------- */
+
+.editor {
+    width: 100%;
+    height: 300px;
+    background-color: transparent;
+    color: #f8f8f8;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    padding: -20px;
+    border-radius: 5px;
+    overflow: auto;
+    margin-right: 10px;
+}
+
+code {
+    background-color: #f8f8f8;
+}
+
+pre {
+    background-color: transparent;
+}
 
 .active {
     display: block;
