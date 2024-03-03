@@ -1,0 +1,788 @@
+@import url('https://fonts.googleapis.com/css?family?Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    /* overflow-x: hidden; */
+}
+
+
+/* -------- HEADER -------- */
+header {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    text-decoration: none;
+    background: transparent;
+    z-index: 100000;
+}
+
+.cover-nav {
+    background: rgb(245, 176, 176);
+    padding: 10px 20px;
+    margin-top: -10px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+    z-index: 99999;
+}
+
+.nav {
+    width: 400px;
+    height: 70px;
+    background: #fff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    /* box-shadow: 0 5px 15px rgba(0, 0, 0, .5); */
+}
+
+.nav ul {
+    display: flex;
+    width: 350px;
+}
+
+.nav ul li {
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+
+.nav ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.nav ul li a .icon {
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    color: rgb(245, 176, 176);
+    transition: 0.5s;
+}
+
+.nav ul li.active a .icon {
+    transform: translateY(-32px);
+}
+
+.nav ul li a .text {
+    position: absolute;
+    color: rgb(245, 176, 176);
+    font-weight: 400;
+    font-weight: bold;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.nav ul li.active a .text {
+    opacity: 1;
+    transform: translateY(10px);
+}
+
+.navEffect {
+    position: absolute;
+    top: -50%;
+    width: 70px;
+    height: 70px;
+    background: #df4d49;
+    border-radius: 50%;
+    border: 6px solid rgb(245, 176, 176);
+    transition: 0.5s;
+}
+
+.navEffect::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-right-radius: 20px;
+    box-shadow: 1px -10px 0 0 rgb(245, 176, 176);
+}
+
+.navEffect:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-left-radius: 20px;
+    box-shadow: -1px -10px 0 0 rgb(245, 176, 176);
+}
+
+.nav ul li:nth-child(1).active ~ .navEffect {
+    transform: translateX(calc(70px * 0));
+}
+
+.nav ul li:nth-child(2).active ~ .navEffect {
+    transform: translateX(calc(70px * 1));
+}
+
+.nav ul li:nth-child(3).active ~ .navEffect {
+    transform: translateX(calc(70px * 2));
+}
+
+.nav ul li:nth-child(4).active ~ .navEffect {
+    transform: translateX(calc(70px * 3));
+}
+
+.nav ul li:nth-child(5).active ~ .navEffect {
+    transform: translateX(calc(70px * 4));
+}
+
+
+/* -------- INICIO PAGE -------- */
+.inicio {
+    width: 100%;
+    background: #fff;
+    padding: 5rem 15%;
+}
+
+.inicio h1 {
+    display: block;
+    font-family: monospace;
+    font-size: 3rem;
+    white-space: nowrap;
+    border-right: 3px solid;
+    width: 9ch;
+    animation: typing 2s steps(10), blinkAnimation .5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+.logo-image {
+    width: 3rem;
+    height: auto;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    margin-right: 2px;
+}
+
+.inicio .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.inicio .container div {
+    width: 50%;
+    height: 100%;
+}
+
+.inicio .container:nth-child(1) {
+    left: 0;
+}
+
+.inicio .container:nth-child(2) {
+    right: 0;
+}
+
+.div2 {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.inicio .container div div {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    left: 0;
+    padding: 0;
+    margin: 0;
+}
+
+@keyframes typing {
+    from { width: 0 } 
+}
+
+@keyframes blinkAnimation {
+    50% { border-color: transparent; }
+}
+
+
+/* -------- SHOP PAGE -------- */
+.shop {
+    width: 100%;
+    padding: 5rem 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(white, #7c809b6b);
+}
+
+.shop img {
+    width: 100%;
+    height: auto;
+}
+
+.shop a button {
+    padding: 20px 40px;
+    width: 10rem;
+    height: auto;
+    background: #3498db;
+    color: white;
+    border-radius: 20px;
+    top: -50%;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.shop a button:hover {
+    background: #76b7e9;
+}
+
+.clothesContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.clothesContainer img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.clothesContainer img:hover {
+    width: 280px;
+    height: 280px;
+}
+
+
+/* -------- TORNEOS PAGE -------- */
+.torneo {
+    width: 100%;
+    background: linear-gradient(#7c809b6b, #FCE4D8);
+    padding: 5rem 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.torneo .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.torneo .container .box {
+    position: relative;
+    width: 400px;
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+    border-radius: 4px;
+    margin: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+}
+
+.torneo .container .box:before {
+    content: '';
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, .2);
+    pointer-events: none;
+    z-index: 2;
+}
+
+.torneo .container .box .number {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    color: #fff;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    font-size: 40px;
+    font-weight: 700;
+    transition: 1s;
+}
+
+.torneo .container .box:nth-child(1) .number {
+    box-shadow: 0 0 0 0 #2196f3;
+    background: #2196f3;
+}
+
+.torneo .container .box:nth-child(1):hover .number {
+    box-shadow: 0 0 0 400px #2196f3;
+}
+
+.torneo .container .box:nth-child(2) .number {
+    box-shadow: 0 0 0 0 #23e629;
+    background: #23e629;
+}
+
+.torneo .container .box:nth-child(2):hover .number {
+    box-shadow: 0 0 0 400px #23e629;
+}
+
+.torneo .container .box .content {
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.torneo .container .box:hover .content {
+    color: #fff;
+}
+
+.torneo .container .box .content h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.torneo .container .box .content p {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.torneo .container .box .content a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    margin-top: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+
+
+/* -------- CLASES PAGE -------- */
+.clases .container {
+    width: 100%;
+    background: linear-gradient(#FCE4D8, #8dffce94);
+    padding: 5rem 15%;
+    font-size: 1.2rem;
+    display: flex;
+    gap: 5%;
+}
+
+.clases-div1, .clases-div2, .clases-div3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+.img {
+    width: auto;
+    height: 250px;
+}
+
+.clases div div button {
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #23e629;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.clases div div button:hover {
+    background-color: #23e62944;
+}
+
+.reserve {
+    width: 100%;
+    padding: 5rem 15%;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    background: linear-gradient(#8dffce94, rgb(142, 241, 241));
+}
+
+.class-div1-2 {
+    width: 50%;
+    font-size: 1.2rem;
+}
+
+.class-div2-2 {
+    width: 50%;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: right;
+    gap: 15px;
+}
+
+.class-div2-2 img {
+    width: auto;
+    height: 250px;
+    border-radius: 12% 88% 20% 80% / 78% 21% 79% 22%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .8);
+}
+
+
+/* -------- CONTACTO PAGE -------- */
+.contacto {
+    width: 100%;
+    background: linear-gradient(rgb(142, 241, 241), rgb(142, 159, 175));
+}
+
+.contacto .container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 5rem 15%;
+    font-size: 1.2rem;
+}
+
+.contacto .container .div1 {
+    width: 50%;
+    height: 100%;
+    left: 0;
+}
+
+.contacto .container .div2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    width: 50%;
+    height: 100%;
+    right: 0;
+}
+
+.contacto .container .div2 .bold {
+    display: flex;
+    width: 100%;
+    justify-content: left;
+    align-items: center;
+    gap: 7px;
+}
+
+.contacto .container div ul li {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+}
+
+.contacto .container div ul li .copy, footer .container div ul li .copy {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.contacto .container div ul li .copy:hover, footer .container div ul li .copy:hover {
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+
+
+/* -------- FOOTER -------- */
+footer {
+    background: #111;
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 5rem 15%;
+    text-align: center;
+}
+
+footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+footer .container .div1 {
+    width: 50%;
+    height: 100%;
+    left: 0;
+    text-align: left;
+}
+
+footer .container .div2 {
+    width: 50%;
+    height: 100%;
+    right: 0;
+    display: flex;
+    gap: 10px;
+}
+
+footer .container .div1 ul li {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .container .div1 ul li .copy {
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+footer .container .div1 ul li .copy:hover {
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+
+footer .container .div2 div ul li {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 7px;
+}
+
+footer .container .div2 ul li .copy {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* -------- SCROLL PERSONALIZED -------- */
+::-webkit-scrollbar {
+    width: 12px;
+    background: rgb(230, 213, 213);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+::-webkit-scrollbar {
+    opacity: 100;
+}
+
+
+/* -------- OTHER PAGE CONFIGURATIONS -------- */
+.bold {
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.transparent {
+    color: transparent;
+}
+
+hr {
+    color: black;
+}
+
+.si_responsive {
+    display: none;
+}
+
+
+/* -------- RESPONSIVE WEB -------- */
+@media screen and (max-width: 768px) {
+    /* -------- RESPONSIVE INICIO PAGE -------- */
+    .inicio .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inicio .container .div1 {
+        width: 100%;
+    }
+
+    .inicio .container .div2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /* -------- RESPONSIVE SHOP PAGE -------- */
+    .clothesContainer img {
+        width: 150px;
+        height: 150px;
+        transition: .5s;
+    }
+
+    .clothesContainer img:hover {
+        width: 180px;
+        height: 180px;
+    }
+
+    .shop a button {
+        padding: 15px 20px;
+        width: 7rem;
+    }
+
+
+    /* -------- RESPONSIVE TORNEOS PAGE -------- */
+
+
+    /* -------- RESPONSIVE CLASES PAGE -------- */
+    .clases .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .clases .reserve {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .clases .reserve .class-div1-2, .clases .reserve .class-div2-2 {
+        width: 100%;
+    }
+
+    .clases .reserve .class-div2-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .clases .reserve .class-div2-2 img {
+        width: auto;
+        height: 180px;
+        background: green;
+        margin-left: -15px;
+    }
+
+
+    /* -------- RESPONSIVE CONTACTO PAGE -------- */
+    .contacto .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacto .container .div1, .contacto .container .div2 {
+        width: 100%;
+    }
+
+
+    /* -------- RESPONSIVE FOOTER -------- */
+    footer .container {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    footer .container .div1, footer .container .div2 {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .container .div1 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .container .div1 ul {
+        text-align: left;
+        justify-content: left;
+        align-items: left;
+    }
+
+    footer .container .div1 ul li {
+        text-align: left;
+        justify-content: left;
+    }
+
+
+    /* -------- RESPONSIVE GENERAL CONFIGURATION -------- */
+    .responsive {
+        display: none;
+    }
+
+    .si_responsive {
+        display: block;
+    }
+}
+
+
+/* --------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------- */
+/* -------- HEADER -------- */
+/* -------- INICIO PAGE -------- */
+/* -------- SHOP PAGE -------- */
+/* -------- TORNEOS PAGE -------- */
+/* -------- CLASES PAGE -------- */
+/* -------- CONTACTO PAGE -------- */
+/* -------- FOOTER -------- */
+/* -------- SCROLL PERSONALIZED -------- */
+/* -------- OTHER PAGE CONFIGURATIONS -------- */
+/* -------- RESPONSIVE WEB -------- */
+/* -------- RESPONSIVE TORNEOS PAGE -------- */
+/* -------- RESPONSIVE CLASES PAGE -------- */
+/* -------- RESPONSIVE CONTACTO PAGE -------- */
+/* -------- RESPONSIVE FOOTER -------- */
+/* -------- RESPONSIVE GENERAL CONFIGURATION -------- */
+/* --------------------------------------------------------------------------- */
+/* --------------------------------------------------------------------------- */
