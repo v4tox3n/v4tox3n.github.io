@@ -74,9 +74,7 @@ body {
     border-bottom: 3px solid var(--main-color);
 }
 
-#menu-icon {
-    font-size: 3.6em;
-    color: var(--main-color);
+.mobile-header {
     display: none;
 }
 
@@ -264,6 +262,88 @@ body {
 }
 
 
+/* PROJECTS */
+.project {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--second-bg-color);
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+}
+
+.article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+
+.project-img {
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+}
+
+.experience-sub-title {
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.project-title {
+    margin: 1rem;
+    color: black;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn-color-2 {
+    border: rgb(53, 53, 53) 0.1rem solid;
+    background: none;
+}
+
+.btn-color-2:hover {
+    cursor: pointer;
+    background: rgb(53, 53, 53);
+    color: white;
+    border: rgb(255, 255, 255) 0.1rem solid;
+}
+  
+.project-btn {
+    color: black;
+    border-color: rgb(163, 163, 163);
+}
+
+
 /* CONTACT */
 .contact h2 {
     margin-bottom: 3rem;
@@ -297,6 +377,15 @@ body {
 
 .contact form .btn {
     margin-top: 2rem;
+}
+
+.contact form .input-box input, .contact form textarea {
+    box-shadow: none;
+    transition: 0.2s ease;
+}
+
+.contact form .input-box input:focus, .contact form textarea:focus {
+    box-shadow: 0 0 15px var(--main-color);
 }
 
 
@@ -397,48 +486,7 @@ body {
 
 
 /* FAQ */
-.faq-container {
-    padding: 4rem 12%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    color: var(--text-color);
-}
 
-.faq-item {
-    margin-bottom: 4rem;
-    max-width: 800px;
-}
-
-.question {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    color: var(--main-color);
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.question:hover {
-    color: var(--text-color);
-}
-
-.answer {
-    font-size: 1.6rem;
-    line-height: 1.8;
-    display: none;
-    color: var(--text-color);
-}
-
-.answer.show {
-    display: block;
-}
-
-.faq-special {
-    background: transparent;
-    filter: none;
-}
 
 
 /* OTHER CONFIGURATION */

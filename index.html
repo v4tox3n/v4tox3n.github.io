@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfolio - Adrià Pons</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="mediaquerys.css">
         <link rel="icon" href="">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
@@ -12,8 +13,6 @@
     <body>
         <header class="header">
             <a href="#home" class="logo">Adrià <span>Pons</span></a>
-
-            <i class='bx bx-menu' id="menu-icon"></i>
 
             <nav class="navbar">
                 <a href="#home" class="active">Home</a>
@@ -24,12 +23,28 @@
             </nav>
         </header>
 
+        <header class="mobile-header">
+            <a href="#home" class="logo">Adrià <span>Pons</span></a>
+
+            <div class="hamburguer-menu">
+                <i class='bx bx-menu' id="menu-icon" onclick="toggleMenu()"></i>
+            </div>
+
+            <div class="menu-links">
+                <li><a href="#home" class="active" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </header>
+
         <section class="home" id="home">
             <div class="home-content">
                 <h1>Hi! I'm <span>Adrià</span></h1>
-                <h3 class="text-animation">I'm a <span></span></h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium vitae dolore voluptates perferendis nobis porro placeat officia cumque sint nihil. Omnis est dolorem repudiandae dignissimos impedit cupiditate reprehenderit molestiae quas.</p>
-            
+                <h3 class="text-animation">I'm a <span></span></h3>                
+                <p>My name is <span>Adrià</span>, I'm <span>16</span> years old and I'm <span>still studying</span>. I'm passionate about <span>frontend/web development</span>. I also love to make <span>scripts</span> in <span>python</span>. Furthermore, I would like to <span>become</span> a professional <span>cybersecurity pentester</span>. I'm <span>always ready</span> to listen to your <span>proposals</span>, so don't hesitate to <span>contact me</span> through the <span>contact form</span> down in this page.</p>
+                
                 <div class="social-icons">
                     <a href="#"><i class='bx bxs-envelope' ></i></a>
                     <a href="#"><i class='bx bxl-github' ></i></a>
@@ -48,30 +63,6 @@
             </div>
         </section>
 
-        <!-- <section class="projects" id="projects">
-            <h2 class="heading">Projects</h2>
-
-            <div class="section-container">
-                <div class="project">
-                    <img src="assets/mac-os.png">
-                    <h2>With this project you'll feel like you bought a Mac. Apps like calculator, calendar, vscode... are "functional"! You an also search things on "Safary".</h2>
-                    <div class="group">
-                        <div class="languages">
-                            <img src="assets/html.svg">
-                            <img src="assets/css.svg">
-                            <img src="assets/js.svg">
-                        </div>
-                        <a href="https://adriiiaa12.github.io/mac-os/">Visit the project <i class='bx bxs-right-top-arrow-circle'></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="services" id="services">
-            <h2 class="heading" id="skills">There <span>aren't</span> more <span>sections</span></h2>
-            <h2 class="heading"><span>at the moment</span> in my <span>Portfolio</span></h2>
-        </section> -->
-
         <section class="contact" id="contact">
             <h2 class="heading">Contact <span>Me</span></h2>
 
@@ -83,7 +74,7 @@
                     <input type="text" placeholder="Subject" required>
                 </div>
 
-                <!-- Habrá que poner método POST y " name: '__' " -->
+                <!-- Habrá que poner método POST/GET y " name: '__' " -->
 
                 <textarea name="" id="" cols="30" rows="10" placeholder="Your Message..." required></textarea>
                 <input type="submit" value="Send" class="btn contact-me-submit-button">
@@ -99,8 +90,7 @@
             </div>
 
             <ul class="list">
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Services</a></li>
+                <li><a href="faq.html">FAQ</a></li>
                 <li><a href="#">Feedback</a></li>
             </ul>
 
