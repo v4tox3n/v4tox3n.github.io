@@ -1,66 +1,104 @@
 <!DOCTYPE html>
-<html lang="es-ES">
+<html lang="en-EN">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio - Adrià Pons</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="mediaquerys.css">
+        <title>Adrià Pons</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/mediaquerys.css">
         <link rel="icon" href="">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
 
     <body>
-        <header class="header">
-            <a href="#home" class="logo">Adrià <span>Pons</span></a>
+        <header>
+            <a href="#home" class="logo"><span>ADRIÀ PONS</span></a>
 
-            <nav class="navbar">
+            <nav>
                 <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
                 <a href="#projects">Projects</a>
                 <a href="#services">Services</a>
-                <a href="#skills">Skills</a>
                 <a href="#contact">Contact</a>
             </nav>
+
+            <div class="flex">
+                <div class="theme-container">
+                    <div class="theme light-theme active">
+                        <i class='bx bxs-sun'></i>
+                        <i class='bx bx-moon'></i>
+                    </div>
+
+                    <div class="theme dark-theme">
+                        <i class='bx bx-sun'></i>
+                        <i class='bx bxs-moon'></i>
+                    </div>
+                </div>
+
+                <div class="language-container" onclick="location.href = 'es/index.html'">
+                    <ion-icon name="language-outline"></ion-icon>
+                    <span class="language active">EN</span>
+                </div>
+            </div>
         </header>
 
         <header class="mobile-header">
-            <a href="#home" class="logo">Adrià <span>Pons</span></a>
-
-            <div class="hamburguer-menu">
-                <i class='bx bx-menu' id="menu-icon" onclick="toggleMenu()"></i>
-            </div>
-
-            <div class="menu-links">
-                <li><a href="#home" class="active" onclick="toggleMenu()">Home</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#services" onclick="toggleMenu()">Services</a></li>
-                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
+            <!-- finish the mobile header -->
         </header>
 
         <section class="home" id="home">
             <div class="home-content">
-                <h1>Hi! I'm <span>Adrià</span></h1>
-                <h3 class="text-animation">I'm a <span></span></h3>                
-                <p>My name is <span>Adrià</span>, I'm <span>16</span> years old and I'm <span>still studying</span>. I'm passionate about <span>frontend/web development</span>. I also love to make <span>scripts</span> in <span>python</span>. Furthermore, I would like to <span>become</span> a professional <span>cybersecurity pentester</span>. I'm <span>always ready</span> to listen to your <span>proposals</span>, so don't hesitate to <span>contact me</span> through the <span>contact form</span> down in this page.</p>
-                
-                <div class="social-icons">
-                    <a href="#"><i class='bx bxs-envelope' ></i></a>
-                    <a href="#"><i class='bx bxl-github' ></i></a>
-                    <a href="#"><i class='bx bxl-discord-alt' ></i></a>
-                    <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
-                </div>
+                <h2 class="heading">Hi, I'm Adrià.</h2>
 
-                <div class="btn-group">
-                    <a href="#" class="btn">Hire Me</a>
-                    <a href="#" class="btn">Card</a>
+                <div class="short-description">
+                    <p>Studying to improve in the IT world and to give the best of</p>
+                    <p>myself working on what I like and enjoy.</p>
                 </div>
             </div>
+        </section>
 
-            <div class="home-img">
-                <img src="assets/logo.png">
-            </div>
+        <section class="about" id="about">
+            <h2 class="heading">About <span>Me</span></h2>
+
+           <div class="about-container">
+                <div class="about-content">
+                    <h3 class="text-animation">I'm a <span></span></h3>                
+                    <p>I'm <span>16</span> years old and I'm <span>still studying</span>. I'm passionate about <span>frontend/web development</span>. I also love to make <span>scripts</span> in <span>python</span>. Furthermore, I would like to <span>become</span> a professional <span>cybersecurity pentester</span>. I'm <span>always ready</span> to listen to your <span>proposals</span>, so don't hesitate to <span>contact me</span> through the <span>contact form</span> down in this page.</p>
+
+                    <div class="location">
+                        <div>
+                            <ion-icon name="location-outline"></ion-icon>
+                            <p>Barcelona, Spain</p>
+                        </div>
+                    </div>
+
+                    <div class="mobile">
+                        <div class="social-icons">
+                            <a href="#"><i class='bx bxs-envelope' ></i></a>
+                            <a href="#"><i class='bx bxl-github' ></i></a>
+                            <a href="#"><i class='bx bxl-discord-alt' ></i></a>
+                            <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+                        </div>
+    
+                        <div class="btn-group">
+                            <a href="#" class="btn">Hire Me</a>
+                            <a href="#" class="btn">Card</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-img">
+                    <img src="assets/logo.png">
+                </div>
+           </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <h2 class="heading">My<span>Projects</span></h2>
+        </section>
+
+        <section class="services" id="services">
+            <h2 class="heading">Avaible <span>Services</span></h2>
         </section>
 
         <section class="contact" id="contact">
@@ -103,6 +141,8 @@
             </div>
         </footer>
 
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
         <script src="script.js"></script>
     </body>
 </html>

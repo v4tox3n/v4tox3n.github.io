@@ -1,10 +1,19 @@
+// WELCOME ALERT
 alert("Hi! Thanks for visiting my portfolio, but now it's not ready. I'm making it, so it's not finished. You can see my projects on my github -> adriiiaa12");
 
-menu = document.querySelector('.menu-links');
 
-function toggleMenu() {
-    // alert('ToggleMenu()');
+// THEMES CHANGER CONFIGURATION
+const themes = document.querySelectorAll('.theme');
 
-    menu.classList.toggle('active');
+function toggleActiveThemes() {
+    themes.forEach(theme => {
+        theme.classList.toggle('active');
+    });
 }
 
+themes.forEach(theme => {
+    theme.addEventListener('click', toggleActiveThemes);
+});
+
+
+// ------------------------

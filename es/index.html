@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Adrià Pons</title>
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/mediaquerys.css">
+        <link rel="icon" href="">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+
+    <body>
+        <header>
+            <a href="#home" class="logo"><span>ADRIÀ PONS</span></a>
+
+            <nav>
+                <a href="#home" class="one active">Inicio</a>
+                <a href="#about" class="two">Sobre Mi</a>
+                <a href="#projects" class="three">Proyectos</a>
+                <a href="#services" class="four">Servicios</a>
+                <a href="#contact" class="five">Contacto</a>
+            </nav>
+
+            <div class="flex">
+                <div class="theme-container">
+                    <div class="theme light-theme active">
+                        <i class='bx bxs-sun'></i>
+                        <i class='bx bx-moon'></i>
+                    </div>
+
+                    <div class="theme dark-theme">
+                        <i class='bx bx-sun'></i>
+                        <i class='bx bxs-moon'></i>
+                    </div>
+                </div>
+
+                <div class="language-container" onclick="location.href = '../index.html'">
+                    <ion-icon name="language-outline"></ion-icon>
+                    <span class="language active">ES</span>
+                </div>
+            </div>
+        </header>
+
+        <header class="mobile-header">
+            <!-- finish the mobile header -->
+        </header>
+
+        <section class="home" id="home">
+            <div class="home-content">
+                <h2 class="six heading">Hey, soy Adrià.</h2>
+
+                <div class="short-description">
+                    <p class="seven">Estudiando para mejorar en el mundo de la informática y para dar lo mejor</p>
+                    <p class="eight">de mí trabajando en lo que me gusta y me divierte.</p>
+                </div>
+
+                <!-- <div class="location">
+                    <div>
+                        <ion-icon name="location-outline"></ion-icon>
+                        <p>Barcelona, Spain</p>
+                    </div>
+                </div> -->
+
+
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h2 class="heading">Sobre <span>Mi</span></h2>
+        </section>
+
+        <section class="projects" id="projects">
+            <h2 class="heading">Mis<span>Proyectos</span></h2>
+        </section>
+
+        <section class="services" id="services">
+            <h2 class="heading">Servicios <span>Disponibles</span></h2>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2 class="heading"><span>Contáctame</span></h2>
+
+            <form action="">
+                <div class="input-box">
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="text" placeholder="Apellido" required>
+                    <input type="email" placeholder="Correo" required>
+                    <input type="text" placeholder="Tema" required>
+                </div>
+
+                <!-- Habrá que poner método POST/GET y " name: '__' " -->
+
+                <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensage..." required></textarea>
+                <input type="submit" value="Enviar" class="btn contact-me-submit-button">
+            </form>
+        </section>
+
+        <footer class="footer">
+            <div class="social">
+                <a href="#"><i class='bx bxs-envelope' ></i></a>
+                <a href="#"><i class='bx bxl-github' ></i></a>
+                <a href="#"><i class='bx bxl-discord-alt' ></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+            </div>
+
+            <ul class="list">
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="#">Feedback</a></li>
+            </ul>
+
+            <div class="others">
+                <a href="#"><i class="fa-brands fa-discord"></i> Comunidad de Discord</a>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; Adrià Pons - Todos los derechos reservados</p>
+            </div>
+        </footer>
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="../script.js"></script>
+    </body>
+</html>
