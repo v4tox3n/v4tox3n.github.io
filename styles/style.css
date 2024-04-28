@@ -374,13 +374,168 @@ nav a:hover, nav a.active {
     }
 }
 
+.work {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.circle {
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 50%;
+    background: rgb(27, 221, 27);
+    box-shadow: none;
+    box-shadow: 0 0 15px rgb(27, 221, 27);
+}
+
+.work div p {
+    font-size: 1.5rem;
+    margin-right: 5px;
+    color: var(--light-main-color);
+    cursor: default;
+    font-weight: bold;
+}
+
 
 /* PROJECTS SECTION */
 
 
 /* SERVICES SECTION */
 .services {
+    padding: 5rem 12% 5rem;
     background: var(--light-second-bg-color);
+}
+
+.services-container {
+    margin-top: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.services-container .box {
+    position: relative;
+    width: 400px;
+    padding: 40px;
+    background: white;
+    color: var(--light-main-color);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+    border-radius: 4px;
+    margin: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+}
+
+.services-container .box:before {
+    content: '';
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, .2);
+    pointer-events: none;
+    z-index: 2;
+}
+
+.services-container .box .number {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    color: white;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    font-size: 40px;
+    font-weight: 700;
+    transition: 1s;
+}
+
+.services-container .box:nth-child(1) .number {
+    box-shadow: 0 0 0 0 #2196f3;
+    background: #2196f3;
+}
+
+.services-container.services-container .box:nth-child(1):hover .number {
+    box-shadow: 0 0 0 400px #2196f3;
+}
+
+.services-container .box:nth-child(2) .number {
+    box-shadow: 0 0 0 0 #23e629;
+    background: #23e629;
+}
+
+.services-container .box:nth-child(2):hover .number {
+    box-shadow: 0 0 0 400px #23e629;
+}
+
+.services-container .box:nth-child(3) .number {
+    box-shadow: 0 0 0 0 #e91e63;
+    background: #e91e63;
+}
+
+.services-container .box:nth-child(3):hover .number {
+    box-shadow: 0 0 0 400px #e91e63;
+}
+
+.services-container .box .content {
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.services-container .box:hover .content {
+    color: #fff;
+}
+
+.services-container .box .content h3 {
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.services-container .box .content p {
+    font-size: 1.7rem;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.services-container .box .content a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-top: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+
+.rate-text {
+    margin: 20px;
+    margin-top: 6rem;
+    font-size: 1.5rem;
+}
+
+.rate-star {
+    margin: 20px;
+    font-size: 1.5rem;
 }
 
 
@@ -527,7 +682,7 @@ nav a:hover, nav a.active {
 
 /* OTHER CONFIGURATION */
 section {
-    min-height: 100vh;
+    min-height: 90vh;
     padding: 10rem 20% 10rem;
 }
 
@@ -587,6 +742,14 @@ ion-icon {
 
 .about {
     padding: 10rem 12% 10rem;
+}
+
+.mobile {
+    display: none;
+}
+
+.no-mobile {
+    display: block;
 }
 
 

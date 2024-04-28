@@ -16,4 +16,9 @@ themes.forEach(theme => {
 });
 
 
-// ------------------------
+// HAMBURGUER MENU (RESPONSIVE WEBSITE)
+menu = document.querySelector('.menu-links');
+
+function toggleMenu() {
+    menu.classList.toggle('active');
+}
