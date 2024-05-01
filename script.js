@@ -22,3 +22,22 @@ menu = document.querySelector('.menu-links');
 function toggleMenu() {
     menu.classList.toggle('active');
 }
+
+
+// RATING STAR SERVICES CONFIGURATION
+const allStars = document.querySelectorAll('.star');
+
+allStars.forEach((star, i) => {
+    star.onclick = function () {
+        let current_star_rating = i + 1;
+
+        allStars.forEach((star, j) => {
+            if (current_star_rating >= j + 1) {
+                star.innerHTML = '&#9733';
+            } else {
+                star.innerHTML = '&#9734';
+            }
+
+        });
+    }
+});
