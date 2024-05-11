@@ -413,15 +413,16 @@ nav a:hover, nav a.active {
 
 /* SERVICES SECTION */
 .services {
-    padding: 5rem 12% 5rem;
     background: var(--light-second-bg-color);
 }
 
 .services-container {
+    width: fit-content;
     margin-top: 6rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
 
 .services-container .box {
@@ -530,7 +531,13 @@ nav a:hover, nav a.active {
     box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
 }
 
-.star_rating {
+.valorations {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.star_rating, .personal-comments {
     width: fit-content;
     display: flex;
     flex-direction: column;
@@ -538,11 +545,28 @@ nav a:hover, nav a.active {
     align-items: center;
     margin: 20px;
     margin-top: 6rem;
+    margin-left: 25px;
     font-size: 1.5rem;
     user-select: none;
     background: var(--light-main-color);
     border-radius: .4rem;
     padding: 1.4rem 2.5rem;
+}
+
+.personal-comments textarea {
+    display: none;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--light-second-main-color);
+    background: var(--light-bg-color);
+    border-radius: 0.8rem;
+    border: 2px solid var(--light-main-color);
+    margin: 1rem 0;
+    resize: none;
+}
+
+.personal-comments textarea.active {
+    display: flex;
 }
 
 .star {
@@ -554,6 +578,22 @@ nav a:hover, nav a.active {
 
 .star:hover {
     cursor: pointer;
+}
+
+.personal-comments {
+    display: none;
+}
+
+.personal-comments.active {
+    display: flex;
+}
+
+.star_rating {
+    display: flex;
+}
+
+.star_rating.active {
+    display: none;
 }
 
 
@@ -758,6 +798,26 @@ ion-icon {
     box-shadow: 0 0 50px var(--light-main-color);
 }
 
+.back {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: transparent;
+    box-shadow: 0 0 25px var(--light-main-color);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: var(--light-main-color);
+    border: 2px solid var(--light-main-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.back:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 50px var(--light-main-color);
+}
+
 .about {
     padding: 10rem 12% 10rem;
 }
@@ -767,6 +827,34 @@ ion-icon {
 }
 
 .no-mobile {
+    display: block;
+}
+
+.centered {
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+.flex {
+    gap: 10px;
+}
+
+.next {
+    display: block;
+}
+
+.next.active {
+    display: none;
+}
+
+.back, .send {
+    display: none;
+}
+
+.back.active, .send.active {
     display: block;
 }
 
