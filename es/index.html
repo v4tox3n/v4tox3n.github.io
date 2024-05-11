@@ -11,15 +11,15 @@
     </head>
 
     <body>
-        <header>
+        <header class="header">
             <a href="#home" class="logo"><span>ADRIÀ PONS</span></a>
 
             <nav>
-                <a href="#home" class="one active">Inicio</a>
-                <a href="#about" class="two">Sobre Mi</a>
-                <a href="#projects" class="three">Proyectos</a>
-                <a href="#services" class="four">Servicios</a>
-                <a href="#contact" class="five">Contacto</a>
+                <a href="#home" class="active">Inicio</a>
+                <a href="#about">Sobre Mi</a>
+                <a href="#projects">Proyectos</a>
+                <a href="#services">Servicios</a>
+                <a href="#contact">Contacto</a>
             </nav>
 
             <div class="flex">
@@ -35,7 +35,7 @@
                     </div>
                 </div>
 
-                <div class="language-container" onclick="location.href = '../index.html'">
+                <div class="language-container" onclick="location.href = '../'">
                     <ion-icon name="language-outline"></ion-icon>
                     <span class="language active">ES</span>
                 </div>
@@ -43,31 +43,78 @@
         </header>
 
         <header class="mobile-header">
-            <!-- finish the mobile header -->
+            <a href="#home" class="logo">Adrià <span>Pons</span></a>
+
+            <div class="hamburguer-menu">
+                <i class='bx bx-menu' id="menu-icon" onclick="toggleMenu()"></i>
+            </div>
+
+            <div class="menu-links">
+                <li><a href="#home" class="active" onclick="toggleMenu()">Inicio</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Sobre Mi</a></li>
+                <li><a href="#services" onclick="toggleMenu()">Proyectos</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Servicios</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contacto</a></li>
+            </div>
         </header>
 
         <section class="home" id="home">
             <div class="home-content">
-                <h2 class="six heading">Hey, soy Adrià.</h2>
+                <h2 class="heading">Hey, soy Adrià.</h2>
 
-                <div class="short-description">
-                    <p class="seven">Estudiando para mejorar en el mundo de la informática y para dar lo mejor</p>
-                    <p class="eight">de mí trabajando en lo que me gusta y me divierte.</p>
+                <div class="no-mobile short-description">
+                    <p>Estudiando para mejorar en el mundo de la informática y para dar lo mejor</p>
+                    <p>de mí trabajando en lo que me gusta y me divierte.</p>
                 </div>
 
-                <!-- <div class="location">
-                    <div>
-                        <ion-icon name="location-outline"></ion-icon>
-                        <p>Barcelona, Spain</p>
-                    </div>
-                </div> -->
-
-
+                <div class="short-description mobile">
+                    <p>Estudiando para mejorar en el mundo de la informática y para dar lo mejor</p>
+                    <p>de mí trabajando en lo que me gusta y me divierte.</p>
+                </div>
             </div>
         </section>
 
         <section class="about" id="about">
             <h2 class="heading">Sobre <span>Mi</span></h2>
+
+           <div class="about-container">
+                <div class="about-content">
+                    <h3 class="text-animation">Soy <span></span></h3>                
+                    <p>Tengo <span>16</span> años y aún <span>sigo estudiando</span>. Me apasiona el <span>desarollo frontend/web</span>. También me encanta hacer <span>scripts</span> en <span>python</span>. Además, me gustaría <span>convertirme</span> profesionalmente en <span>cybersecurity pentester</span>. <span>Siempre</span> estoy <span>listo</span> para escuchar tus <span>propuestas</span>, así que no dudes en <span>contactarme</span> a través del <span>formulario de contacto</span> más abajo en la página.</p>
+
+                    <div class="location">
+                        <div>
+                            <ion-icon name="location-outline"></ion-icon>
+                            <p>Barcelona, España</p>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <div>
+                            <div class="circle"></div>
+                            <p>Disponible para trabajar</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="social-icons">
+                            <a target="_blank" href="#"><i class='bx bxs-envelope' ></i></a>
+                            <a target="_blank" href="https://github.com/adriiiaa12"><i class='bx bxl-github' ></i></a>
+                            <a target="_blank" href="#"><i class='bx bxl-discord-alt' ></i></a>
+                            <a target="_blank" href="https://instagram.com/adriiiaa___12"><i class='bx bxl-instagram-alt' ></i></a>>
+                        </div>
+    
+                        <div class="btn-group">
+                            <a href="#" class="btn">Contráctame</a>
+                            <a href="#" class="btn">Tarjeta</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-img">
+                    <img src="../assets/logo.png">
+                </div>
+           </div>
         </section>
 
         <section class="projects" id="projects">
@@ -76,41 +123,70 @@
 
         <section class="services" id="services">
             <h2 class="heading">Servicios <span>Disponibles</span></h2>
+
+            <div class="centered">
+                <div class="services-container">
+                    <div class="box">
+                        <div class="number">01</div>
+                        <div class="content">
+                            <h3>Sitio Web</h3>
+                            <p>Puedo hacer todo tipo de páginas web. Pueden incluir formularios y métodos de contacto. Me adapto a tus gustos, preferencias y necesidades. No hago portafolios personales porque estos deben ser hechos por tu propio gusto y habilidades para mostrar lo que vales para ser contratado por alguien.</p>
+                            <a href="#">Contratar Servicio</a>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="number">02</div>
+                        <div class="content">
+                            <h3>App Privada</h3>
+                            <p>Otro servicio disponible que hago, es una aplicación privada, sólo para usted o también para una empresa privada. Un ejemplo de una aplicación de este tipo podría ser por ejemplo una aplicación para comprobar cuántas horas trabaja un empleado en una empresa, por lo que es una aplicación especial para una empresa específica, no para todo el mundo.</p>
+                            <a href="#">Contratar Servicio</a>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="number">03</div>
+                        <div class="content">
+                            <h3>Código Script</h3>
+                            <p>Este último servicio es similar al anterior pero sin interfaz de usuario. Consiste en programas (normalmente ejecutados por terminal) para facilitar algún trabajo. Por ejemplo, si siempre tienes que actualizar una página web (noticias por ejemplo), el script te facilita el trabajo para que no tengas que hacerlo manualmente.</p>
+                            <a href="#">Contratar Servicio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="contact" id="contact">
-            <h2 class="heading"><span>Contáctame</span></h2>
+            <h2 class="heading">Formulario <span>Contacto</span></h2>
 
             <form action="">
                 <div class="input-box">
                     <input type="text" placeholder="Nombre" required>
                     <input type="text" placeholder="Apellido" required>
                     <input type="email" placeholder="Correo" required>
-                    <input type="text" placeholder="Tema" required>
+                    <input type="text" placeholder="Asunto" required>
                 </div>
 
-                <!-- Habrá que poner método POST/GET y " name: '__' " -->
-
-                <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensage..." required></textarea>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Mensage..." required></textarea>
                 <input type="submit" value="Enviar" class="btn contact-me-submit-button">
             </form>
         </section>
 
         <footer class="footer">
             <div class="social">
-                <a href="#"><i class='bx bxs-envelope' ></i></a>
-                <a href="#"><i class='bx bxl-github' ></i></a>
-                <a href="#"><i class='bx bxl-discord-alt' ></i></a>
-                <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+                <a target="_blank" href="#"><i class='bx bxs-envelope' ></i></a>
+                <a target="_blank" href="https://github.com/adriiiaa12"><i class='bx bxl-github' ></i></a>
+                <a target="_blank" href="#"><i class='bx bxl-discord-alt' ></i></a>
+                <a target="_blank" href="https://instagram.com/adriiiaa___12"><i class='bx bxl-instagram-alt' ></i></a>
             </div>
 
             <ul class="list">
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="#">Feedback</a></li>
+                <li><a target="_blank" href="../faq">FAQ</a></li>
+                <li><a target="_blank" href="../feedback">Feedback</a></li>
             </ul>
 
             <div class="others">
-                <a href="#"><i class="fa-brands fa-discord"></i> Comunidad de Discord</a>
+                <a target="_blank" href="https://discord.gg/Wu3FTufMTb"><i class="fa-brands fa-discord"></i> Comunidad de Discord</a>
             </div>
 
             <div class="copyright">
@@ -120,6 +196,6 @@
 
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-        <script src="../script.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>

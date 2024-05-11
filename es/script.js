@@ -1,5 +1,5 @@
 // WELCOME ALERT
-alert("Hi! Thanks for visiting my portfolio, but now it's not ready. I'm making it, so it's not finished. You can see my projects on my github -> adriiiaa12");
+alert("Hola! Gracias por visitar mi portfolio pero aún no está terminado. Sigo haciéndolo por lo que aún le faltan cosas. Para ver todos mis proyectos y todo lo que he programado en mi github -> adriiiaa12");
 
 
 // HEADER SELECT OPTION CONFIGURATION
@@ -54,10 +54,10 @@ function toggleMenu() {
 const webhookUrl = 'https://discord.com/api/webhooks/1238970517059403927/dUZHRZfZbckd1QMtYC3nbXHeZuerCFyW7sV0wBxtezUTVcu1frb_xWD2AqlQYe4WV81n';
 
 const form = document.querySelector('form');
-const nameInput = document.querySelector('input[placeholder="Name"]');
-const surnameInput = document.querySelector('input[placeholder="Surname"]');
-const emailInput = document.querySelector('input[placeholder="Email"]');
-const subjectInput = document.querySelector('input[placeholder="Subject"]');
+const nameInput = document.querySelector('input[placeholder="Nombre"]');
+const surnameInput = document.querySelector('input[placeholder="Apellido"]');
+const emailInput = document.querySelector('input[placeholder="Correo"]');
+const subjectInput = document.querySelector('input[placeholder="Asunto"]');
 const messageInput = document.querySelector('textarea');
 let lastMessageTime = 0;
 
@@ -78,7 +78,7 @@ form.addEventListener('submit', (e) => {
         lastMessageTime = currentTime;
     } else {
         const remainingTime = (600000 - elapsedTimeSinceLastMessage) / 60000;
-        alert(`You have to wait ${remainingTime.toFixed(2)} minutes before sending another message.`);
+        alert(`Tienes que esperar ${remainingTime.toFixed(2)} minutos antes de enviar otro mensage.`);
     }
 });
 
@@ -98,10 +98,10 @@ function sendMessageToDiscord(name, surname, email, subject, message) {
     })
     .then((response) => {
         if (response.ok) {
-            alert('Message sent successfully!');
+            alert('Mensage enviado correctamente.');
             window.location.href = 'https://adriiiaa12.github.io#contact';
         } else {
-            alert('Error sending message');
+            alert('Error al enviar el mensage');
         }
     })
     .catch((error) => {
