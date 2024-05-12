@@ -53,7 +53,7 @@ function toggleMenu() {
 // CONTACT SEND INFORMATION
 const webhookUrl = 'https://discord.com/api/webhooks/1238970517059403927/dUZHRZfZbckd1QMtYC3nbXHeZuerCFyW7sV0wBxtezUTVcu1frb_xWD2AqlQYe4WV81n';
 
-const form = document.querySelector('form');
+const form = document.querySelector('.contactForm');
 const nameInput = document.querySelector('input[placeholder="Name"]');
 const surnameInput = document.querySelector('input[placeholder="Surname"]');
 const emailInput = document.querySelector('input[placeholder="Email"]');
@@ -108,3 +108,6 @@ function sendMessageToDiscord(name, surname, email, subject, message) {
         alert('Error:', error);
     });
 }
+
+
+// HIRE SERVICE SEND INFORMATION

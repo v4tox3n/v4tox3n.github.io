@@ -673,6 +673,78 @@ nav a:hover, nav a.active {
 }
 
 
+/* HIRE SERVICE FORM */
+.hire-service-content form {
+    max-width: 60rem;
+    margin: 1rem auto;
+    margin-top: 8rem;
+    text-align: center;
+    background: var(--light-second-bg-color);
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+}
+
+.hire-service-content form h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    gap: 10px;
+    text-decoration: underline var(--light-second-main-color);
+}
+
+.hire-service-content form input[type="text"],
+.hire-service-content form input[type="email"],
+.hire-service-content form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: black;
+    background: transparent;
+    border-radius: 0.8rem;
+    border: 2px solid var(--light-main-color);
+    margin: 1rem 0;
+    resize: none;
+}
+
+.hire-service-content form select {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: black;
+    background: transparent;
+    border-radius: 0.8rem;
+    border: 2px solid var(--light-main-color);
+    margin: 1rem 0;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%23000000'%3E%3Cpath d='M9.293 14.707a1 1 0 001.414 0l5-5a1 1 0 00-1.414-1.414L10 12.586l-4.293-4.293a1 1 0 10-1.414 1.414l5 5z'/%3E%3C/svg%3E"); /* Agrega una flecha personalizada */
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1.5rem;
+    cursor: pointer;
+}
+
+.hire-service-content form select:focus {
+    box-shadow: 0 0 15px var(--light-main-color);
+}
+
+.hire-service-content form textarea {
+    height: 12rem;
+    margin-bottom: 3rem;
+}
+
+.hire-service-content form input[type="text"]:focus,
+.hire-service-content form input[type="email"]:focus,
+.hire-service-content form input[type="tel"]:focus,
+.hire-service-content form textarea:focus {
+    box-shadow: 0 0 15px var(--light-main-color);
+}
+
+
 /* OTHER CONFIGURATION */
 section {
     min-height: 90vh;
@@ -768,7 +840,6 @@ ion-icon {
 .centered {
     width: 100%;
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
 }

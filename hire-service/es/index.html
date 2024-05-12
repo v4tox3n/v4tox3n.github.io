@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contratar Servicios - Adrià Pons</title>
+        <link rel="stylesheet" href="../../styles/style.css">
+        <link rel="stylesheet" href="../../styles/mediaquerys.css">
+        <link rel="icon" href="">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+
+    <body>
+        <header class="header">
+            <a href="../../#home" class="logo"><span>ADRIÀ PONS</span></a>
+
+            <nav>
+                <a href="../../#home" class="active">Inicio</a>
+                <a href="../../#about">Sobre Mi</a>
+                <a href="../../#projects">Proyectos</a>
+                <a href="../../#services">Servicios</a>
+                <a href="../../#contact">Contacto</a>
+            </nav>
+
+            <div class="flex">
+                <div class="theme-container">
+                    <div class="theme light-theme active">
+                        <i class='bx bxs-sun'></i>
+                        <i class='bx bx-moon'></i>
+                    </div>
+
+                    <div class="theme dark-theme">
+                        <i class='bx bx-sun'></i>
+                        <i class='bx bxs-moon'></i>
+                    </div>
+                </div>
+
+                <div class="language-container" onclick="location.href = '../'">
+                    <ion-icon name="language-outline"></ion-icon>
+                    <span class="language active">ES</span>
+                </div>
+            </div>
+        </header>
+
+        <header class="mobile-header">
+            <a href="../../#home" class="logo">Adrià <span>Pons</span></a>
+
+            <div class="hamburguer-menu">
+                <i class='bx bx-menu' id="menu-icon" onclick="toggleMenu()"></i>
+            </div>
+
+            <div class="menu-links">
+                <li><a href="../../#home" class="active" onclick="toggleMenu()">Inicio</a></li>
+                <li><a href="../../#projects" onclick="toggleMenu()">Sobre Mi</a></li>
+                <li><a href="../../#services" onclick="toggleMenu()">Proyectos</a></li>
+                <li><a href="../../#skills" onclick="toggleMenu()">Servicios</a></li>
+                <li><a href="../../#contact" onclick="toggleMenu()">Contacto</a></li>
+            </div>
+        </header>
+
+        <section class="hire-service">
+            <h2 class="heading">Contratar <span>Servicios</span></h2>
+
+            <div class="hire-service-content">
+                <form action="" class="hire-service-form">
+                    <h2><span>Enter the required information</span></h2>
+                    <input id="name" type="text" placeholder="Nombre" required>
+                    <input id="email" type="email" placeholder="Correo" required>
+                    <select id="service" required>
+                        <option value="" disabled selected>Selecciona un servicio</option>
+                        <option value="Web Site">Sitio Web</option>
+                        <option value="Private App">App Privada</option>
+                        <option value="Script Code">Código Script</option>
+                    </select>
+                    <textarea id="comments" rows="4" cols="50" placeholder="Comentarios... "></textarea>
+                    <input type="submit" class="btn" value="Enviar solicitud">
+
+                    <br>
+                    <br>
+                    <h1 style="color: red;">* AÚN NO ESTÀ FUNCIONANDO</h1>
+                </form>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="social">
+                <a target="_blank" href="#"><i class='bx bxs-envelope' ></i></a>
+                <a target="_blank" href="https://github.com/adriiiaa12"><i class='bx bxl-github' ></i></a>
+                <a target="_blank" href="#"><i class='bx bxl-discord-alt' ></i></a>
+                <a target="_blank" href="https://instagram.com/adriiiaa___12"><i class='bx bxl-instagram-alt' ></i></a>
+            </div>
+
+            <div class="others">
+                <a target="_blank" href="https://discord.gg/Wu3FTufMTb"><i class="fa-brands fa-discord"></i> Comunidad de Discord</a>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; Adrià Pons - Todos los derechos reservados</p>
+            </div>
+        </footer>
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="../../script.js"></script>
+    </body>
+</html>
