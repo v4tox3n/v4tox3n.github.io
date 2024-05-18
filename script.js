@@ -30,10 +30,15 @@ mobile_options.forEach(function(button) {
 
 // THEMES CHANGER CONFIGURATION
 const themes = document.querySelectorAll('.theme');
+const allObjects = document.querySelectorAll('*');
 
 function toggleActiveThemes() {
     themes.forEach(theme => {
         theme.classList.toggle('active');
+    });
+
+    allObjects.forEach(all => {
+        all.classList.toggle('dark');
     });
 }
 

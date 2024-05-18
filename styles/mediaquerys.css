@@ -19,17 +19,17 @@
 
     :root {
         /* backgrounds colors */
-        --dark-bg-color: ; /* 502274 */
-        --dark-second-bg-color: ; /* A42CD6 */
+        --dark-bg-color: #202040;
+        --dark-second-bg-color: #373856;
         --light-bg-color: #D8D8F6;
         --light-second-bg-color: #b7b8d6;
     
         /* main colors */
-        --dark-main-color: ;
+        --dark-main-color: #8a7bbf;
         --light-main-color: #494850;
     
         /* second colors */
-        --dark-second-main-color: ;
+        --dark-second-main-color: #5e5d71;
         --light-second-main-color: #2C2C34;
     
         /* projects */
@@ -159,5 +159,10 @@
 
     .no-mobile {
         display: none;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
     }
 }

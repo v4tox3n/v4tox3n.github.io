@@ -1,0 +1,218 @@
+:root {
+    /* backgrounds colors */
+    --dark-bg-color: #202040;
+    --dark-second-bg-color: #373856;
+    --light-bg-color: #D8D8F6;
+    --light-second-bg-color: #b7b8d6;
+
+    /* main colors */
+    --dark-main-color: #8a7bbf;
+    --light-main-color: #494850;
+
+    /* second colors */
+    --dark-second-main-color: #5e5d71;
+    --light-second-main-color: #2C2C34;
+
+    /* projects */
+    --project-1-dark-bg-color: ;
+    --project-2-dark-bg-color: ;
+    --project-3-dark-bg-color: ;
+    --project-1-light-bg-color: ;
+    --project-2-light-bg-color: ;
+    --project-3-light-bg-color: ; 
+}
+
+body.dark {
+    background: var(--dark-bg-color);
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* HEADER */
+.logo.dark span {
+    color: white;
+    transition: 0.3s ease;
+}
+
+.logo.dark:hover, .logo.dark span:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 25px var(--dark-main-color);
+}
+
+nav.dark {
+    background: var(--dark-bg-color);
+    border: 2px solid silver;
+}
+
+nav.dark a.dark {
+    color: var(--dark-main-color);
+    background: transparent;
+    transition: 0.3s ease;
+}
+
+nav.dark a.dark:hover, nav.dark a.dark.active {
+    background: silver;
+}
+
+.theme.dark {
+    background: var(--dark-bg-color);
+    border: 2px solid silver;
+    transition: all 0.3s ease-in-out;
+}
+
+.theme.dark:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 25px var(--dark-main-color);
+}
+
+.theme.dark i.dark {
+    color: var(--dark-main-color);
+}
+
+.language-container.dark {
+    background: var(--dark-bg-color);
+    border: 2px solid silver;
+    transition: all 0.3s ease-in-out;
+}
+
+.language-container.dark:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 25px var(--dark-main-color);
+}
+
+.language.dark.active {
+    color: var(--dark-main-color);
+}
+
+.language-container.dark ion-icon.dark {
+    color: var(--dark-main-color);
+}
+
+
+/* HOME SECTION */
+.home-content.dark h2.dark {
+    background: linear-gradient(to right, #D8BFD8, #8A2BE2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent
+}
+
+.location.dark p.dark, .location.dark ion-icon.dark {
+    color: var(--dark-main-color);
+}
+
+.location.dark p.dark, .location.dark ion-icon.dark {
+    color: var(--dark-main-color);
+}
+
+.short-description.dark p.dark {
+    color: var(--dark-main-color);
+}
+
+
+/* ABOUT ME SECTION */
+.about.dark {
+    background: var(--dark-second-bg-color);
+}
+
+.about-img.dark img.dark {
+    box-shadow: 0 0 25px var(--dark-main-color);
+}
+
+.about-img.dark img.dark:hover {
+    box-shadow: 0 0 25px var(--dark-main-color), 0 0 50px var(--dark-main-color), 0 0 100px var(--dark-main-color);
+}
+
+.social-icons.dark a.dark {
+    border: 2px solid var(--dark-main-color);
+    color: var(--dark-main-color);
+    transition: 0.3s ease-in-out;
+}
+
+.social-icons.dark a.dark:hover {
+    color: white;
+    transform: scale(1.3) translateY(-5px);
+    box-shadow: 0 0 25px var(--dark-main-color);
+    background-color: var(--dark-main-color);
+}
+
+.btn-group.dark a.dark {
+    background-color: var(--dark-main-color);
+    color: var(--dark-bg-color);
+    border: 2px solid var(--dark-main-color);
+    box-shadow: 0 0 25px transparent;
+}
+
+.btn-group.dark a.dark:hover {
+    box-shadow: 0 0 25px var(--dark-main-color);
+    background-color: var(--dark-main-color);
+}
+
+.text-animation.dark span.dark::before {
+    content: 'Web Developer';
+    color: var(--dark-main-color);
+    animation: words 20s infinite;
+}
+
+.text-animation.dark span.dark::after {
+    content: '';
+    background-color: var(--dark-second-bg-color);
+    border-left: 3px solid var(--dark-second-bg-color);
+    animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+}
+
+.work.dark div.dark p.dark {
+    color: var(--dark-main-color);
+}
+
+
+/* PROJECTS SECTION */
+
+
+/* SERVICES SECTION */
+.services.dark {
+    background: var(--dark-second-bg-color);
+}
+
+.services-container.dark .box.dark {
+    color: var(--dark-main-color);
+}
+
+.contact.dark form.dark .input-box.dark input.dark, .contact.dark form.dark textarea.dark {
+    border: 2px solid var(--dark-main-color);
+}
+
+.contact.dark form.dark .input-box.dark input.dark:focus, .contact.dark form.dark textarea.dark:focus {
+    box-shadow: 0 0 15px var(--dark-main-color);
+}
+
+
+/* FOOTER SECTION */
+
+/* HIRE SERVICE FORM */
+
+
+
+/* OTHER CONFIGURATION */
+span.dark {
+    color: var(--dark-main-color);
+}
+
+ion-icon.dark {
+    color: var(--dark-main-color);
+}
+
+.btn.dark {
+    background: var(--dark-main-color);
+    box-shadow: 0 0 25px var(--dark-main-color);
+    color: var(--dark-bg-color);
+}
+
+.btn.dark:hover {
+    box-shadow: 0 0 50px var(--dark-main-color);
+}
+
+
+
+/* ¿¿¿back??? */
