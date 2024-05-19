@@ -186,8 +186,8 @@ nav a:hover, nav a.active {
     align-items: center;
 }
 
-.location p, .location ion-icon {
-    font-size: 1.5rem;
+.location div p, .location div ion-icon {
+    font-size: 1.4rem;
     margin-right: 5px;
     color: var(--light-main-color);
     cursor: default;

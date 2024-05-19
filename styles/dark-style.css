@@ -98,11 +98,7 @@ nav.dark a.dark:hover, nav.dark a.dark.active {
     color: transparent
 }
 
-.location.dark p.dark, .location.dark ion-icon.dark {
-    color: var(--dark-main-color);
-}
-
-.location.dark p.dark, .location.dark ion-icon.dark {
+.location.dark div.dark p.dark, .location.dark div.dark ion-icon.dark {
     color: var(--dark-main-color);
 }
 
@@ -189,9 +185,78 @@ nav.dark a.dark:hover, nav.dark a.dark.active {
 
 
 /* FOOTER SECTION */
+.footer.dark {
+    background: var(--dark-main-color);
+}
+
+.footer.dark .social.dark {
+    color: var(--dark-bg-color);
+}
+
+.footer.dark .social.dark a.dark {
+    color: var(--dark-bg-color);
+    border: 2px solid var(--dark-bg-color);
+}
+
+.footer.dark .social.dark a.dark:hover {
+    background: var(--dark-bg-color);
+    color: var(--dark-main-color);
+}
+
+.footer.dark ul.dark li.dark a.dark {
+    color: var(--dark-bg-color);
+}
+
+.footer.dark ul.dark li.dark a.dark:hover {
+    border-bottom: 3px solid var(--dark-bg-color);
+}
+
+.footer.dark .others.dark a.dark {
+    margin-top: 1.8rem;
+    border: 2px solid var(--dark-bg-color);
+    background: var(--dark-main-color);
+    color: var(--dark-bg-color);
+}
+
+.footer.dark .others.dark a.dark:hover {
+    background: var(--dark-bg-color);
+    color: var(--dark-main-color);
+}
+
+.footer.dark .copyright.dark {
+    color: var(--dark-bg-color);
+}
+
 
 /* HIRE SERVICE FORM */
+.hire-service-form.dark {
+    background: var(--dark-second-bg-color);
+}
 
+.hire-service-content.dark form.dark h2.dark {
+    text-decoration: underline var(--dark-second-main-color);
+}
+
+.hire-service-content.dark form.dark input.dark[type="text"],
+.hire-service-content.dark form.dark input.dark[type="email"],
+.hire-service-content.dark form.dark textarea.dark {
+    border: 2px solid var(--dark-main-color);
+}
+
+.hire-service-content.dark form.dark select.dark {
+    border: 2px solid var(--dark-main-color);
+}
+
+.hire-service-content.dark form.dark select.dark:focus {
+    box-shadow: 0 0 15px var(--dark-main-color);
+}
+
+.hire-service-content.dark form.dark input.dark[type="text"]:focus,
+.hire-service-content.dark form.dark input.dark[type="email"]:focus,
+.hire-service-content.dark form.dark input.dark[type="tel"]:focus,
+.hire-service-content.dark form.dark textarea.dark:focus {
+    box-shadow: 0 0 15px var(--dark-main-color);
+}
 
 
 /* OTHER CONFIGURATION */
@@ -212,7 +277,3 @@ ion-icon.dark {
 .btn.dark:hover {
     box-shadow: 0 0 50px var(--dark-main-color);
 }
-
-
-
-/* ¿¿¿back??? */

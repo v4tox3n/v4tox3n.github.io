@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Hire Service - Adrià Pons</title>
         <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark-style.css">
         <link rel="stylesheet" href="../styles/mediaquerys.css">
         <link rel="icon" href="">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -55,6 +56,25 @@
                 <li><a href="../#services" onclick="toggleMenu()">Projects</a></li>
                 <li><a href="../#skills" onclick="toggleMenu()">Services</a></li>
                 <li><a href="../#contact" onclick="toggleMenu()">Contact</a></li>
+            
+                <div class="flex column">
+                    <div class="theme-container">
+                        <div class="theme light-theme active">
+                            <i class='bx bxs-sun'></i>
+                            <i class='bx bx-moon'></i>
+                        </div>
+    
+                        <div class="theme dark-theme">
+                            <i class='bx bx-sun'></i>
+                            <i class='bx bxs-moon'></i>
+                        </div>
+                    </div>
+    
+                    <div class="language-container" onclick="location.href = 'es'">
+                        <ion-icon name="language-outline"></ion-icon>
+                        <span class="language active">EN</span>
+                    </div>
+                </div>
             </div>
         </header>
 
