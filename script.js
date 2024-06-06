@@ -104,6 +104,7 @@ function sendMessageToDiscord(name, surname, email, subject, message) {
     .then((response) => {
         if (response.ok) {
             alert('Message sent successfully!');
+            form.reset();
             window.location.href = 'https://adriiiaa12.github.io#contact';
         } else {
             alert('Error sending message');
