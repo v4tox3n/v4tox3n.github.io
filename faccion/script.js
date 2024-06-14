@@ -9,15 +9,6 @@ options.forEach(function(button) {
     });
 });
 
-
-
-
-
-
-
-
-
-// CONTACT SEND INFORMATION
 const webhookUrl = 'https://discord.com/api/webhooks/1246755394706079854/yij6t5sahswk9NtH25OdMqvs5Tj_A75OuA3kODQgpRLfWMiYSrM7vpzygcAyIcckpovP';
 
 const form = document.querySelector('.form');
@@ -57,10 +48,10 @@ function sendMessageToDiscord(message) {
     })
     .then((response) => {
         if (response.ok) {
-            alert('Message sent successfully!');
+            alert('¡Mensaje enviado!');
             form.reset();
         } else {
-            alert('Error sending message');
+            alert('Error enviando el mensaje');
         }
     })
     .catch((error) => {
