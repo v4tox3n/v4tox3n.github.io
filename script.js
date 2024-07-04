@@ -105,7 +105,7 @@ function sendMessageToDiscord(name, surname, email, subject, message) {
         if (response.ok) {
             alert('Message sent successfully!');
             form.reset();
-            window.location.href = 'https://adriiiaa12.github.io#contact';
+            // window.location.href = 'https://adriiiaa12.github.io#contact';
         } else {
             alert('Error sending message');
         }
@@ -114,6 +114,3 @@ function sendMessageToDiscord(name, surname, email, subject, message) {
         alert('Error:', error);
     });
 }
-
-
-// HIRE SERVICE SEND INFORMATION
