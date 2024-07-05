@@ -93,6 +93,13 @@
         max-height: 280px;
     }
 
+    .menu-links.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .menu-links a {
         display: block;
         padding: 10px;
@@ -145,6 +152,12 @@
         font-size: 1.7rem;
         color: var(--light-main-color);
         font-family: 'Poppins' sans-serif;
+    }
+
+
+    /* HIRE SERVICE CONFIGURATION */
+    .box {
+        width: 80%;
     }
 
 

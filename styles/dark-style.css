@@ -89,6 +89,23 @@ nav.dark a.dark:hover, nav.dark a.dark.active {
     color: var(--dark-main-color);
 }
 
+#menu-icon.dark {
+    color: white;
+}
+
+.menu-links.active.dark {
+    background: var(--dark-second-bg-color);
+    border-color: var(--dark-main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-links.active.dark li.dark a.active.dark {
+    color: var(--dark-main-color);
+}
+
 
 /* HOME SECTION */
 .home-content.dark h2.dark {
