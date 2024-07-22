@@ -233,3 +233,62 @@ nine.addEventListener('mouseleave', function() {
     s_nine.classList.remove('active');
     more_tech.classList.remove('active');
 });
+
+const webhookUrl = 'https://discord.com/api/webhooks/1238970517059403927/dUZHRZfZbckd1QMtYC3nbXHeZuerCFyW7sV0wBxtezUTVcu1frb_xWD2AqlQYe4WV81n';
+
+const form = document.querySelector('.contactForm');
+const nameInput = document.querySelector('input[placeholder="Name"]');
+const surnameInput = document.querySelector('input[placeholder="Surname"]');
+const emailInput = document.querySelector('input[placeholder="Email"]');
+const subjectInput = document.querySelector('input[placeholder="Subject"]');
+const messageInput = document.querySelector('textarea');
+let lastMessageTime = 0;
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const currentTime = new Date().getTime();
+    const elapsedTimeSinceLastMessage = currentTime - lastMessageTime;
+
+    if (elapsedTimeSinceLastMessage >= 600000) {
+        const name = nameInput.value;
+        const surname = surnameInput.value;
+        const email = emailInput.value;
+        const subject = subjectInput.value;
+        const message = messageInput.value;
+
+        sendMessageToDiscord(name, surname, email, subject, message);
+        lastMessageTime = currentTime;
+    } else {
+        const remainingTime = (600000 - elapsedTimeSinceLastMessage) / 60000;
+        alert(`You have to wait ${remainingTime.toFixed(2)} minutes before sending another message.`);
+    }
+});
+
+function sendMessageToDiscord(name, surname, email, subject, message) {
+    const content = `**Name:** \`\`\`${name}\`\`\`\n**Surname:** \`\`\`${surname}\`\`\`\n**Email:** \`\`\`${email}\`\`\`\n**Subject:** \`\`\`${subject}\`\`\`\n**Message:** \`\`\`${message}\`\`\``;
+
+    const payload = {
+        content: content,
+    };
+
+    fetch(webhookUrl, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
+    })
+    .then((response) => {
+        if (response.ok) {
+            alert('Message sent successfully!');
+            form.reset();
+            // window.location.href = 'https://adriiiaa12.github.io#contact';
+        } else {
+            alert('Error sending message');
+        }
+    })
+    .catch((error) => {
+        alert('Error:', error);
+    });
+}
