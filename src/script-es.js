@@ -19,7 +19,7 @@ project_card = document.querySelectorAll('.project-card');
 
 project_card.forEach(e => {
     e.addEventListener('click', function() {
-        alert("This project it's currently not avaible");
+        alert("Este proyecto aún no está disponible");
     });
 });
 
@@ -261,12 +261,12 @@ form.addEventListener('submit', (e) => {
         lastMessageTime = currentTime;
     } else {
         const remainingTime = (600000 - elapsedTimeSinceLastMessage) / 60000;
-        alert(`You have to wait ${remainingTime.toFixed(2)} minutes before sending another message.`);
+        alert(`Tienes que esperar ${remainingTime.toFixed(2)} minutos antes de enviar otro mensaje.`);
     }
 });
 
 function sendMessageToDiscord(name, surname, email, subject, message) {
-    const content = `**Name:** \`\`\`${name}\`\`\`\n**Surname:** \`\`\`${surname}\`\`\`\n**Email:** \`\`\`${email}\`\`\`\n**Subject:** \`\`\`${subject}\`\`\`\n**Message:** \`\`\`${message}\`\`\``;
+    const content = `**Nombre:** \`\`\`${name}\`\`\`\n**Apellido:** \`\`\`${surname}\`\`\`\n**Email:** \`\`\`${email}\`\`\`\n**Asunto:** \`\`\`${subject}\`\`\`\n**Mensaje:** \`\`\`${message}\`\`\``;
 
     const payload = {
         content: content,
@@ -281,10 +281,10 @@ function sendMessageToDiscord(name, surname, email, subject, message) {
     })
     .then((response) => {
         if (response.ok) {
-            alert('Message sent successfully!');
+            alert('Mensaje enviado correctamente!');
             form.reset();
         } else {
-            alert('Error sending message');
+            alert('Error enviando el mensaje');
         }
     })
     .catch((error) => {
