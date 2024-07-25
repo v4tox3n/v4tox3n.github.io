@@ -901,3 +901,104 @@ header.header nav ul li span.active {
 .contact form .input-box input:focus, .contact form textarea:focus {
     box-shadow: 0 0 15px #FFB347;
 }
+
+.config {
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.wheel ion-icon {
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.wheel {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.wheel ion-icon.active {
+    display: block;
+    font-size: 3.2rem;
+    color: var(--light-main-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.config.active {
+    position: fixed;
+    top: 40px;
+    right: 100px;
+    width: fit-content;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    background: var(--bg-color-second);
+    border: 2px solid silver;
+    transition: all 0.3s ease-in-out;
+    z-index: 100;
+    margin-right: -3rem;
+}
+
+.tl.active {
+    top: 90px;
+    transition: all 0.3s ease-in-out;
+}
+
+.theme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    cursor: pointer;
+    background: var(--light-bg-color);
+    border: 2px solid silver;
+    border-radius: 10px;
+    padding: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.theme:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 25px var(--light-main-color);
+}
+
+.theme i, .language-container ion-icon {
+    font-size: 2rem;
+    color: var(--light-main-color);
+}
+
+.theme.active {
+    display: block;
+}
+
+.language-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    background: var(--light-bg-color);
+    border: 2px solid silver;
+    border-radius: 10px;
+    padding: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.language-container:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 25px var(--light-main-color);
+}
+
+.language.active {
+    display: block;
+    font-size: 1.7rem;
+    color: var(--light-main-color);
+}
+
+.language {
+    display: none;
+}
