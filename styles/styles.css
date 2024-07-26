@@ -22,9 +22,6 @@ html {
     --bg-color: #1C1C1C;
     --bg-color-second: #2F2F2F;
 
-    --neon-color: ;
-    --neon-light-color: ;
-
     --hl-1-color: #87CEEB;
     --hl-2-color: #77DD77;
     --hl-5-color: #FDFD96;
@@ -36,20 +33,25 @@ html {
     --md-5-color: #FDFD96;
     --md-3-color: #C9A0DC;
     --md-4-color: #FFB347;
-
-    --main-1-color: ;
-    --main-2-color: ;
-    --main-3-color: ;
-    --main-4-color: ;
     
-    --main-1-light-color: ;
-    --main-2-light-color: ;
-    --main-3-light-color: ;
-    --main-4-light-color: ;
+    --bg-color-light: #FFF0F5;
+    --bg-color-second-light: #FFFFFF;
+
+    --hl-1-color-light: #87CEEB;
+    --hl-2-color-light: #32CD32;
+    --hl-5-color-light: #FFD700;
+    --hl-3-color-light: #BA55D3;
+    --hl-4-color-light: #FF8C00;
+
+    --md-1-color-light: #87CEEB;
+    --md-2-color-light: #32CD32;
+    --md-5-color-light: #FFD700;
+    --md-3-color-light: #BA55D3;
+    --md-4-color-light: #FF8C00;    
 }
 
 body {
-    width: 500vw;
+    width: 100vw;
     height: 100vh;
     background: var(--bg-color);
 }
@@ -341,7 +343,7 @@ header.header nav ul li span.active {
     font-size: 2.3rem;
     box-shadow: 0 0 50px var(--bg-color-second);
     border-radius: 0.8rem;
-    border: 2px solid var(--bg-color-second);
+    background: var(--bg-color-second);
     padding: 4rem 8rem;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
@@ -920,7 +922,7 @@ header.header nav ul li span.active {
 .wheel ion-icon.active {
     display: block;
     font-size: 3.2rem;
-    color: var(--light-main-color);
+    color: white;
     transition: all 0.3s ease-in-out;
 }
 
@@ -954,7 +956,7 @@ header.header nav ul li span.active {
     align-items: center;
     display: none;
     cursor: pointer;
-    background: var(--light-bg-color);
+    background: transparent;
     border: 2px solid silver;
     border-radius: 10px;
     padding: 5px;
@@ -963,12 +965,12 @@ header.header nav ul li span.active {
 
 .theme:hover {
     transform: scale(1.1);
-    text-shadow: 0 0 25px var(--light-main-color);
+    text-shadow: 0 0 25px white;
 }
 
 .theme i, .language-container ion-icon {
     font-size: 2rem;
-    color: var(--light-main-color);
+    color: white;
 }
 
 .theme.active {
@@ -981,7 +983,7 @@ header.header nav ul li span.active {
     align-items: center;
     gap: 5px;
     cursor: pointer;
-    background: var(--light-bg-color);
+    background: transparent;
     border: 2px solid silver;
     border-radius: 10px;
     padding: 5px;
@@ -990,15 +992,19 @@ header.header nav ul li span.active {
 
 .language-container:hover {
     transform: scale(1.1);
-    text-shadow: 0 0 25px var(--light-main-color);
+    text-shadow: 0 0 25px white;
 }
 
 .language.active {
     display: block;
     font-size: 1.7rem;
-    color: var(--light-main-color);
+    color: white;
 }
 
 .language {
     display: none;
+}
+
+.projects .h2 {
+    color: white;
 }

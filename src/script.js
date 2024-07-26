@@ -301,7 +301,7 @@ function toggleActiveThemes() {
     });
 
     allObjects.forEach(all => {
-        all.classList.toggle('dark');
+        all.classList.toggle('light');
     });
 }
 

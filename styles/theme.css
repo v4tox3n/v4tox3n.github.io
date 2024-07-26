@@ -1,0 +1,207 @@
+@import url('https://fonts.googgleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+html {
+    font-size: 60%;
+    overflow-x: hidden;
+}
+
+.home.light *.light {
+    color: black;
+}
+
+.about.light p.light {
+    color: black;
+}
+
+.services.light p.light {
+    color: black;
+}
+
+:root {
+    --bg-color: #1C1C1C;
+    --bg-color-second: #2F2F2F;
+
+    --hl-1-color: #87CEEB;
+    --hl-2-color: #77DD77;
+    --hl-5-color: #FDFD96;
+    --hl-3-color: #C9A0DC;
+    --hl-4-color: #FFB347;
+
+    --md-1-color: #87CEEB;
+    --md-2-color: #77DD77;
+    --md-5-color: #FDFD96;
+    --md-3-color: #C9A0DC;
+    --md-4-color: #FFB347;
+    
+    --bg-color-light: #FFF0F5;
+    --bg-color-second-light: #FFFFFF;
+
+    --hl-1-color-light: #87CEEB;
+    --hl-2-color-light: #32CD32;
+    --hl-5-color-light: #FFD700;
+    --hl-3-color-light: #BA55D3;
+    --hl-4-color-light: #FF8C00;
+
+    --md-1-color-light: #87CEEB;
+    --md-2-color-light: #32CD32;
+    --md-5-color-light: #FFD700;
+    --md-3-color-light: #BA55D3;
+    --md-4-color-light: #FF8C00;    
+}
+
+body.light, section.light, header.light {
+    background: var(--bg-color-light);
+    color: black;
+}
+
+.hl1.light {
+    color: var(--hl-1-color-light);
+}
+
+.hl2.light {
+    color: var(--hl-2-color-light);
+}
+
+.hl3.light {
+    color: var(--hl-3-color-light);
+}
+
+.hl5.light {
+    color: var(--hl-5-color-light)
+}
+
+.hl4.light {
+    color: var(--hl-4-color-light);
+}
+
+.md1.light {
+    background: var(--md-1-color-light);
+}
+
+.md2.light {
+    background: var(--md-2-color-light);
+}
+
+.md5.light {
+    background: var(--md-5-color-light);
+}
+
+.md3.light {
+    background: var(--md-3-color-light);
+}
+
+.md4.light {
+    background: var(--md-4-color-light);
+}
+
+header.light nav.light ul.light li.light a.light {
+    color: black;
+}
+
+header.light nav.light ul.light li.light .op1.light:hover, header.light nav.light ul.light li.light .op1.light.active {
+    background: #FFD1DC;
+    color: black;
+}
+
+header.light nav.light ul.light li.light .op2.light:hover, header.light nav.light ul.light li.light .op2.light.active {
+    background-color: var(--hl-1-color-light);
+    color: black;
+}
+
+header.light nav.light ul.light li.light .op3.light:hover, header.light nav.light ul.light li.light .op3.light.active {
+    background-color: var(--hl-2-color-light);
+    color: black;
+}
+
+header.light nav.light ul.light li.light .op4.light:hover, header.light nav.light ul.light li.light .op4.light.active {
+    background-color: var(--hl-5-color-light);
+    color: black;
+}
+
+header.light nav.light ul.light li.light .op5.light:hover, header.light nav.light ul.light li.light .op5.light.active {
+    background-color: var(--hl-3-color-light);
+    color: black;
+}
+
+header.light nav.light ul.light li.light .op6.light:hover, header.light nav.light ul.light li.light .op6.light.active {
+    background-color: var(--hl-4-color-light);
+    color: black;
+}
+
+.home.light .all-home.light .main-content.light {
+    background: var(--bg-color-second-light);
+    box-shadow: 0 0 50px var(--bg-color-second-light);
+    background: var(--bg-color-second-light);
+}
+
+.profile.light {
+    background: var(--bg-color-second-light);
+}
+
+.tag.light {
+    background: #87CEEB;
+    color: var(--bg-color);
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.section-about.light, .section-experience.light {
+    background: var(--bg-color-second-light);
+}
+
+.frontend.light, .backend.light, .more-tech.light {
+    background: var(--bg-color-second-light);
+}
+
+.wheel.light ion-icon.light.active {
+    color: black;
+}
+
+.config.light.active {
+    background: var(--bg-color-second-light);
+}
+
+.theme.light:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 25px black;
+}
+
+.theme.light i.light, .language-container.light ion-icon.light {
+    color: black;
+}
+
+.language.light.active {
+    color: black;
+}
+
+.language-container.light:hover {
+    text-shadow: 0 0 25px black;
+}
+
+.contact.light form.light .input-box.light input.light, .contact.light form.light textarea.light {
+    color: black;
+}
+
+.intro.light p.light {
+    color: black;
+}
+
+.section-about.light p.light, .section-experience.light p.light {
+    color: black;
+}
+
+.projects.light .h2.light {
+    color: black;
+}
+
+.heading.light {
+    color: black;
+}
+
+.frontend.light h2.light, .backend.light h2.light, .more-tech.light h2.light {
+    border-bottom: 3px solid #FFD700;
+    color: #FFD700;
+}

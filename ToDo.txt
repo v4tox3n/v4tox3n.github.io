@@ -1,6 +1,7 @@
 [ - ] Responsive Design
 [ - ] Social Network Links   [¿ABOUT ME?]
 [ + ] Meta Descriptions for SEO ¿?
+[ + ] Themes css configuration
 [ - ] Add Projects
 [ - ] Add A Blog
 [ + ] Improve the configuration seccion of the page (theme and language)
