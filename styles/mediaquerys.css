@@ -3,7 +3,7 @@
 
     html {
         font-size: 50%;
-        /* overflow-x: hidden; */
+        overflow-x: hidden;
     }
 
     * {
@@ -78,7 +78,7 @@
 
     .mobile-header {
         position: fixed;
-        width: 100%;
+        width: calc(100% - 40px);
         bottom: 20px;
         margin-bottom: 80px;
         background: var(--bg-color);
@@ -89,8 +89,9 @@
         border: 2px solid #444;
         width: fit-content;
         margin: 0 auto;
-        left: 50%;
-        transform: translateX(-50%);
+        left: 20px;
+        right: 20px;
+        transform: translateX(0);
         transition: all 0.3s ease-in-out;
         z-index: 1000;
     }
@@ -221,5 +222,9 @@
     .flex-column img {
         width: 40%;
         height: 40%;
+    }
+
+    body, main, section {
+        overflow-x: hidden;
     }
 }

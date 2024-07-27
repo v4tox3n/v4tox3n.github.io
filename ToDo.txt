@@ -6,3 +6,4 @@
 [ - ] Add A Blog
 [ + ] Improve the configuration seccion of the page (theme and language)
 [ - ] Smooth Animations ¿?
+[ - ] Upload Icon

@@ -1,5 +1,8 @@
 @media (max-width: 1200px) {
-    html { font-size: 50%; }
+    html { 
+        font-size: 50%;
+        overflow-x: hidden;
+    }
 
     header nav ul li span {
         font-size: 10px;
@@ -7,7 +10,10 @@
 }
 
 @media (max-width: 992px) {
-    html { font-size: 45%; }
+    html { 
+        font-size: 45%; 
+        overflow-x: hidden;
+    }
 
     section { padding: 5rem 10%; }
 
@@ -23,7 +29,10 @@
 }
 
 @media (max-width: 768px) {
-    html { font-size: 40%; }
+    html { 
+        font-size: 40%; 
+        overflow-x: hidden;
+    }
 
     section { padding: 3rem 5%; }
 
@@ -48,7 +57,10 @@
 }
 
 @media (max-width: 576px) {
-    html { font-size: 35%; }
+    html { 
+        font-size: 35%; 
+        overflow-x: hidden;
+    }
 
     section { padding: 2rem 5%; }
 
