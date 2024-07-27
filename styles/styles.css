@@ -78,7 +78,6 @@ section {
     align-items: center;
     font-size: 4.5rem;
     font-weight: 700;
-    /* margin-top: 3rem; */
     margin-bottom: 1.5rem;
     gap: 10px;
     color: white;
@@ -185,7 +184,7 @@ header {
 
 header nav ul {
     display: flex;
-    flex-direction: row; /* NEW */ 
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     list-style: none;

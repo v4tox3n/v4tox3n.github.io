@@ -1,27 +1,4 @@
-main_content = document.querySelector('.all-home .main-content');
-up_c_h = document.querySelector('.up-c-h');
-down_c_h = document.querySelector('.down-c-h');
-all_home = document.querySelector('.all-home');
-
-main_content.addEventListener('mouseenter', function() {
-    main_content.classList.add('active');
-    up_c_h.classList.add('active');
-    down_c_h.classList.add('active');
-});
-
-all_home.addEventListener('mouseleave', function() {
-    main_content.classList.remove('active');
-    up_c_h.classList.remove('active');
-    down_c_h.classList.remove('active');
-})
-
-project_card = document.querySelectorAll('.project-card');
-
-project_card.forEach(e => {
-    e.addEventListener('click', function() {
-        alert("This project it's currently not avaible");
-    });
-});
+// NO-MOBILE
 
 const option1 = document.querySelector('.op1');
 const option2 = document.querySelector('.op2');
@@ -305,6 +282,10 @@ function toggleActiveThemes() {
     });
 }
 
+allObjects.forEach(all => {
+    all.classList.toggle('light');
+});
+
 themes.forEach(theme => {
     theme.addEventListener('click', toggleActiveThemes);
 });
@@ -319,3 +300,49 @@ wheel_config.addEventListener('click', function() {
     icon1.classList.toggle('active');
     icon2.classList.toggle('active');
 })
+
+function isMobile() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
+function adjustHeaderForMobile() {
+    if (isMobile()) {
+        const header = document.querySelector('header');
+        if (header.classList.contains('header')) {
+            header.classList.remove('header');
+        } else {
+            if (header.classList.contains('header')) {
+
+            } else {
+                header.classList.add('header');
+            }
+        }
+    } else {
+        main_content = document.querySelector('.all-home .main-content');
+        up_c_h = document.querySelector('.up-c-h');
+        down_c_h = document.querySelector('.down-c-h');
+        all_home = document.querySelector('.all-home');
+
+        main_content.addEventListener('mouseenter', function() {
+            main_content.classList.add('active');
+            up_c_h.classList.add('active');
+            down_c_h.classList.add('active');
+        });
+
+        all_home.addEventListener('mouseleave', function() {
+            main_content.classList.remove('active');
+            up_c_h.classList.remove('active');
+            down_c_h.classList.remove('active');
+        })
+
+        project_card = document.querySelectorAll('.project-card');
+
+        project_card.forEach(e => {
+            e.addEventListener('click', function() {
+                alert("This project it's currently not avaible");
+            });
+        });
+    }
+}
+
+document.addEventListener('DOMContentLoaded', adjustHeaderForMobile);

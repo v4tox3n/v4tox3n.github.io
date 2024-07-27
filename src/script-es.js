@@ -319,3 +319,18 @@ wheel_config.addEventListener('click', function() {
     icon1.classList.toggle('active');
     icon2.classList.toggle('active');
 })
+
+function isMobile() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
+function adjustHeaderForMobile() {
+    if (isMobile()) {
+        const header = document.querySelector('header');
+        if (header.classList.contains('header')) {
+            header.classList.remove('header');
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', adjustHeaderForMobile);
