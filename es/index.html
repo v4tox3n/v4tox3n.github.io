@@ -9,6 +9,7 @@
         <title>Adrià Pons - Portfolio</title>
         <link rel="stylesheet" href="../styles/styles.css">
         <link rel="stylesheet" href="../styles/mediaquerys.css">
+        <link rel="stylesheet" href="../styles/media.css">
         <link rel="stylesheet" href="../styles/theme.css">
         <link rel="icon" href="..">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -20,8 +21,8 @@
             <section class="home" id="home">
                 <canvas class="particle-background"></canvas>
                 <div class="all-home">
-                    <div class="hover-content up-c-h">
-                        <div class="project-card card-1"><h2>Proyecto</h2><h2>1</h2></div>
+                    <div class="hover-content up-c-h no-mobile">
+                        <div class="project-card card-1"><a href="http://adriiiaa12.github.io/mac-os" target="_blank"><h2>Mac OS</h2><img onclick="window.locate.href = 'https://adriiiaa12.github.io/mac-os'" src="../public/projects/mac-os.png"></a></div>
                         <div class="project-card card-2"><h2>Proyecto</h2><h2>2</h2></div>
                         <div class="project-card card-3"><h2>Proyecto</h2><h2>3</h2></div>
                     </div>
@@ -31,11 +32,9 @@
                         <br>
                         <p>Estudiando para mejorar en el <span class="md2">mundo de la informática</span> y para</p>
                         <p> dar <span class="md4">lo mejor</span> de mi <span class="md4">trabajando</span> en lo que me <span class="md3">gusta</span> y <span class="md3">disfruto.</span></p>
-                        <!-- <h1>I'm a <span class="md2">programmer</span></h1>
-                        <h1 class="flex">currently <a href="#contact"><span class="md4 flex">avaible <ion-icon name="arrow-redo-outline"></ion-icon></span></a></h1> -->
                     </div>
     
-                    <div class="hover-content down-c-h">
+                    <div class="hover-content down-c-h no-mobile">
                         <div class="project-card card-4"><h2>Proyecto</h2><h2>4</h2></div>
                         <div class="project-card card-5"><h2>Proyecto</h2><h2>5</h2></div>
                     </div>
@@ -55,7 +54,7 @@
                                 <span class="tag">💼 Disponible para trabajar</span>
                             </div>
                         </div>
-                        <img src="../public/img/p-img.png" class="profile-img">
+                        <img src="../public/img/p-img.png" class="no-mobile profile-img">
                     </div>
 
                     <div class="section-about">
@@ -273,6 +272,42 @@
             </nav>
         </header>
 
+        <header class="mobile-header">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#home" class="option active op1 home-option"><ion-icon name="home-outline"></ion-icon></a>
+                        <span class="span1 active">Inicio</span>
+                    </li>
+
+                    <li>
+                        <a href="#about" class="option op2 other-options"><ion-icon name="person-circle-outline"></ion-icon></a>
+                        <span class="span2">Sobre Mi</span>
+                    </li>
+
+                    <li>
+                        <a href="#projects" class="option op3 other-options"><ion-icon name="code-slash-outline"></ion-icon></a>
+                        <span class="span3">Proyectos</span>
+                    </li>
+
+                    <li>
+                        <a href="#skills" class="option op4 other-options"><ion-icon name="code-slash-outline"></ion-icon></a>
+                        <span class="span4">Tecnologias</span>
+                    </li>
+
+                    <li>
+                        <a href="#services" class="option op5 other-options"><ion-icon name="cart-outline"></ion-icon></a>
+                        <span class="span5">Servicios</span>
+                    </li>
+
+                    <li>
+                        <a href="#contact" class="option op6 other-options"><ion-icon name="chatbubbles-outline"></ion-icon></a>
+                        <span class="span6">Contacto</span>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
         <header class="config active wheel">
             <ion-icon class="active icon1" name="cog-outline"></ion-icon>
             <ion-icon class="icon2" name="close-outline"></ion-icon>
@@ -297,8 +332,6 @@
             </div>
         </header>
     </body>
-
-
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

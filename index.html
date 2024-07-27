@@ -9,6 +9,7 @@
         <title>Adrià Pons - Portfolio</title>
         <link rel="stylesheet" href="styles/styles.css">
         <link rel="stylesheet" href="styles/mediaquerys.css">
+        <link rel="stylesheet" href="styles/media.css">
         <link rel="stylesheet" href="styles/theme.css">
         <link rel="icon" href="">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -21,7 +22,7 @@
                 <canvas class="particle-background"></canvas>
                 <div class="all-home">
                     <div class="hover-content up-c-h no-mobile">
-                        <div class="project-card card-1"><h2>Project</h2><h2>1</h2></div>
+                        <div class="project-card card-1"><a href="http://adriiiaa12.github.io/mac-os" target="_blank"><h2>Mac OS</h2><img onclick="window.locate.href = 'https://adriiiaa12.github.io/mac-os'" src="public/projects/mac-os.png"></a><!--<h2>Project</h2><h2>1</h2>--></div>
                         <div class="project-card card-2"><h2>Project</h2><h2>2</h2></div>
                         <div class="project-card card-3"><h2>Project</h2><h2>3</h2></div>
                     </div>
@@ -40,18 +41,6 @@
                 </div>
             </section>
 
-            <!-- <section class="home mobile" id="home">
-                <canvas class="particle-background mobile"></canvas>
-                <div class="all-home">
-                    <div class="main-content">
-                        <h1>Hey, I'm <span class="md1">Adrià <span class="shake">👋</span></span></h1>
-                        <br>
-                        <p>Studying to improve in the <span class="md2">IT world</span> and to give <span class="md4">the best</span> of</p>
-                        <p>myself <span class="md4">working</span> on what I <span class="md3">like</span> and <span class="md3">enjoy.</span></p>
-                    </div>
-                </div>
-            </section> -->
-
             <section class="about" id="about">
                 <h2 class="heading">About <span class="hl1">Me</span></h2>
 
@@ -65,7 +54,7 @@
                                 <span class="tag">💼 Avaible to work</span>
                             </div>
                         </div>
-                        <img src="public/img/p-img.png" class="profile-img">
+                        <img src="public/img/p-img.png" class="no-mobile profile-img">
                     </div>
 
                     <div class="section-about">
@@ -283,7 +272,7 @@
             </nav>
         </header>
 
-        <header class="mobile-header">
+        <header class="mobile-header no-mobile">
             <nav>
                 <ul>
                     <li>

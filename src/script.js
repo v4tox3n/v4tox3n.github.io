@@ -15,11 +15,15 @@ all_home.addEventListener('mouseleave', function() {
     down_c_h.classList.remove('active');
 })
 
-project_card = document.querySelectorAll('.project-card');
+let project_card = document.querySelectorAll('.project-card');
 
-project_card.forEach(e => {
+project_card.forEach((e, index) => {
     e.addEventListener('click', function() {
-        alert("This project it's currently not avaible");
+        if (index === 0) {
+            
+        } else {
+            alert("This project it's currently not avaible");
+        }
     });
 });
 
@@ -319,24 +323,3 @@ wheel_config.addEventListener('click', function() {
     icon1.classList.toggle('active');
     icon2.classList.toggle('active');
 })
-
-function isMobile() {
-    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-}
-
-function adjustHeaderForMobile() {
-    if (isMobile()) {
-        const header = document.querySelector('header');
-        if (header.classList.contains('header')) {
-            header.classList.remove('header');
-        } else {
-            if (header.classList.contains('header')) {
-
-            } else {
-                header.classList.add('header');
-            }
-        }
-    }
-}
-
-document.addEventListener('DOMContentLoaded', adjustHeaderForMobile);

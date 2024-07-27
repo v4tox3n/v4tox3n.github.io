@@ -50,7 +50,8 @@
     }
 
     section {
-        padding: 10rem 12% 10rem;
+        /* padding: 10rem 12% 10rem; */
+        padding: 2rem 4rem;
     }
 
     .config.active {
@@ -190,5 +191,35 @@
 
     .project-card {
         display: none;
+    }
+
+    .tags {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    /* .tag {
+        width: fit-content;
+    } */
+
+    .main-content {
+        padding: -2rem -4rem;
+    }
+
+    .mobile h1 {
+        color: var(--hl-1-color-light);
+    }
+
+    .flex-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flex-column img {
+        width: 40%;
+        height: 40%;
     }
 }

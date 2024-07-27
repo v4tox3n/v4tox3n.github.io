@@ -1023,3 +1023,26 @@ header.header nav ul li span.active {
 .mobile {
     display: none;
 }
+
+.tl.active {
+    margin-right: 5px;
+    top: 40px;
+}
+
+.project-card a {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-card a h2 {
+    color: black;
+}
+
+.project-card a img {
+    width: 80%;
+    height: auto;
+}
