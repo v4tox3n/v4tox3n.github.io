@@ -1007,3 +1007,19 @@ header.header nav ul li span.active {
 .projects .h2 {
     color: white;
 }
+
+.header {
+    display: block;
+}
+
+.mobile-header {
+    display: none;
+}
+
+.no-mobile {
+    visibility: 1;
+}
+
+.mobile {
+    display: none;
+}

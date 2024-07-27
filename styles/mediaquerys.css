@@ -3,7 +3,7 @@
 
     html {
         font-size: 50%;
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
     }
 
     * {
@@ -64,6 +64,131 @@
 
     .no-mobile {
         visibility: none;
+        display: none;
+    }
+
+    .header {
+        display: none;
+    }
+    
+    .mobile-header {
+        display: block;
+    }
+
+    .mobile-header {
+        position: fixed;
+        width: 100%;
+        bottom: 20px;
+        margin-bottom: 80px;
+        background: var(--bg-color);
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        border-radius: 15px;
+        border: 2px solid #444;
+        width: fit-content;
+        margin: 0 auto;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all 0.3s ease-in-out;
+        z-index: 1000;
+    }
+    
+    .mobile-header nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .mobile-header nav ul li {
+        position: relative;
+        margin: 0 10px;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .mobile-header nav ul li a {
+        color: white;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        border: 2px solid #444;
+        transition: background-color color 0.3s;
+    }
+    
+    .mobile-header nav ul li a ion-icon {
+        transform: scale(2);
+    }
+    
+    .mobile-header nav ul li .op1:hover, .mobile-header nav ul li .op1.active {
+        background-color: #FFD1DC;
+        color: var(--bg-color);
+    }
+    
+    .mobile-header nav ul li .op2:hover, .mobile-header nav ul li .op2.active {
+        background-color: #87CEEB;
+        color: var(--bg-color);
+    }
+    
+    .mobile-header nav ul li .op3:hover, .mobile-header nav ul li .op3.active {
+        background-color: #77DD77;
+        color: var(--bg-color);
+    }
+    
+    .mobile-header nav ul li .op4:hover, .mobile-header nav ul li .op4.active {
+        background-color: #FDFD96;
+        color: var(--bg-color);
+    }
+    
+    .mobile-header nav ul li .op5:hover, .mobile-header nav ul li .op5.active {
+        background-color: #C9A0DC;
+        color: var(--bg-color);
+    }
+    
+    .mobile-header nav ul li .op6:hover, .mobile-header nav ul li .op6.active {
+        background-color: #FFB347;
+        color: var(--bg-color);
+    }
+    
+    .mobile-header nav ul li span {
+        position: absolute;
+        top: -40px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #333;
+        color: white;
+        padding: 5px 8px;
+        border-radius: 5px;
+        font-size: 12px;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+        transition: opacity 0.3s;
+    }
+    
+    .mobile-header nav ul li:hover span {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .no-mobile {
+        visibility: 0;
+    }
+    
+    .mobile {
+        display: block;
+    }
+
+    .project-card {
         display: none;
     }
 }
