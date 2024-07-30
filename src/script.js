@@ -102,7 +102,7 @@ const navLinks = document.querySelectorAll(".option");
 const header = document.querySelector("header");
 
 const options = {
-  threshold: 0.6
+  threshold: 0.3
 };
 
 const observer = new IntersectionObserver((entries) => {
