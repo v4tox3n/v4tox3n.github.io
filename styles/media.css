@@ -42,6 +42,12 @@
     canvas {
         display: none;
     }
+    
+    .pad {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media (max-width: 768px) {
@@ -110,6 +116,12 @@
         left: 50%;
         transform: translateX(-50%);
     }
+    
+    .pad {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media (max-width: 576px) {
@@ -145,6 +157,12 @@
     canvas {
         display: none;
     }
+
+    .pad {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media (max-width: 480px) {
@@ -173,5 +191,11 @@
     .hbss {
         left: 50%;
         transform: translateX(-50%);
+    }
+
+    .pad {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
