@@ -15,6 +15,12 @@
     .flex-column img {
         display: none;
     }
+
+    .theme.active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media (max-width: 992px) {
@@ -44,6 +50,12 @@
     }
     
     .pad {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .theme.active {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -122,6 +134,12 @@
         justify-content: center;
         align-items: center;
     }
+
+    .theme.active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media (max-width: 576px) {
@@ -163,6 +181,12 @@
         justify-content: center;
         align-items: center;
     }
+
+    .theme.active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media (max-width: 480px) {
@@ -194,6 +218,12 @@
     }
 
     .pad {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .theme.active {
         display: flex;
         justify-content: center;
         align-items: center;
