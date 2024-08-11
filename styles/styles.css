@@ -1039,7 +1039,7 @@ header.header nav ul li span.active {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     left: 0%;
     transform: translateX(-50%);
     margin-left: 50%;
@@ -1055,7 +1055,6 @@ header.header nav ul li span.active {
     overflow: hidden;
     position: relative;
     border-radius: 5px;
-    margin-right: 10px;
 }
 
 .social-media i {

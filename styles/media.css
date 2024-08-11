@@ -29,7 +29,13 @@
         overflow-x: hidden;
     }
 
-    section { padding: 5rem 10%; }
+    section { 
+        padding: 5rem 10%; 
+    }
+
+    .home {
+        padding: 1rem 2%;
+    }
 
     .heading {
         font-size: 3.5rem;
@@ -55,6 +61,16 @@
         align-items: center;
     }
 
+    .mpad {
+        /* background: red; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0;
+        width: 100%;
+    }
+
     .theme.active {
         display: flex;
         justify-content: center;
@@ -68,7 +84,13 @@
         overflow-x: hidden;
     }
 
-    section { padding: 3rem 5%; }
+    section { 
+        padding: 3rem 5%; 
+    }
+
+    .home {
+        padding: 1rem 2%;
+    }
 
     .heading {
         font-size: 3rem;
@@ -148,7 +170,13 @@
         overflow-x: hidden;
     }
 
-    section { padding: 2rem 5%; }
+    section { 
+        padding: 2rem 5%; 
+    }
+
+    .home {
+        padding: 1rem 2%;
+    }
 
     .heading {
         font-size: 2.5rem;
