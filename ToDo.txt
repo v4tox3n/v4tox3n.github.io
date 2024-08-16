@@ -1,8 +1,8 @@
-[ / ] Responsive Design
+[ + ] Responsive Design
 [ + ] Social Network Links
 [ + ] Meta Descriptions for SEO ¿?
 [ + ] Themes css configuration
-[ + ] Add Projects
+[ - ] Add Projects
 [ - ] Add A Blog
 [ + ] Improve the configuration seccion of the page (theme and language)
 [ - ] Smooth Animations ¿?

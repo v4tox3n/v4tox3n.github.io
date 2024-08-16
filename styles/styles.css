@@ -584,7 +584,7 @@ header.header nav ul li span.active {
     margin-top: 10px;
 }
 
-.skills-container {
+/* .skills-container {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
@@ -772,7 +772,7 @@ header.header nav ul li span.active {
 
 .frontend.active, .backend.active, .more-tech.active {
     padding: 20px 20px 57px 20px
-}
+} */
 
 .services-container {
     max-width: 900px;
@@ -916,6 +916,7 @@ header.header nav ul li span.active {
 .wheel {
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    z-index: 1000;
 }
 
 .wheel ion-icon.active {
