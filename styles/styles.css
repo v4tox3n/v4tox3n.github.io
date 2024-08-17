@@ -584,57 +584,6 @@ header.header nav ul li span.active {
     margin-top: 10px;
 }
 
-/* .skills-container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-    width: 100%;
-}
-
-.frontend, .backend, .more-tech {
-    margin-bottom: 90px;
-    background: var(--bg-color-second);
-    padding: 20px 20px 20px 20px;
-    border-radius: 10px;
-    width: 100%;
-}
-
-.frontend h2, .backend h2, .more-tech h2 {
-    border-bottom: 3px solid #FDFD96;
-    padding-bottom: 10px;
-    color: #FDFD96;
-    width: 100%;
-    font-size: 2.4em;
-}
-
-.frontend div i, .backend div i, .more-tech div i {
-    font-size: 7rem;
-    padding: 10px 20px;
-    border: 2px solid black;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.frontend div span, .backend div span, .more-tech div span {
-    visibility: hidden;
-    position: relative;
-    top: 50px;
-    bottom: -40px;
-    left: -50%;
-    transform: translateX(-150%);
-    padding: 10px 20px;
-    border: 1px solid black;
-    border-radius: 10px;
-}
-
-.frontend div, .backend div, .more-tech div {
-    margin-left: 20px;
-}
-
-.frontend div span.active, .backend div span.active, .more-tech div span.active {
-    visibility: visible;
-}
-
 .one {
     color: #E34F26;
     border: 2px solid #E34F26;
@@ -772,7 +721,7 @@ header.header nav ul li span.active {
 
 .frontend.active, .backend.active, .more-tech.active {
     padding: 20px 20px 57px 20px
-} */
+}
 
 .services-container {
     max-width: 900px;
@@ -916,7 +865,6 @@ header.header nav ul li span.active {
 .wheel {
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-    z-index: 1000;
 }
 
 .wheel ion-icon.active {
@@ -1113,4 +1061,165 @@ header.header nav ul li span.active {
 
 .mobile {
     display: none;
+}
+
+.projects h2 {
+    margin-bottom: 6rem;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    /* CHANGE */
+    /* gap: 2.5rem; */
+    /* CHANGE */
+    gap: 5rem;
+}
+
+.projects .box {
+    color: white;
+    padding: 10px;
+    max-height: 300px;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+    display: inline-block;
+    position: relative;
+    border: 2px solid #77DD77;
+}
+
+.projects .box:hover {
+    transform: scale(1.03);
+}
+
+.projects .box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 3rem;
+    filter: drop-shadow(10px);
+    transition: 0.3s ease;
+}
+
+.projects .projects-container .box .info {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 3rem;
+    color: white;
+    padding: 5rem;
+    width: 80%;
+    text-align: center;
+    transition: 0.3 ease;
+}
+
+.projects .projects-container .box:hover .info {
+    display: block;
+}
+
+.projects .projects-container .box .info h4 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: #77DD77;
+    font-weight: bold;
+}
+
+.projects .projects-container .box .info p {
+    font-size: 1.6rem;
+    font-weight: 400;
+    max-height: 100px;
+    margin: auto;
+}
+
+.projects .projects-container .box .info p a {
+    color: white;
+    text-decoration: underline;
+}
+
+@media (max-width: 991px) {
+    .projects {
+        padding-bottom: 7rem;
+    }
+}
+
+@media (max-width: 895px) {
+    .projects h2 {
+        margin-bottom: 3rem;
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.skills .container {
+    background: var(--bg-color-second);
+    color: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 70%;
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.skills .container .row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    flex-wrap: wrap;
+    gap: 1.8rem;
+}
+
+.skills .container .bar {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 1rem;
+    background: #ffffc0;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.skills .container .bar:hover {
+    box-shadow: 0 4px 10px #FDFD96;
+    transform: scale(1.03);
+}
+
+.skills .container .bar .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.skills .container .bar span {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-left: 0.5rem;
+}
+
+@media screen and (max-width: 600px) {
+    .skills .container {
+        margin: 0;
+        padding: 0;
+    }
+
+    .skills .container .row {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 1rem;
+        padding: 2rem 0.2rem 2rem 0.2rem;
+        gap: 1rem;
+    }
+
+    .skills .container {
+        margin-top: 5px;
+        width: 100%;
+    }
 }

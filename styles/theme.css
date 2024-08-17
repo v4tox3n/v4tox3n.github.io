@@ -205,3 +205,12 @@ header.light nav.light ul.light li.light .op6.light:hover, header.light nav.ligh
     border-bottom: 3px solid #FFD700;
     color: #FFD700;
 }
+
+.btn.light {
+    box-shadow: 0 0 15px black;
+}
+
+.btn.light:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px black;
+}
