@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-EN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>v4tox3n - Services</title>
+        <link rel="stylesheet" href="../styles/services.css">
+        <link rel="stylesheet" href="../styles/mediaquerys.css">
+        <link rel="stylesheet" href="../styles/media.css">
+        <link rel="stylesheet" href="../styles/service-theme.css">
+        <link rel="icon" href="../public/img/logo.ico">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+
+    <body>
+        <div class="form-container">
+            <h2>Hire Service</h2>
+            <form class="serviceForm">
+                <div class="input-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+    
+                <div class="input-group">
+                    <label for="contact">Contact:</label>
+                    <input type="email" id="contact" name="contact" placeholder="Email/Instagram/Discord..." required>
+                </div>
+    
+                <div class="input-group">
+                    <label for="service">Select Service:</label>
+                    <select id="service" name="service" required>
+                        <option value="website">Web Site</option>
+                        <option value="private_app">Private App</option>
+                        <option value="script_code">Script Code</option>
+                    </select>
+                </div>
+    
+                <div class="input-group">
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" rows="4" required></textarea>
+                </div>
+    
+                <button type="submit" class="submit-button">Send Request</button>
+                <p style="color: red;">NOT WORKING YET</p>
+            </form>
+        </div>
+
+        <header class="config active wheel">
+            <ion-icon class="active icon1" name="cog-outline"></ion-icon>
+            <ion-icon class="icon2" name="close-outline"></ion-icon>
+        </header>
+
+        <header class="config tl">
+            <div class="dnefeb">
+                <div class="theme light-theme">
+                    <i class='bx bxs-sun'></i>
+                    <i class='bx bx-moon'></i>
+                </div>
+
+                <div class="theme dark-theme active">
+                    <i class='bx bx-sun'></i>
+                    <i class='bx bxs-moon'></i>
+                </div>
+            </div>
+
+            <div class="language-container" onclick="location.href = 'es'">
+                <ion-icon name="language-outline"></ion-icon>
+                <span class="language active">EN</span>
+            </div>
+        </header>
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="../src/services.js"></script>
+    </body>
+</html>

@@ -1,0 +1,65 @@
+body.light {
+    background-color: #f0f0f0;
+    color: #333333;
+}
+
+.form-container.light {
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h2.light {
+    color: #6a1b9a;
+}
+
+.input-group.light label.light {
+    color: #666666;
+}
+
+.input-group.light input.light, 
+.input-group.light select.light, 
+.input-group.light textarea.light {
+    border: 2px solid #6a1b9a;
+    background-color: #f9f9f9;
+    color: #333333;
+}
+
+.input-group.light input.light:focus, 
+.input-group.light select.light:focus, 
+.input-group.light textarea.light:focus {
+    border-color: #ff5722;
+}
+
+.submit-button.light {
+    background-color: #6a1b9a;
+    color: #ffffff;
+}
+
+.submit-button.light:hover {
+    background-color: #ff5722;
+}
+
+.wheel.light ion-icon.light.active {
+    color: black;
+}
+
+.config.light.active {
+    background: white;
+}
+
+.theme.light:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 25px black;
+}
+
+.theme.light i.light, .language-container.light ion-icon.light {
+    color: black;
+}
+
+.language.light.active {
+    color: black;
+}
+
+.language-container.light:hover {
+    text-shadow: 0 0 25px black;
+}

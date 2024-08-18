@@ -211,6 +211,19 @@ header.light nav.light ul.light li.light .op6.light:hover, header.light nav.ligh
 }
 
 .btn.light:hover {
-    transform: scale(1.05);
+    /* transform: scale(1.05); */
     box-shadow: 0 0 30px black;
+}
+
+.skills.light .container.light {
+    background: var(--bg-color-second-light);
+}
+
+.skills.light .container.light .bar.light {
+    background: #FDFD96;
+    color: black;
+}
+
+.skills.light .container.light .bar.light:hover {
+    box-shadow: 0 4px 10px #797948;
 }

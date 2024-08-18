@@ -227,7 +227,7 @@
                             <img src="../public/services/website.png">
                         </div>
                         
-                        <button class="btn">Contratar Servicio</button>
+                        <a href="../services" target="_blank" rel="noopener noreferrer"><button class="btn hbss">Contratar Servicio</button></a>
                     </div>
 
                     <div class="second-service">
@@ -240,10 +240,10 @@
                                 </div>
                             </div>
 
-                            <img src="../public/services/website.png">
+                            <img src="../public/services/applications.png">
                         </div>
                         
-                        <button class="btn but-esp">Contratar Servicio</button>
+                        <a href="../services" target="_blank" rel="noopener noreferrer"><button class="btn hbss">Contratar Servicio</button></a>
                     </div>
 
                     <div class="third-service">
@@ -259,7 +259,7 @@
                             <img src="../public/services/script-code.png">
                         </div>
                         
-                        <button class="btn">Contratar Servicio</button>
+                        <a href="../services" target="_blank" rel="noopener noreferrer"><button class="btn hbss">Contratar Servicio</button></a>
                     </div>
                 </div>
             </section>
@@ -387,34 +387,4 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="../src/particles-js-main.js"></script>
     <script src="../src/script-es.js?v=1.0" defer></script>
-
-    <script>
-        const themes = document.querySelectorAll('.theme');
-        const allObjects = document.querySelectorAll('*');
-
-        function toggleActiveThemes() {
-            themes.forEach(theme => {
-                theme.classList.toggle('active');
-            });
-
-            allObjects.forEach(all => {
-                all.classList.toggle('light');
-            });
-        }
-
-        themes.forEach(theme => {
-            theme.addEventListener('click', toggleActiveThemes);
-        });
-
-        const wheel_config = document.querySelector('.wheel');
-        const config = document.querySelector('.tl');
-        const icon1 = document.querySelector('.icon1');
-        const icon2 = document.querySelector('.icon2');
-
-        wheel_config.addEventListener('click', function() {
-            config.classList.toggle('active');
-            icon1.classList.toggle('active');
-            icon2.classList.toggle('active');
-        })
-    </script>
 </html>

@@ -1,0 +1,186 @@
+body {
+    background-color: #0f0f0f;
+    font-family: 'Roboto', sans-serif;
+    color: #e6e6e6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    background-color: #181818;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    color: #9f42fc;
+    margin-bottom: 20px;
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #cccccc;
+    font-size: 18px;
+}
+
+.input-group input, 
+.input-group select, 
+.input-group textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 2px solid #9f42fc;
+    border-radius: 8px;
+    background-color: #222222;
+    color: #e6e6e6;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.input-group input:focus, 
+.input-group select:focus, 
+.input-group textarea:focus {
+    border-color: #ff7518;
+    outline: none;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #9f42fc;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #ff7518;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.config {
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.wheel ion-icon {
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.wheel {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.wheel ion-icon.active {
+    display: block;
+    font-size: 3.2rem;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.config.active {
+    position: fixed;
+    top: 40px;
+    right: 100px;
+    width: fit-content;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    background: var(--bg-color-second);
+    border: 2px solid silver;
+    transition: all 0.3s ease-in-out;
+    z-index: 100;
+    margin-right: -3rem;
+}
+
+.tl.active {
+    top: 90px;
+    transition: all 0.3s ease-in-out;
+}
+
+.theme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid silver;
+    border-radius: 10px;
+    padding: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.theme:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 25px white;
+}
+
+.theme i, .language-container ion-icon {
+    font-size: 2rem;
+    color: white;
+}
+
+.theme.active {
+    display: block;
+}
+
+.language-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid silver;
+    border-radius: 10px;
+    padding: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.language-container:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 25px white;
+}
+
+.language.active {
+    display: block;
+    font-size: 1.7rem;
+    color: white;
+}
+
+.language {
+    display: none;
+}
