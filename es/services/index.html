@@ -3,13 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>v4tox3n - Services</title>
-        <link rel="stylesheet" href="../styles/styles.css">
-        <link rel="stylesheet" href="../styles/services.css">
-        <link rel="stylesheet" href="../styles/mediaquerys.css">
-        <link rel="stylesheet" href="../styles/media.css">
-        <link rel="stylesheet" href="../styles/service-theme.css">
-        <link rel="icon" href="../public/img/logo.ico">
+        <title>v4tox3n - Servicios</title>
+        <link rel="stylesheet" href="../../styles/styles.css">
+        <link rel="stylesheet" href="../../styles/services.css">
+        <link rel="stylesheet" href="../../styles/mediaquerys.css">
+        <link rel="stylesheet" href="../../styles/media.css">
+        <link rel="stylesheet" href="../../styles/service-theme.css">
+        <link rel="icon" href="../../public/img/logo.ico">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -17,35 +17,35 @@
 
     <body>
         <div class="form-container">
-            <h2>Hire Service</h2>
+            <h2>Contrata Servicios</h2>
             <form class="serviceForm">
                 <div class="input-group">
-                    <label for="name">Name:</label>
+                    <label for="name">Nombre:</label>
                     <input type="text" id="name" name="name" required>
                 </div>
     
                 <div class="input-group">
-                    <label for="contact">Contact:</label>
+                    <label for="contact">Contacto:</label>
                     <input type="text" id="contact" name="contact" placeholder="Email/Instagram/Discord..." required>
                 </div>
     
                 <div class="input-group">
-                    <label for="service">Select Service:</label>
+                    <label for="service">Selecciona Servicio:</label>
                     <select id="service" name="service" required>
-                        <option value="website">Web Site</option>
-                        <option value="private_app">Private App</option>
+                        <option value="website">Página Web</option>
+                        <option value="private_app">Aplicación</option>
                         <option value="script_code">Script/Bot</option>
                     </select>
                 </div>
     
                 <div class="input-group">
-                    <label for="description">Description:</label>
+                    <label for="description">Descripción:</label>
                     <textarea id="description" name="description" rows="4" required></textarea>
                 </div>
     
-                <button type="submit" class="submit-button sbr">Send Request</button>
+                <button type="submit" class="submit-button sbr">Enviar</button>
                 <br>
-                <button class="submit-button" onclick="window.location.href = '../'">Back</button>
+                <button class="submit-button" onclick="window.location.href = '../'">Atrás</button>
             </form>
         </div>
 
@@ -67,14 +67,14 @@
                 </div>
             </div>
 
-            <div class="language-container" onclick="location.href = '../es/services'">
+            <div class="language-container" onclick="location.href = '../../services'">
                 <ion-icon name="language-outline"></ion-icon>
-                <span class="language active">EN</span>
+                <span class="language active">ES</span>
             </div>
         </header>
 
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-        <script src="../src/services.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="../../src/services-es.js"></script>
     </body>
 </html>

@@ -69,6 +69,7 @@ h2 {
     color: #ffffff;
     font-size: 18px;
     font-weight: 500;
+    margin-bottom: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -82,105 +83,4 @@ p {
     justify-content: center;
     align-items: center;
     font-size: 14px;
-}
-
-.config {
-    display: none;
-    transition: all 0.3s ease-in-out;
-}
-
-.wheel ion-icon {
-    display: none;
-    transition: all 0.3s ease-in-out;
-}
-
-.wheel {
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
-
-.wheel ion-icon.active {
-    display: block;
-    font-size: 3.2rem;
-    color: white;
-    transition: all 0.3s ease-in-out;
-}
-
-.config.active {
-    position: fixed;
-    top: 40px;
-    right: 100px;
-    width: fit-content;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 30px 20px;
-    border-radius: 10px;
-    background: var(--bg-color-second);
-    border: 2px solid silver;
-    transition: all 0.3s ease-in-out;
-    z-index: 100;
-    margin-right: -3rem;
-}
-
-.tl.active {
-    top: 90px;
-    transition: all 0.3s ease-in-out;
-}
-
-.theme {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: none;
-    cursor: pointer;
-    background: transparent;
-    border: 2px solid silver;
-    border-radius: 10px;
-    padding: 5px;
-    transition: all 0.3s ease-in-out;
-}
-
-.theme:hover {
-    transform: scale(1.1);
-    text-shadow: 0 0 25px white;
-}
-
-.theme i, .language-container ion-icon {
-    font-size: 2rem;
-    color: white;
-}
-
-.theme.active {
-    display: block;
-}
-
-.language-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    cursor: pointer;
-    background: transparent;
-    border: 2px solid silver;
-    border-radius: 10px;
-    padding: 5px;
-    transition: all 0.3s ease-in-out;
-}
-
-.language-container:hover {
-    transform: scale(1.1);
-    text-shadow: 0 0 25px white;
-}
-
-.language.active {
-    display: block;
-    font-size: 1.7rem;
-    color: white;
-}
-
-.language {
-    display: none;
 }

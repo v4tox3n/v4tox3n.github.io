@@ -51,12 +51,12 @@ form.addEventListener('submit', (e) => {
         lastMessageTime = currentTime;
     } else {
         const remainingTime = (600000 - elapsedTimeSinceLastMessage) / 60000;
-        alert(`You have to wait ${remainingTime.toFixed(2)} minutes before sending another request.`);
+        alert(`Tienes que esperar ${remainingTime.toFixed(2)} minuos antes de enviar otra petición.`);
     }
 });
 
 function sendMessageToDiscord(name, contact, service, description) {
-    const content = `**Name:** \`\`\`${name}\`\`\`\n**Contact:** \`\`\`${contact}\`\`\`\n**Service:** \`\`\`${service}\`\`\`\n**Description:** \`\`\`${description}\`\`\``;
+    const content = `**Nombre:** \`\`\`${name}\`\`\`\n**Contacto:** \`\`\`${contact}\`\`\`\n**Servicio:** \`\`\`${service}\`\`\`\n**Descripción:** \`\`\`${description}\`\`\``;
 
     const payload = {
         content: content,
@@ -71,10 +71,10 @@ function sendMessageToDiscord(name, contact, service, description) {
     })
     .then((response) => {
         if (response.ok) {
-            alert('Request sent successfully!');
+            alert('¡Petición enviada correctamentes!');
             form.reset();
         } else {
-            alert('Error sending request');
+            alert('Error enviando la petición');
         }
     })
     .catch((error) => {
