@@ -1,0 +1,8 @@
+{
+    "name": "Irlanda",
+    "continent": "europa",
+    "meters": "70200",
+    "sea": "yes",
+    "color": "verde",
+    "flag": ["verde", "blanco", "naranja"]
+}

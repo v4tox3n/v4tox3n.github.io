@@ -1,0 +1,8 @@
+{
+    "name": "Bielorrusia",
+    "continent": "europa",
+    "meters": "207600",
+    "sea": "no",
+    "color": "rojo",
+    "flag": ["rojo", "verde", "blanco"]
+}

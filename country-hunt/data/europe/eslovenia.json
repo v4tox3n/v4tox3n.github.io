@@ -1,0 +1,8 @@
+{
+    "name": "Eslovenia",
+    "continent": "europa",
+    "meters": "20200",
+    "sea": "yes",
+    "color": "azul",
+    "flag": ["blanco", "azul", "rojo"]
+}

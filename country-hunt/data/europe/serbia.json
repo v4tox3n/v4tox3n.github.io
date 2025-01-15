@@ -1,0 +1,8 @@
+{
+    "name": "Serbia",
+    "continent": "europa",
+    "meters": "77400",
+    "sea": "no",
+    "color": "rojo",
+    "flag": ["rojo", "azul", "blanco"]
+}

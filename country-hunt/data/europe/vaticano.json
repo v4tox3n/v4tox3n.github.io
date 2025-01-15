@@ -1,0 +1,8 @@
+{
+    "name": "Vaticano",
+    "continent": "europa",
+    "meters": "0.44",
+    "sea": "no",
+    "color": "amarillo",
+    "flag": ["amarillo", "blanco"]
+}

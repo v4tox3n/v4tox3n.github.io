@@ -1,0 +1,8 @@
+{
+    "name": "Ucrania",
+    "continent": "europa",
+    "meters": "603000",
+    "sea": "yes",
+    "color": "azul",
+    "flag": ["azul", "amarillo"]
+}

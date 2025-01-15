@@ -1,0 +1,131 @@
+@import url('https://fonts.googgleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+html {
+    font-size: 60%;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --bg-color: black;
+    --bg-color-second: #;
+
+    --main-color: ;
+    
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: var(--bg-color);
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    gap: 10px;
+    color: white;
+}
+
+section {
+    min-width: 100vw;
+    min-height: 100vh;
+    background: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 20% 10rem;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchInput {
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border-radius: 0.7rem;
+}
+
+.results {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    list-style-type: none;
+    padding: 0;
+}
+
+.results li {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.results li:hover {
+    background-color: #f0f0f0;
+}
+
+.answers-container {
+    padding: 10rem 20% 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.answers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    list-style-type: none;
+}
+
+.answers li {
+    font-size: 1.75rem;
+    padding: 10px 20px;
+    border-radius: 1rem;
+    border: 1px solid black;
+    color: black;
+}
+
+.wrong {
+    background: rgb(245, 110, 110);
+}
+
+.correct {
+    background: rgb(134, 231, 134);
+}

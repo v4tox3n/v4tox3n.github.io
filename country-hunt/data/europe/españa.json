@@ -1,0 +1,8 @@
+{
+    "name": "España",
+    "continent": "europa",
+    "meters": "506000",
+    "sea": "yes",
+    "color": "rojo",
+    "flag": ["rojo", "amarillo"]
+}

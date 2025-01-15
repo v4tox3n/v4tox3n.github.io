@@ -1,0 +1,8 @@
+{
+    "name": "Islandia",
+    "continent": "europa",
+    "meters": "103000",
+    "sea": "yes",
+    "color": "azul",
+    "flag": ["azul", "rojo", "blanco"]
+}

@@ -1,0 +1,8 @@
+{
+    "name": "Malta",
+    "continent": "europa",
+    "meters": "316",
+    "sea": "yes",
+    "color": "rojo",
+    "flag": ["rojo", "blanco"]
+}
