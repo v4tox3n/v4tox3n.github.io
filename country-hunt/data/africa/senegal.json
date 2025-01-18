@@ -1,0 +1,8 @@
+{
+    "name": "Senegal",
+    "continent": "africa",
+    "meters": "196722",
+    "sea": "yes",
+    "color": "verde",
+    "flag": ["verde", "amarillo", "rojo"]
+}

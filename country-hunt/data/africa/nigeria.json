@@ -1,0 +1,8 @@
+{
+    "name": "Nigeria",
+    "continent": "africa",
+    "meters": "923768",
+    "sea": "yes",
+    "color": "verde",
+    "flag": ["verde", "blanco"]
+}

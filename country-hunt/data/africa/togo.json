@@ -1,0 +1,8 @@
+{
+    "name": "Togo",
+    "continent": "africa",
+    "meters": "56785",
+    "sea": "yes",
+    "color": "verde",
+    "flag": ["verde", "amarillo", "rojo"]
+}

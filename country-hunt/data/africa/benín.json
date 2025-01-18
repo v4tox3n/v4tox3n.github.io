@@ -1,0 +1,8 @@
+{
+    "name": "Benín",
+    "continent": "africa",
+    "meters": "112622",
+    "sea": "yes",
+    "color": "amarillo",
+    "flag": ["amarillo", "verde", "rojo"]
+}

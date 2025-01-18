@@ -1,0 +1,8 @@
+{
+    "name": "Esuatini",
+    "continent": "africa",
+    "meters": "17364",
+    "sea": "no",
+    "color": "azul",
+    "flag": ["azul", "amarillo", "rojo"]
+}

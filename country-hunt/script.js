@@ -2,7 +2,7 @@ let firstName, firstContinent, firstMeters, firstSea, firstColor, firstFlag;
 let secondName, secondContinent, secondMeters, secondSea, secondColor, secondFlag;
 
 let route = '';
-const game_mode = 'Europe';
+const game_mode = 'Mundial';
 
 if (game_mode === 'Europe'){
     route = './data/europe/';
@@ -14,6 +14,8 @@ if (game_mode === 'Europe'){
     route = './data/america/';
 } else if (game_mode === 'Oceania') {
     route = './data/oceania/';
+} else if (game_mode === 'Mundial'){
+    route = './data/'
 } else {
     alert('Error seleccionando el modo de juego.');
 }
@@ -55,13 +57,13 @@ function selectRandomCountry(data) {
     firstSea = data.sea;
     firstColor = data.color;
     firstFlag = Array.isArray(data.flag) ? data.flag.join(", ") : data.flag;
-
     // alert(`Name: ${firstName}\nContinent: ${firstContinent}\nMeters: ${firstMeters}\nSea: ${firstSea}\nColor: ${firstColor}\nFlag: ${firstFlag}`);
 }
 
 fetchRandomFile();
 
 const jsonData = [
+    // EUROPE
     { "name": "España", "c": "e" },
     { "name": "Francia", "c": "e" },
     { "name": "Suiza", "c": "e" },
@@ -111,7 +113,86 @@ const jsonData = [
     { "name": "Chipre", "c": "e" },
     { "name": "Georgia", "c": "e" },
     { "name": "Rusia", "c": "e" },
-    { "name": "Turquía", "c": "e" }
+    { "name": "Turquía", "c": "e" },
+    // AFRICA
+    { "name": "Angola", "c": "af" },
+    { "name": "Argelia", "c": "af" },
+    { "name": "Benín", "c": "af" },
+    { "name": "Botsuana", "c": "af" },
+    { "name": "Burkina Faso", "c": "af" },
+    { "name": "Burundi", "c": "af" },
+    { "name": "Cabo Verde", "c": "af" },
+    { "name": "Camerún", "c": "af" },
+    { "name": "Chad", "c": "af" },
+    { "name": "Comoras", "c": "af" },
+    { "name": "Congo", "c": "af" },
+    { "name": "Costa de Marfil", "c": "af" },
+    { "name": "Djibouti", "c": "af" },
+    { "name": "Egipto", "c": "af" },
+    { "name": "Esuatini", "c": "af" },
+    { "name": "Etiopía", "c": "af" },
+    { "name": "Gabón", "c": "af" },
+    { "name": "Gambia", "c": "af" },
+    { "name": "Ghana", "c": "af" },
+    { "name": "Guinea Ecuatorial", "c": "af" },
+    { "name": "Kenia", "c": "af" },
+    { "name": "Lesoto", "c": "af" },
+    { "name": "Liberia", "c": "af" },
+    { "name": "Libia", "c": "af" },
+    { "name": "Madagascar", "c": "af" },
+    { "name": "Malaui", "c": "af" },
+    { "name": "Malí", "c": "af" },
+    { "name": "Marruecos", "c": "af" },
+    { "name": "Mauricio", "c": "af" },
+    { "name": "Mauritania", "c": "af" },
+    { "name": "Mozambique", "c": "af" },
+    { "name": "Namibia", "c": "af" },
+    { "name": "Níger", "c": "af" },
+    { "name": "Nigeria", "c": "af" },
+    { "name": "Ruanda", "c": "af" },
+    { "name": "Senegal", "c": "af" },
+    { "name": "Sierra Leona", "c": "af" },
+    { "name": "Somalia", "c": "af" },
+    { "name": "Sudán", "c": "af" },
+    { "name": "Sudán del Sur", "c": "af" },
+    { "name": "Tanzania", "c": "af" },
+    { "name": "Togo", "c": "af" },
+    { "name": "Túnez", "c": "af" },
+    { "name": "Uganda", "c": "af" },
+    { "name": "Zambia", "c": "af" },
+    { "name": "Zimbabue", "c": "af" },
+    // AMERICA
+    { "name": "Antigua y Barbuda", "c":  "am" },
+    { "name": "Argentina", "c":  "am" },
+    { "name": "Bahamas", "c":  "am" },
+    { "name": "Barbados", "c":  "am" },
+    { "name": "Belice", "c":  "am" },
+    { "name": "Bolivia", "c":  "am" },
+    { "name": "Brasil", "c":  "am" },
+    { "name": "Canadá", "c":  "am" },
+    { "name": "Chile", "c":  "am" },
+    { "name": "Colombia", "c":  "am" },
+    { "name": "Costa Rica", "c":  "am" },
+    { "name": "Cuba", "c":  "am" },
+    { "name": "Dominica", "c":  "am" },
+    { "name": "Ecuador", "c":  "am" },
+    { "name": "El Salvador", "c":  "am" },
+    { "name": "Estados Unidos", "c":  "am" },
+    { "name": "Granada", "c":  "am" },
+    { "name": "Guatemala", "c":  "am" },
+    { "name": "Guyana", "c":  "am" },
+    { "name": "Haití", "c":  "am" },
+    { "name": "Honduras", "c":  "am" },
+    { "name": "Jamaica", "c":  "am" },
+    { "name": "México", "c":  "am" },
+    { "name": "Nicaragua", "c":  "am" },
+    { "name": "Panamá", "c":  "am" },
+    { "name": "Paraguay", "c":  "am" },
+    { "name": "Perú", "c":  "am" },
+    { "name": "República Dominicana", "c":  "am" },
+    { "name": "Surinam", "c":  "am" },
+    { "name": "Uruguay", "c":  "am" },
+    { "name": "Venezuela", "c":  "am" }
 ];
 
 intents = 1;
@@ -131,6 +212,10 @@ function displayResults(results) {
                 // alert(`${jsonFile}`);
                 if (result.c === 'e') {
                     searchJSONfileEU(jsonFile);
+                } else if (result.c === 'af') {
+                    searchJSONfileAF(jsonFile);
+                } else if (result.c === 'am') {
+                    searchJSONfileAM(jsonFile);
                 }
                 intents += 1;
                 input.placeholder = 'Intento ' + intents + ' de 10';
@@ -166,8 +251,6 @@ document.querySelector('.searchInput').addEventListener('input', (event) => {
 
 function searchJSONfileEU(file) {
     const route = 'data/europe/' + file;
-    // alert(route);
-
     fetch(route)
         .then(response => {
             if (!response.ok) {
@@ -182,13 +265,52 @@ function searchJSONfileEU(file) {
             secondSea = data.sea;
             secondColor = data.color;
             secondFlag = data.flag;
+            showCluesSelectedCountry();
+        })
+        .catch(error => {
+            alert('Error petición fetch: ' + error.message);
+        });
+}
 
-            // alert('Name: ' + secondName);
-            // alert('Continent: ' + secondContinent);
-            // alert('Meters: ' + secondMeters);
-            // alert('Sea: ' + secondSea);
-            // alert('Color: ' + secondColor);
-            // alert('Flag: ' + secondFlag.join(", "));
+function searchJSONfileAF(file) {
+    const route = 'data/africa/' + file;
+    fetch(route)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('HTTP Error: ' + response.status);
+            }
+            return response.json();
+        })
+        .then(data => {
+            secondName = data.name;
+            secondContinent = data.continent;
+            secondMeters = data.meters;
+            secondSea = data.sea;
+            secondColor = data.color;
+            secondFlag = data.flag;
+            showCluesSelectedCountry();
+        })
+        .catch(error => {
+            alert('Error petición fetch: ' + error.message);
+        });
+}
+
+function searchJSONfileAM(file) {
+    const route = 'data/america/' + file;
+    fetch(route)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('HTTP Error: ' + response.status);
+            }
+            return response.json();
+        })
+        .then(data => {
+            secondName = data.name;
+            secondContinent = data.continent;
+            secondMeters = data.meters;
+            secondSea = data.sea;
+            secondColor = data.color;
+            secondFlag = data.flag;
             showCluesSelectedCountry();
         })
         .catch(error => {

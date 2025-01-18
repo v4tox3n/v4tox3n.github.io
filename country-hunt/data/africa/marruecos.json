@@ -1,0 +1,8 @@
+{
+    "name": "Marruecos",
+    "continent": "africa",
+    "meters": "446550",
+    "sea": "yes",
+    "color": "rojo",
+    "flag": ["rojo", "verde"]
+}

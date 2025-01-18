@@ -1,0 +1,8 @@
+{
+    "name": "Botsuana",
+    "continent": "africa",
+    "meters": "581730",
+    "sea": "no",
+    "color": "azul",
+    "flag": ["azul", "negro", "blanco"]
+}
