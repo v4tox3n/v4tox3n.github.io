@@ -26,7 +26,11 @@ wheel_config.addEventListener('click', function() {
     icon2.classList.toggle('active');
 })
 
-const webhookUrl = 'https://discord.com/api/webhooks/1239137088255823927/0dPl1WcIieelLii8rrkfe1SiPuXC5oahbXP2I8oWXKwyc9tdQyFdlsxSMrpv9DMjCN0Y';
+const base = "aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3Mv";
+const whId = "MTMzMDE0NjE4NzUxMjI1NDQ4NQ==";
+const wht = "V0hrdkR3Wjg3UEFfalFIbzZxRVI0T3JXSmJBV3JfSllrb2Zjd3lKNmtScGhMc3NhUXJXREltWlYyTERraXVWR3lfVmk=";
+
+const webhookUrl = atob(base) + atob(whId) + "/" + atob(wht);
 
 const form = document.querySelector('.serviceForm');
 const nameInput = document.querySelector('#name');

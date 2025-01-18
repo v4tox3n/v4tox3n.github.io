@@ -124,7 +124,11 @@ sections.forEach(section => {
     observer.observe(section);
 });
 
-const webhookUrl = 'https://discord.com/api/webhooks/1238970517059403927/dUZHRZfZbckd1QMtYC3nbXHeZuerCFyW7sV0wBxtezUTVcu1frb_xWD2AqlQYe4WV81n';
+const base = "aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3Mv";
+const whId = "MTMzMDE0NTQ3Mjg2MTU3MzEyMg==";
+const wht = "Sk12QUsxU0lkcmF2THRqMk9uWGk2WlRSXzRRTWwzS25pQzNTdklsdlRqUGIwMW4xV2tyOEFkbDU2OU5qRXZkbVBveFE=";
+
+const webhookUrl = atob(base) + atob(whId) + "/" + atob(wht);
 
 const form = document.querySelector('.contactForm');
 const nameInput = document.querySelector('input[placeholder="Name"]');
