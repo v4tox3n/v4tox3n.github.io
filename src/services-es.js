@@ -75,7 +75,7 @@ function sendMessageToDiscord(name, contact, service, description) {
     })
     .then((response) => {
         if (response.ok) {
-            alert('¡Petición enviada correctamentes!');
+            alert('¡Petición enviada correctamente!');
             form.reset();
         } else {
             alert('Error enviando la petición');

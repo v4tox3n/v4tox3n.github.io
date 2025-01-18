@@ -131,10 +131,10 @@ const wht = "Sk12QUsxU0lkcmF2THRqMk9uWGk2WlRSXzRRTWwzS25pQzNTdklsdlRqUGIwMW4xV2t
 const webhookUrl = atob(base) + atob(whId) + "/" + atob(wht);
 
 const form = document.querySelector('.contactForm');
-const nameInput = document.querySelector('input[placeholder="Name"]');
-const surnameInput = document.querySelector('input[placeholder="Surname"]');
+const nameInput = document.querySelector('input[placeholder="Nombre"]');
+const surnameInput = document.querySelector('input[placeholder="Apellido"]');
 const emailInput = document.querySelector('input[placeholder="Email"]');
-const subjectInput = document.querySelector('input[placeholder="Subject"]');
+const subjectInput = document.querySelector('input[placeholder="Asunto"]');
 const messageInput = document.querySelector('textarea');
 let lastMessageTime = 0;
 
