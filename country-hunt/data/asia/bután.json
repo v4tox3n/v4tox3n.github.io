@@ -1,0 +1,8 @@
+{
+    "name": "Bután",
+    "continent": "asia",
+    "meters": "47000",
+    "sea": "no",
+    "color": "amarillo",
+    "flag": ["amarillo", "rojo"]
+}

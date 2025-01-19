@@ -1,0 +1,8 @@
+{
+    "name": "Kiribati",
+    "continent": "oceania",
+    "meters": "811",
+    "sea": "yes",
+    "color": "rojo",
+    "flag": ["rojo", "amarillo", "azul", "blanco"]
+}

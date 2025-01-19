@@ -1,0 +1,8 @@
+{
+    "name": "Nauru",
+    "continent": "oceania",
+    "meters": "21",
+    "sea": "yes",
+    "color": "azul",
+    "flag": ["azul", "amarillo", "blanco"]
+}

@@ -1,0 +1,8 @@
+{
+    "name": "Azerbaiyán",
+    "continent": "asia",
+    "meters": "86600",
+    "sea": "yes",
+    "color": "rojo",
+    "flag": ["rojo", "azul", "verde"]
+}

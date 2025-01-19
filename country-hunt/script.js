@@ -20,10 +20,6 @@ if (game_mode === 'Europe'){
     alert('Error seleccionando el modo de juego.');
 }
 
-// else if (game_mode === 'Mundial'){
-//     random...
-// }
-
 async function fetchRandomFile() {
     try {
         const indexResponse = await fetch(`${route}index.json`);
@@ -112,8 +108,7 @@ const jsonData = [
     { "name": "Gales", "c": "e" },
     { "name": "Chipre", "c": "e" },
     { "name": "Georgia", "c": "e" },
-    { "name": "Rusia", "c": "e" },
-    { "name": "Turquía", "c": "e" },
+
     // AFRICA
     { "name": "Angola", "c": "af" },
     { "name": "Argelia", "c": "af" },
@@ -161,6 +156,7 @@ const jsonData = [
     { "name": "Uganda", "c": "af" },
     { "name": "Zambia", "c": "af" },
     { "name": "Zimbabue", "c": "af" },
+
     // AMERICA
     { "name": "Antigua y Barbuda", "c":  "am" },
     { "name": "Argentina", "c":  "am" },
@@ -192,7 +188,67 @@ const jsonData = [
     { "name": "República Dominicana", "c":  "am" },
     { "name": "Surinam", "c":  "am" },
     { "name": "Uruguay", "c":  "am" },
-    { "name": "Venezuela", "c":  "am" }
+    { "name": "Venezuela", "c":  "am" },
+
+    // OCEANIA
+    { "name": "Australia", "c": "o" },
+    { "name": "Fiyi", "c": "o" },
+    { "name": "Kiribati", "c": "o" },
+    { "name": "Islas Marshall", "c": "o" },
+    { "name": "Micronesia", "c": "o" },
+    { "name": "Nauru", "c": "o" },
+    { "name": "Nueva Zelanda", "c": "o" },
+    { "name": "Palaos", "c": "o" },
+    { "name": "Papúa Nueva Guinea", "c": "o" },
+    { "name": "Samoa", "c": "o" },
+    { "name": "Islas Salomón", "c": "o" },
+    { "name": "Tonga", "c": "o" },
+    { "name": "Tuvalu", "c": "o" },
+    { "name": "Vanuatu", "c": "o" },
+    
+    // ASIA
+    { "name": "Afganistán", "c": "as" },
+    { "name": "Azerbaiyán", "c": "as" },
+    { "name": "Bangladesh", "c": "as" },
+    { "name": "Bután", "c": "as" },
+    { "name": "Camboya", "c": "as" },
+    { "name": "Catar", "c": "as" },
+    { "name": "China", "c": "as" },
+    { "name": "Corea del Norte", "c": "as" },
+    { "name": "Corea del Sur", "c": "as" },
+    { "name": "Emiratos Árabes Unidos", "c": "as" },
+    { "name": "India", "c": "as" },
+    { "name": "Indonesia", "c": "as" },
+    { "name": "Irán", "c": "as" },
+    { "name": "Iraq", "c": "as" },
+    { "name": "Israel", "c": "as" },
+    { "name": "Japón", "c": "as" },
+    { "name": "Jordania", "c": "as" },
+    { "name": "Kazajistán", "c": "as" },
+    { "name": "Kirguistán", "c": "as" },
+    { "name": "Laos", "c": "as" },
+    { "name": "Líbano", "c": "as" },
+    { "name": "Malasia", "c": "as" },
+    { "name": "Maldivas", "c": "as" },
+    { "name": "Mongolia", "c": "as" },
+    { "name": "Nepal", "c": "as" },
+    { "name": "Omán", "c": "as" },
+    { "name": "Pakistán", "c": "as" },
+    { "name": "Palestina", "c": "as" },
+    { "name": "Filipinas", "c": "as" },
+    { "name": "Rusia", "c": "as" },
+    { "name": "Arabia Saudita", "c": "as" },
+    { "name": "Singapur", "c": "as" },
+    { "name": "Siria", "c": "as" },
+    { "name": "Sri Lanka", "c": "as" },
+    { "name": "Tailandia", "c": "as" },
+    { "name": "Turquía", "c": "as" },
+    { "name": "Taiwán", "c": "as" },
+    { "name": "Tayikistán", "c": "as" },
+    { "name": "Turkmenistán", "c": "as" },
+    { "name": "Uzbekistán", "c": "as" },
+    { "name": "Vietnam", "c": "as" },
+    { "name": "Yemen", "c": "as" }
 ];
 
 intents = 1;
@@ -216,6 +272,10 @@ function displayResults(results) {
                     searchJSONfileAF(jsonFile);
                 } else if (result.c === 'am') {
                     searchJSONfileAM(jsonFile);
+                } else if (result.c === 'o') {
+                    searchJSONfileO(jsonFile);
+                } else if (result.c === 'as') {
+                    searchJSONfileAS(jsonFile);
                 }
                 intents += 1;
                 input.placeholder = 'Intento ' + intents + ' de 10';
@@ -297,6 +357,52 @@ function searchJSONfileAF(file) {
 
 function searchJSONfileAM(file) {
     const route = 'data/america/' + file;
+    fetch(route)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('HTTP Error: ' + response.status);
+            }
+            return response.json();
+        })
+        .then(data => {
+            secondName = data.name;
+            secondContinent = data.continent;
+            secondMeters = data.meters;
+            secondSea = data.sea;
+            secondColor = data.color;
+            secondFlag = data.flag;
+            showCluesSelectedCountry();
+        })
+        .catch(error => {
+            alert('Error petición fetch: ' + error.message);
+        });
+}
+
+function searchJSONfileO(file) {
+    const route = 'data/oceania/' + file;
+    fetch(route)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('HTTP Error: ' + response.status);
+            }
+            return response.json();
+        })
+        .then(data => {
+            secondName = data.name;
+            secondContinent = data.continent;
+            secondMeters = data.meters;
+            secondSea = data.sea;
+            secondColor = data.color;
+            secondFlag = data.flag;
+            showCluesSelectedCountry();
+        })
+        .catch(error => {
+            alert('Error petición fetch: ' + error.message);
+        });
+}
+
+function searchJSONfileAS(file) {
+    const route = 'data/asia/' + file;
     fetch(route)
         .then(response => {
             if (!response.ok) {

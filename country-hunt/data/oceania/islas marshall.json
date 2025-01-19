@@ -1,0 +1,8 @@
+{
+    "name": "Islas Marshall",
+    "continent": "oceania",
+    "meters": "181",
+    "sea": "yes",
+    "color": "azul",
+    "flag": ["azul", "blanco", "naranja"]
+}
