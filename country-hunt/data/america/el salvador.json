@@ -1,0 +1,8 @@
+{
+    "name": "El Salvador",
+    "continent": "américa",
+    "meters": "21041",
+    "sea": "yes",
+    "color": "azul",
+    "flag": ["azul", "blanco"]
+}

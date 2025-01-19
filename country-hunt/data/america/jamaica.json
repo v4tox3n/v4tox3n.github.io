@@ -1,0 +1,8 @@
+{
+    "name": "Jamaica",
+    "continent": "américa",
+    "meters": "10991",
+    "sea": "yes",
+    "color": "verde",
+    "flag": ["verde", "amarillo", "negro"]
+}

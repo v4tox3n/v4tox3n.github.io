@@ -1,44 +1,54 @@
 <!DOCTYPE html>
-<html lang="es-ES">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Country Hunt</title>
-        <link rel="stylesheet" href="styles/styles.css">
-        <link rel="stylesheet" href="styles/mediaquerys.css">
         <link rel="icon" href="">
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="styles/styles.css">
+        <!-- MEDIAQUERYES -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <br>
-        <br>
         <header>
+            <div class="logo">🌍 Country Hunt</div>
             <nav>
-                <!-- <div class="no-display no-mobile"></div> -->
-                <h1 class="heading">Country Hunt</h1>
-                
+              <a href="#home">Home</a>
+              <a href="#game">Play</a>
+              <a href="#how-to-play">How to Play</a>
+              <a href="#game-modes">Game Modes</a>
+              <a href="#game-examples">Game Examples</a>
+              <div class="search-icon">🔍</div> 
             </nav>
-            
         </header>
 
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        <section class="home-section" id="home">
+            <div class="section-content">
+                <h1 class="game-title">Country Hunt</h1>
+                <a href="#game" class="play-button" id="playButton">¡Jugar Ahora!</a>
+            </div>
+        </section>
 
-        <div class="div">
-            <h1>-</h1>
-            <input type="text" class="searchInput" placeholder="Intento 1 de 10">
-            <ul class="results"></ul>
-        </div>
-
-        <br>
-
-        <div class="answers-container"></div>
+        <section class="game-section" id="game">
+            <div class="header">
+                <nav>
+                    <h1 class="heading">GUESS THE COUNTRY</h1>
+                </nav>
+            </div>
+    
+            <div class="div">
+                <input type="text" class="searchInput" placeholder="Intento 1 de 10">
+                <ul class="results"></ul>
+            </div>
+            <div class="answers-container"></div>
+        </section>
+        <section class="home2-section" id="home"></section>
+        <section class="home2-section" id="home"></section>
+        <section class="home2-section" id="home"></section>
 
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

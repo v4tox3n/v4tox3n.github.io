@@ -1,0 +1,8 @@
+{
+    "name": "Guatemala",
+    "continent": "américa",
+    "meters": "108889",
+    "sea": "yes",
+    "color": "azul",
+    "flag": ["azul", "blanco"]
+}

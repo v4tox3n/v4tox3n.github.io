@@ -1,0 +1,8 @@
+{
+    "name": "República Dominicana",
+    "continent": "américa",
+    "meters": "48671",
+    "sea": "yes",
+    "color": "rojo",
+    "flag": ["rojo", "azul", "blanco"]
+}

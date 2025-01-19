@@ -389,3 +389,12 @@ function showCluesSelectedCountry() {
         }, 750);
     }
 }
+
+window.onload = () => {
+    const title = document.querySelector('.game-title');
+    const playButton = document.querySelector('#playButton');
+
+    title.addEventListener('animationend', () => {
+        playButton.classList.add('visible');
+    });
+};

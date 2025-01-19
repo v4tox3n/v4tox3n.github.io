@@ -1,8 +1,8 @@
 {
-    "name": "Panamá",
+    "name": "Paraguay",
     "continent": "américa",
-    "meters": "75417",
-    "sea": "yes",
+    "meters": "406752",
+    "sea": "no",
     "color": "rojo",
     "flag": ["rojo", "blanco", "azul"]
 }

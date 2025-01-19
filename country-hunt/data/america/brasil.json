@@ -1,0 +1,8 @@
+{
+    "name": "Brasil",
+    "continent": "américa",
+    "meters": "8515767",
+    "sea": "yes",
+    "color": "verde",
+    "flag": ["verde", "amarillo", "azul", "blanco"]
+}

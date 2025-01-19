@@ -1,0 +1,8 @@
+{
+    "name": "Dominica",
+    "continent": "américa",
+    "meters": "751",
+    "sea": "yes",
+    "color": "verde",
+    "flag": ["verde", "amarillo", "negro", "rojo", "blanco"]
+}

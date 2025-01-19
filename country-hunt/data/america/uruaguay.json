@@ -1,0 +1,8 @@
+{
+    "name": "Uruguay",
+    "continent": "américa",
+    "meters": "176215",
+    "sea": "yes",
+    "color": "azul",
+    "flag": ["azul", "blanco", "amarillo"]
+}
