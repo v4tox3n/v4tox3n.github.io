@@ -19,8 +19,10 @@ let project_card = document.querySelectorAll('.project-card');
 
 project_card.forEach((e, index) => {
     e.addEventListener('click', function() {
-        if (index === 0) {
+        if (index === 0 || index === 1) {
             
+        } else if (index === 2){
+            alert("This project will be avaible soon");
         } else {
             alert("This project it's currently not avaible");
         }

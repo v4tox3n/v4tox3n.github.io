@@ -930,11 +930,8 @@ header.header nav ul li span.active {
 
 .projects-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    /* CHANGE */
-    /* gap: 2.5rem; */
-    /* CHANGE */
     gap: 5rem;
 }
 
