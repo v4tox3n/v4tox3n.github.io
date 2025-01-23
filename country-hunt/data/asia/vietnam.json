@@ -1,0 +1,8 @@
+{
+    "name": "Vietnam",
+    "continent": "asia",
+    "meters": "331212",
+    "sea": "yes",
+    "color": "rojo",
+    "flag": ["rojo", "amarillo"]
+}

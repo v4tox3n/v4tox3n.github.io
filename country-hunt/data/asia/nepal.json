@@ -1,0 +1,8 @@
+{
+    "name": "Nepal",
+    "continent": "asia",
+    "meters": "147181",
+    "sea": "no",
+    "color": "rojo",
+    "flag": ["rojo", "azul"]
+}

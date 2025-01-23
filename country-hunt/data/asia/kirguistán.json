@@ -1,0 +1,8 @@
+{
+    "name": "Kirguistán",
+    "continent": "asia",
+    "meters": "199951",
+    "sea": "no",
+    "color": "rojo",
+    "flag": ["rojo", "amarillo"]
+}

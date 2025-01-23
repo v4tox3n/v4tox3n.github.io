@@ -1,0 +1,8 @@
+{
+    "name": "Laos",
+    "continent": "asia",
+    "meters": "237955",
+    "sea": "no",
+    "color": "rojo",
+    "flag": ["rojo", "azul", "blanco"]
+}

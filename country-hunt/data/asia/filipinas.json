@@ -1,0 +1,8 @@
+{
+    "name": "Filipinas",
+    "continent": "asia",
+    "meters": "300000",
+    "sea": "yes",
+    "color": "azul",
+    "flag": ["rojo", "blanco", "azul"]
+}

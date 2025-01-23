@@ -1,0 +1,8 @@
+{
+    "name": "Japón",
+    "continent": "asia",
+    "meters": "377975",
+    "sea": "yes",
+    "color": "rojo",
+    "flag": ["blanco", "rojo"]
+}

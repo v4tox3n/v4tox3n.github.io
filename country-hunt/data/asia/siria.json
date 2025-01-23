@@ -1,0 +1,8 @@
+{
+    "name": "Siria",
+    "continent": "asia",
+    "meters": "185180",
+    "sea": "yes",
+    "color": "rojo",
+    "flag": ["rojo", "blanco", "negro", "verde"]
+}

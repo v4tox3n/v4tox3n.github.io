@@ -1,0 +1,8 @@
+{
+    "name": "Kazajistán",
+    "continent": "asia",
+    "meters": "2724900",
+    "sea": "no",
+    "color": "celeste",
+    "flag": ["celeste", "amarillo"]
+}

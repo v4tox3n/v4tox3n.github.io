@@ -504,3 +504,51 @@ window.onload = () => {
         playButton.classList.add('visible');
     });
 };
+
+const bubbles = document.querySelectorAll('.bubble');
+const directions = [];
+const gameBackground = document.querySelector('.game-background');
+const backgroundRect = gameBackground.getBoundingClientRect();
+
+bubbles.forEach((bubble, index) => {
+    const randomX = Math.random() * backgroundRect.width;
+    const randomY = Math.random() * backgroundRect.height;  
+
+    bubble.style.top = `${randomY}px`;
+    bubble.style.left = `${randomX}px`;
+
+    const randomDirX = Math.random() * 2 - 1;
+    const randomDirY = Math.random() * 2 - 1;
+    directions[index] = { x: randomDirX, y: randomDirY };
+});
+
+function moveBubbles() {
+    bubbles.forEach((bubble, index) => {
+        const rect = bubble.getBoundingClientRect();
+
+        let top = parseFloat(bubble.style.top);
+        let left = parseFloat(bubble.style.left);
+
+        top += directions[index].y;
+        left += directions[index].x;
+
+        if (rect.top <= backgroundRect.top) {
+            directions[index].y = Math.abs(directions[index].y);
+        } else if (rect.bottom >= backgroundRect.bottom) {
+            directions[index].y = -Math.abs(directions[index].y);
+        }
+
+        if (rect.left <= backgroundRect.left) {
+            directions[index].x = Math.abs(directions[index].x);
+        } else if (rect.right >= backgroundRect.right) {
+            directions[index].x = -Math.abs(directions[index].x);
+        }
+
+        bubble.style.top = `${top}px`;
+        bubble.style.left = `${left}px`;
+    });
+
+    requestAnimationFrame(moveBubbles);
+}
+
+moveBubbles();

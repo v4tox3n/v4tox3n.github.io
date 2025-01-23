@@ -1,0 +1,8 @@
+{
+    "name": "Taiwán",
+    "continent": "asia",
+    "meters": "36197",
+    "sea": "yes",
+    "color": "rojo",
+    "flag": ["rojo", "azul", "blanco"]
+}
