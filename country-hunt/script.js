@@ -4,18 +4,24 @@ let secondName, secondContinent, secondMeters, secondSea, secondColor, secondFla
 let route = '';
 const game_mode = 'Mundial';
 
-if (game_mode === 'Europe'){
+if (game_mode === 'Europa'){
     route = './data/europe/';
+    fetchRandomFile();
 } else if (game_mode === 'Asia') { 
     route = './data/asia/';
+    fetchRandomFile();
 } else if (game_mode === 'Africa'){
     route = './data/africa/';
+    fetchRandomFile();
 } else if (game_mode === 'America') { 
     route = './data/america/';
+    fetchRandomFile();
 } else if (game_mode === 'Oceania') {
     route = './data/oceania/';
+    fetchRandomFile();
 } else if (game_mode === 'Mundial'){
     route = './data/'
+    fetchRandomFile();
 } else {
     alert('Error seleccionando el modo de juego.');
 }
@@ -55,8 +61,6 @@ function selectRandomCountry(data) {
     firstFlag = Array.isArray(data.flag) ? data.flag.join(", ") : data.flag;
     // alert(`Name: ${firstName}\nContinent: ${firstContinent}\nMeters: ${firstMeters}\nSea: ${firstSea}\nColor: ${firstColor}\nFlag: ${firstFlag}`);
 }
-
-fetchRandomFile();
 
 const jsonData = [
     // EUROPE
@@ -552,3 +556,16 @@ function moveBubbles() {
 }
 
 moveBubbles();
+
+const continentCards = document.querySelectorAll('.continent-card');
+
+continentCards.forEach(card => {
+    const toggleContainer = card.querySelector('.toggle-container');
+
+    toggleContainer.addEventListener('click', () => {
+        card.classList.toggle('active');
+        card.classList.toggle('inactive');
+        toggleContainer.classList.toggle('active');
+        toggleContainer.classList.toggle('inactive');
+    });
+});

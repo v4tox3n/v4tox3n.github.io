@@ -329,3 +329,191 @@ header::after {
 .bubble.large { 
     width: 100px; height: 100px; 
 }
+
+
+
+/* GAME MODES */
+.game-mode-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    text-align: center;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.continent-card {
+    position: relative;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.continent-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.continent-card.inactive {
+    background: linear-gradient(45deg, #2c2c2c, #1a1a1a);
+}
+
+.continent-card.inactive:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        135deg,
+        transparent,
+        transparent 15px,
+        rgba(255, 99, 99, 1) 15px,
+        rgba(255, 99, 99, 1) 30px
+    );
+    opacity: 0.6;
+    z-index: 1;
+    pointer-events: none;
+    filter: drop-shadow(0px 4px 6px rgba(255, 99, 99, 0.3));
+}
+
+.continent-card.active {
+    background: linear-gradient(45deg, #2c2c2c, #1a1a1a);
+}
+
+.continent-card.active:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        135deg,
+        transparent,
+        transparent 15px,
+        rgba(144, 238, 144, 1) 15px,
+        rgba(144, 238, 144, 1) 30px
+    );
+    opacity: 0.6;
+    z-index: 1;
+    pointer-events: none;
+    filter: drop-shadow(0px 4px 6px rgba(144, 238, 144, 0.3));
+}
+
+.continent-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), 0 0 6px rgba(255, 255, 255, 0.8);
+}
+
+.toggle-container {
+    margin-top: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.toggle {
+    position: relative;
+    width: 50px;
+    height: 25px;
+    background: #ccc;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2), 0 0 6px rgba(255, 255, 255, 0.8);
+}
+
+.toggle:before {
+    content: "";
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    background: #fff;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 0 6px rgba(255, 255, 255, 0.8);
+}
+
+.toggle-container.active .toggle {
+    background: #90ee90;
+}
+
+.toggle-container.active .toggle:before {
+    transform: translateX(25px);
+}
+
+.toggle-container.inactive .toggle {
+    background: #ff6363;
+}
+
+.game-mode-section {
+    width: 100%;
+    height: 100%;
+    background: #1E2A47;
+    position: relative;
+    overflow: hidden;
+}
+
+.particle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    animation: particleAnim 5s infinite ease-in-out;
+    z-index: 1;
+}
+
+@keyframes particleAnim {
+    0% {
+        transform: translate3d(0, 0, 0);
+        opacity: 0.5;
+    }
+    50% {
+        transform: translate3d(200px, 300px, 0);
+        opacity: 1;
+    }
+    100% {
+        transform: translate3d(-200px, -300px, 0);
+        opacity: 0.5;
+    }
+}
+
+.wave {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+    background-size: 100% 100%;
+    transform: rotate(45deg);
+    animation: waveAnim 10s infinite ease-in-out;
+}
+
+@keyframes waveAnim {
+    0% {
+        transform: rotate(45deg) translateX(0);
+    }
+    50% {
+        transform: rotate(45deg) translateX(10%);
+    }
+    100% {
+        transform: rotate(45deg) translateX(0);
+    }
+}
