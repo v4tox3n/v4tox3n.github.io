@@ -3,8 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Tu tienda de neumáticos de confianza. Especialistas en venta, montaje y asesoramiento de neumáticos para todo tipo de vehículos. Calidad, seguridad y atención personalizada para que siempre ruedes con tranquilidad.">
+        <meta name="author" content="v4tox3n">
         <title>Michelon - Shop</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="/assets/others/logo.ico">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
 
     <body>
@@ -101,7 +105,7 @@
                 <h2 class="heading">Sobre Nosotros</h2>
                 
                 <div class="about-us-text">
-                    <p style="color: white; text-shadow: 2px 2px 5px rgba(255, 69, 0, 0.5);">Nuestra tienda de neumáticos no es solo un negocio: es el resultado de años de experiencia, esfuerzo y pasión por el mundo del motor. Detrás de cada servicio que ofrecemos, hay un equipo humano comprometido. Conoce a los tres socios fundadores que hacen posible que cada cliente se lleve el mejor producto y una atención de confianza:</p>
+                    <p style="color: white; text-shadow: 2px 2px 5px rgba(255, 69, 0, 0.5); font-weight: bold;">Nuestra tienda de neumáticos no es solo un negocio: es el resultado de años de experiencia, esfuerzo y pasión por el mundo del motor. Detrás de cada servicio que ofrecemos, hay un equipo humano comprometido. Conoce a los tres socios fundadores que hacen posible que cada cliente se lleve el mejor producto y una atención de confianza:</p>
                 </div>
 
                 <div class="content">
@@ -203,11 +207,43 @@
 
         <footer>
             <section class="footer">
-                
+                <div class="container">
+                    <div class="footer-logo">
+                        <div class="div-img" style="background-color: #f7f6f4;"><img src="/assets/others/logo2.png"/></div>
+                    </div>
+        
+                    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <div class="footer-links">
+                            <ul>
+                                <li><a href="#">Política de devoluciones</a></li>
+                                <li><a onclick="ripollet()">Visita nuestra tienda en Ripollet</a></li>
+                            </ul>
+                        </div>
+                        <br>
+                        <div class="footer-social">
+                            <a onclick="alert('No disponible');"><box-icon type='logo' class="1" name='facebook'></box-icon><span>Facebook</span></a>
+                            <a onclick="alert('No disponible');"><box-icon type='logo' class="2" name='instagram'></box-icon><span>Instagram</span></a>
+                            <a onclick="alert('No disponible');"><box-icon type='logo' class="3" name='twitter'></box-icon><span>Twitter</span></a>
+                        </div>
+                    </div>
+        
+                    <div class="footer-contact">
+                        <p>📍 C/ Afores Ripollet (Barcelona)</p>
+                        <!-- <p>📞 987 654 321</p> -->
+                        <p>✉️ michelon@mejoresneumaticos.com</p>
+                        <div><p>Expertos en neumáticos desde 1995. Calidad, confianza y seguridad en cada kilómetro.</p></div>
+                    </div>
+                </div>
+        
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Neumáticos Ripollet. Todos los derechos reservados.</p>
+                </div>
             </section>
         </footer>
+        
 
         <script src="script.js"></script>
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
         <script>
             let user_logged_in = false;
 

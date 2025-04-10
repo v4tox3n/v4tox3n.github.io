@@ -119,3 +119,23 @@ faqItems.forEach(item => {
     item.classList.toggle('active');
   });
 });
+
+function ripollet() {
+  alert('ripollet');
+}
+
+const first_social = document.querySelector('.uno');
+const second_social = document.querySelector('.dos');
+const third_social = document.querySelector('.tres');
+
+first_social.addEventListener('hover', () => {
+  first_social.classList.add('active');
+});
+
+second_social.addEventListener('hover', () => {
+  second_social.classList.add('active');
+});
+
+third_social.addEventListener('hover', () => {
+  third_social.classList.add('active');
+});
