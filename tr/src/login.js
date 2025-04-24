@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCmNe_E-RevWp10Bdraool5Sum70Jru_2o",
-  authDomain: "michelon-25446.firebaseapp.com",
-  projectId: "michelon-25446",
-  storageBucket: "michelon-25446.firebasestorage.app",
-  messagingSenderId: "160107546338",
-  appId: "1:160107546338:web:c64b888a03f287643d40bb",
-  measurementId: "G-YP5BLS81K3"
+    apiKey: "AIzaSyAE7dWiaNZtr-cMkkzVrCdL38hg3HeCSpQ",
+    authDomain: "michelon-antiguo.firebaseapp.com",
+    projectId: "michelon-antiguo",
+    storageBucket: "michelon-antiguo.firebasestorage.app",
+    messagingSenderId: "252285707734",
+    appId: "1:252285707734:web:705026efe2829c88c6b077",
+    measurementId: "G-BH8FSK2SG4"
 };
 
 const app = initializeApp(firebaseConfig);
@@ -19,7 +19,7 @@ const provider = new GoogleAuthProvider();
 document.querySelector('.google-btn').addEventListener('click', login_function);
 
 function login_function() {
-    alert('hola')
+    alert('hola');
     signInWithPopup(auth, provider)
     .then((result) => {
         const credential = GoogleAuthProvider.credentialFromResult(result);
