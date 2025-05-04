@@ -74,8 +74,9 @@ submit_register.addEventListener('click', async function(e) {
         await user.reload();
         const updatedUser = auth.currentUser;
         
-        alert(`Compte creat exitosament!\n\nNom: ${updatedUser.displayName}\nEmail: ${updatedUser.email}`);
-        
+        // alert(`Compte creat exitosament!\n\nNom: ${updatedUser.displayName}\nEmail: ${updatedUser.email}`);
+        alert(`Compte creat amb éxit ${updatedUser.displayName}! Inicia sessió ara per accedir al teu compte.`);
+
     } catch (error) {
         alert(`Error al registrar-se:\n${error.message}`);
     }

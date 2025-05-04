@@ -71,7 +71,7 @@ function generateSmartReply(msg) {
     if (lower.includes('hora')) return 'Ahora mismo son las ' + new Date().toLocaleTimeString();
     if (lower.includes('adiós') || lower.includes('hasta luego') || lower.includes('adios')) return '¡Hasta pronto! 👋';
 
-    return 'En estos momentos no puedo responder a eso, inténtalo más tarde 🤔';
+    return 'Ara mateix no puc respondre a això, intenta-ho més tard 🤔';
 }
 
 document.addEventListener('keydown', (e) => {

@@ -160,3 +160,131 @@ canvas {
     left: 0;
     z-index: 1;
 }
+
+.proyectos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.proyecto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proyecto .heading {
+    color: #fff;
+    font-family: 'Audiowide', cursive;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+    margin-bottom: 30px;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+.cuadrados-container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.cuadrado {
+    width: 300px;
+    height: 200px;
+    margin: 0;
+}
+
+.proyectos-horizontal {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    margin-top: 40px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.proyecto-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+}
+
+.heading {
+    color: #fff;
+    font-family: 'Audiowide', cursive;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+    margin-bottom: 25px;
+    font-size: 2em;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.mini-cuadrados {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.mini-cuadrado {
+    width: 280px;
+    /* height: 160px; */
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    border: 2px solid #fff;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mini-cuadrado:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+    border-color: #0ff;
+}
+
+.mini-cuadrado img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.separador-vertical {
+    width: 2px;
+    height: 160px;
+    background: linear-gradient(to bottom, transparent, rgba(0, 255, 255, 0.6), transparent);
+    margin: 0 10px;
+}
+
+.title {
+    margin-bottom: 60px;
+}
+
+@media (max-width: 768px) {
+    .proyectos-horizontal {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .proyecto-box {
+        width: 90%;
+    }
+    .separador-vertical {
+        height: 2px;
+        width: 80%;
+        background: linear-gradient(to right, 
+            transparent, 
+            rgba(0, 255, 255, 0.6), 
+            transparent);
+        margin: 20px 0;
+    }
+}
