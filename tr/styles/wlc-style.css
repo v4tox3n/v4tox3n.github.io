@@ -263,6 +263,7 @@ canvas {
     height: 160px;
     background: linear-gradient(to bottom, transparent, rgba(0, 255, 255, 0.6), transparent);
     margin: 0 10px;
+    background: transparent;
 }
 
 .title {

