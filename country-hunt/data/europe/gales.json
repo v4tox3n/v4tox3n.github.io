@@ -1,8 +1,0 @@
-{
-    "name": "Gales",
-    "continent": "europa",
-    "meters": "20700",
-    "sea": "yes",
-    "color": "rojo",
-    "flag": ["rojo", "blanco", "verde"]
-}

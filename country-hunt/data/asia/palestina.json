@@ -1,8 +1,0 @@
-{
-    "name": "Palestina",
-    "continent": "asia",
-    "meters": "6020",
-    "sea": "yes",
-    "color": "rojo",
-    "flag": ["rojo", "verde", "negro", "blanco"]
-}

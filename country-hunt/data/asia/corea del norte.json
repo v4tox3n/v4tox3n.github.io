@@ -1,8 +1,0 @@
-{
-    "name": "Corea del Norte",
-    "continent": "asia",
-    "meters": "120540",
-    "sea": "yes",
-    "color": "rojo",
-    "flag": ["rojo", "azul", "blanco"]
-}

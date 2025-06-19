@@ -1,8 +1,0 @@
-{
-    "name": "Angola",
-    "continent": "africa",
-    "meters": "1246700",
-    "sea": "yes",
-    "color": "rojo",
-    "flag": ["rojo", "negro", "amarillo"]
-}

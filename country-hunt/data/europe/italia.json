@@ -1,8 +1,0 @@
-{
-    "name": "Italia",
-    "continent": "europa",
-    "meters": "301000",
-    "sea": "yes",
-    "color": "verde",
-    "flag": ["verde", "blanco", "rojo"]
-}

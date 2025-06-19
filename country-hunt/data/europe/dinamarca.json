@@ -1,8 +1,0 @@
-{
-    "name": "Dinamarca",
-    "continent": "europa",
-    "meters": "43000",
-    "sea": "yes",
-    "color": "rojo",
-    "flag": ["rojo", "blanco"]
-}

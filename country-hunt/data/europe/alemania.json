@@ -1,8 +1,0 @@
-{
-    "name": "Alemania",
-    "continent": "europa",
-    "meters": "357000",
-    "sea": "yes",
-    "color": "negro",
-    "flag": ["negro", "rojo", "amarillo"]
-}

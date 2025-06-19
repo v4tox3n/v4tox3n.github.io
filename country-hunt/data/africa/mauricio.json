@@ -1,8 +1,0 @@
-{
-    "name": "Mauricio",
-    "continent": "africa",
-    "meters": "2040",
-    "sea": "yes",
-    "color": "rojo",
-    "flag": ["rojo", "azul", "amarillo", "verde"]
-}

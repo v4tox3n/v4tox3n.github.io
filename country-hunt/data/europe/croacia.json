@@ -1,8 +1,0 @@
-{
-    "name": "Croacia",
-    "continent": "europa",
-    "meters": "56500",
-    "sea": "yes",
-    "color": "rojo",
-    "flag": ["rojo", "blanco", "azul"]
-}

@@ -1,8 +1,0 @@
-{
-    "name": "Granada",
-    "continent": "américa",
-    "meters": "344",
-    "sea": "yes",
-    "color": "rojo",
-    "flag": ["rojo", "amarillo", "verde"]
-}
