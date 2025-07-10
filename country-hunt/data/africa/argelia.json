@@ -1,0 +1,8 @@
+{
+    "name": "Argelia",
+    "continent": "africa",
+    "meters": "2381741",
+    "sea": "yes",
+    "color": "verde",
+    "flag": ["verde", "blanco", "rojo"]
+}

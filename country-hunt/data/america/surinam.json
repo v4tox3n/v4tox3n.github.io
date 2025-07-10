@@ -1,0 +1,8 @@
+{
+    "name": "Surinam",
+    "continent": "américa",
+    "meters": "163820",
+    "sea": "yes",
+    "color": "verde",
+    "flag": ["verde", "rojo", "blanco", "amarillo"]
+}

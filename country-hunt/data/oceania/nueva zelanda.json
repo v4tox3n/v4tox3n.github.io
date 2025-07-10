@@ -1,0 +1,8 @@
+{
+    "name": "Nueva Zelanda",
+    "continent": "oceania",
+    "meters": "268021",
+    "sea": "yes",
+    "color": "azul",
+    "flag": ["azul", "rojo", "blanco"]
+}

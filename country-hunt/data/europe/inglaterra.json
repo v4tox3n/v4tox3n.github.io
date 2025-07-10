@@ -1,0 +1,8 @@
+{
+    "name": "Inglaterra",
+    "continent": "europa",
+    "meters": "130279",
+    "sea": "yes",
+    "color": "blanco",
+    "flag": ["blanco", "rojo"]
+}

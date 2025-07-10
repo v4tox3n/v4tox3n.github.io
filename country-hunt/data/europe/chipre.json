@@ -1,0 +1,8 @@
+{
+    "name": "Chipre",
+    "continent": "europa",
+    "meters": "9250",
+    "sea": "yes",
+    "color": "blanco",
+    "flag": ["blanco", "naranja", "verde"]
+}

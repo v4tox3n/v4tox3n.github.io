@@ -1,0 +1,8 @@
+{
+    "name": "Samoa",
+    "continent": "oceania",
+    "meters": "2842",
+    "sea": "yes",
+    "color": "rojo",
+    "flag": ["rojo", "azul", "blanco"]
+}

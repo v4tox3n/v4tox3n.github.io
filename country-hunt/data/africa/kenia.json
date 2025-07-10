@@ -1,0 +1,8 @@
+{
+    "name": "Kenia",
+    "continent": "africa",
+    "meters": "580367",
+    "sea": "yes",
+    "color": "rojo",
+    "flag": ["rojo", "negro", "blanco", "verde"]
+}

@@ -1,0 +1,8 @@
+{
+    "name": "Vanuatu",
+    "continent": "oceania",
+    "meters": "12189",
+    "sea": "yes",
+    "color": "rojo",
+    "flag": ["rojo", "verde", "amarillo", "negro"]
+}

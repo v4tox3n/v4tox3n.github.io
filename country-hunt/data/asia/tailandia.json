@@ -1,0 +1,8 @@
+{
+    "name": "Tailandia",
+    "continent": "asia",
+    "meters": "513120",
+    "sea": "yes",
+    "color": "rojo",
+    "flag": ["rojo", "azul", "blanco"]
+}

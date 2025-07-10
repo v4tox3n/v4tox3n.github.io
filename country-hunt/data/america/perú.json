@@ -1,0 +1,8 @@
+{
+    "name": "Perú",
+    "continent": "américa",
+    "meters": "1285216",
+    "sea": "yes",
+    "color": "rojo",
+    "flag": ["rojo", "blanco"]
+}

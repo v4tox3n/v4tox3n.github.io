@@ -1,0 +1,8 @@
+{
+    "name": "Colombia",
+    "continent": "américa",
+    "meters": "1141748",
+    "sea": "yes",
+    "color": "amarillo",
+    "flag": ["amarillo", "azul", "rojo"]
+}

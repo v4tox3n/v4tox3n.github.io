@@ -1,0 +1,8 @@
+{
+    "name": "Egipto",
+    "continent": "africa",
+    "meters": "1002450",
+    "sea": "yes",
+    "color": "rojo",
+    "flag": ["rojo", "blanco", "negro"]
+}

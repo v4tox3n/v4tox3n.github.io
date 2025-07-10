@@ -1,0 +1,8 @@
+{
+    "name": "Bolivia",
+    "continent": "américa",
+    "meters": "1098581",
+    "sea": "no",
+    "color": "rojo",
+    "flag": ["rojo", "amarillo", "verde"]
+}

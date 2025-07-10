@@ -1,0 +1,8 @@
+{
+    "name": "Estonia",
+    "continent": "europa",
+    "meters": "45200",
+    "sea": "yes",
+    "color": "azul",
+    "flag": ["azul", "negro", "blanco"]
+}

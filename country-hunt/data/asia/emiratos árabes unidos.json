@@ -1,0 +1,8 @@
+{
+    "name": "Emiratos Árabes Unidos",
+    "continent": "asia",
+    "meters": "83600",
+    "sea": "yes",
+    "color": "verde",
+    "flag": ["rojo", "verde", "blanco", "negro"]
+}

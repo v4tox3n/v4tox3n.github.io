@@ -1,0 +1,8 @@
+{
+    "name": "Sri Lanka",
+    "continent": "asia",
+    "meters": "65610",
+    "sea": "yes",
+    "color": "naranja",
+    "flag": ["verde", "naranja", "blanco"]
+}

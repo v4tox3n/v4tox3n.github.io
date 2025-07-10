@@ -1,0 +1,8 @@
+{
+    "name": "México",
+    "continent": "américa",
+    "meters": "1964375",
+    "sea": "yes",
+    "color": "verde",
+    "flag": ["verde", "blanco", "rojo"]
+}

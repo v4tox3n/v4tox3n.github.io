@@ -1,0 +1,8 @@
+{
+    "name": "Hungría",
+    "continent": "europa",
+    "meters": "93000",
+    "sea": "no",
+    "color": "rojo",
+    "flag": ["rojo", "blanco", "verde"]
+}

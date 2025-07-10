@@ -1,0 +1,8 @@
+{
+    "name": "Ghana",
+    "continent": "africa",
+    "meters": "238533",
+    "sea": "yes",
+    "color": "amarillo",
+    "flag": ["amarillo", "rojo", "verde", "negro"]
+}

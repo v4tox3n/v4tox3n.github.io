@@ -1,0 +1,8 @@
+{
+    "name": "Micronesia",
+    "continent": "oceania",
+    "meters": "702",
+    "sea": "yes",
+    "color": "azul",
+    "flag": ["azul", "blanco"]
+}

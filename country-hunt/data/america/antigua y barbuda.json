@@ -1,0 +1,8 @@
+{
+    "name": "Antigua y Barbuda",
+    "continent": "américa",
+    "meters": "440",
+    "sea": "yes",
+    "color": "rojo",
+    "flag": ["rojo", "azul", "amarillo", "blanco", "negro"]
+}

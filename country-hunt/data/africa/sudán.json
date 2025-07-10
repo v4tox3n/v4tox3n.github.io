@@ -1,0 +1,8 @@
+{
+    "name": "Sudán",
+    "continent": "africa",
+    "meters": "1861484",
+    "sea": "yes",
+    "color": "rojo",
+    "flag": ["rojo", "verde", "blanco", "negro"]
+}

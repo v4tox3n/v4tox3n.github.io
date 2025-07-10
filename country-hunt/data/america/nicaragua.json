@@ -1,0 +1,8 @@
+{
+    "name": "Nicaragua",
+    "continent": "américa",
+    "meters": "130375",
+    "sea": "yes",
+    "color": "azul",
+    "flag": ["azul", "blanco"]
+}

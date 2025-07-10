@@ -1,0 +1,8 @@
+{
+    "name": "Australia",
+    "continent": "oceania",
+    "meters": "7692024",
+    "sea": "yes",
+    "color": "rojo",
+    "flag": ["rojo", "azul", "blanco"]
+}

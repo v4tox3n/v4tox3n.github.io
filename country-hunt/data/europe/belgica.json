@@ -1,0 +1,8 @@
+{
+    "name": "Bélgica",
+    "continent": "europa",
+    "meters": "30500",
+    "sea": "yes",
+    "color": "negro",
+    "flag": ["negro", "amarillo", "rojo"]
+}

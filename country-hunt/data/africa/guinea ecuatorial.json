@@ -1,0 +1,8 @@
+{
+    "name": "Guinea Ecuatorial",
+    "continent": "africa",
+    "meters": "28051",
+    "sea": "yes",
+    "color": "verde",
+    "flag": ["verde", "blanco", "rojo"]
+}

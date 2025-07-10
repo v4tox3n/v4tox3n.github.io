@@ -1,0 +1,8 @@
+{
+    "name": "Belice",
+    "continent": "américa",
+    "meters": "22966",
+    "sea": "yes",
+    "color": "azul",
+    "flag": ["azul", "rojo", "blanco"]
+}

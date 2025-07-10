@@ -1,0 +1,8 @@
+{
+    "name": "Bahamas",
+    "continent": "américa",
+    "meters": "13943",
+    "sea": "yes",
+    "color": "azul",
+    "flag": ["azul", "amarillo", "negro"]
+}

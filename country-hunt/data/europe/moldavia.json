@@ -1,0 +1,8 @@
+{
+    "name": "Moldavia",
+    "continent": "europa",
+    "meters": "33800",
+    "sea": "no",
+    "color": "amarillo",
+    "flag": ["rojo", "amarillo", "azul"]
+}

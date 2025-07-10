@@ -1,0 +1,8 @@
+{
+    "name": "Fiyi",
+    "continent": "oceania",
+    "meters": "18274",
+    "sea": "yes",
+    "color": "azul",
+    "flag": ["azul", "rojo", "blanco", "amarillo"]
+}

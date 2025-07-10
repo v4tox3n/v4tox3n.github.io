@@ -1,0 +1,8 @@
+{
+    "name": "Uganda",
+    "continent": "africa",
+    "meters": "241038",
+    "sea": "no",
+    "color": "amarillo",
+    "flag": ["amarillo", "negro", "rojo"]
+}

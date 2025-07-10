@@ -1,0 +1,8 @@
+{
+    "name": "Cuba",
+    "continent": "américa",
+    "meters": "110860",
+    "sea": "yes",
+    "color": "azul",
+    "flag": ["azul", "blanco", "rojo"]
+}

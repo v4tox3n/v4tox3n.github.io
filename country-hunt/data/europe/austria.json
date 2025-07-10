@@ -1,0 +1,8 @@
+{
+    "name": "Austria",
+    "continent": "europa",
+    "meters": "83800",
+    "sea": "no",
+    "color": "rojo",
+    "flag": ["rojo", "blanco"]
+}

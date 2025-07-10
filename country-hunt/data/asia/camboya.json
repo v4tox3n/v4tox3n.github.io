@@ -1,0 +1,8 @@
+{
+    "name": "Camboya",
+    "continent": "asia",
+    "meters": "181035",
+    "sea": "yes",
+    "color": "rojo",
+    "flag": ["rojo", "azul", "blanco"]
+}

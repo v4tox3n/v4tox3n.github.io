@@ -1,0 +1,8 @@
+{
+    "name": "Liechtenstein",
+    "continent": "europa",
+    "meters": "160",
+    "sea": "no",
+    "color": "azul",
+    "flag": ["azul", "rojo", "amarillo"]
+}

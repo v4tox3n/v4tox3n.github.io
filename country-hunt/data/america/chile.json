@@ -1,0 +1,8 @@
+{
+    "name": "Chile",
+    "continent": "américa",
+    "meters": "756102",
+    "sea": "yes",
+    "color": "rojo",
+    "flag": ["rojo", "blanco", "azul"]
+}

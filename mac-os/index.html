@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mac OS - Simulator</title>
+        <link rel="icon" href="assets/icons/finder.png">
+        <link rel="stylesheet" href="styles/prism.css">
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+
+    <body>
+        <div class="root">
+            <header>
+                <div class="left">
+                    <div class="apple-logo"><img src="assets/icons/apple.png"></div>
+                    <button class="finder">Finder</button>
+                    <button class="file">File</button>
+                    <button class="edit">Edit</button>
+                    <button class="view">View</button>
+                    <button class="go">Go</button>
+                    <button class="window">Window</button>
+                    <button class="help">Help</button>
+                </div>
+
+                <div class="right">
+                    <div class="date">Sat Jan 20</div>
+                    <div class="hour">12:30 AM</div>
+                </div>
+            </header>
+
+            <div class="header">
+                <div class="options-header-button fin">
+                    <button class="normal">About Finder</button>
+                    <button class="normal">Prefereces</button>
+                    <button class="normal">Empty Trash</button>
+                    <button class="normal">Hide Finder</button>
+                    <button class="normal">Hide Others</button>
+                    <button class="no-accesible">Show All</button>
+                </div>
+                <div class="options-header-button fil">
+                    <button class="normal">About Finder</button>
+                    <button class="normal">Prefereces</button>
+                    <button class="normal">Empty Trash</button>
+                    <button class="normal">Hide Finder</button>
+                    <button class="normal">Hide Others</button>
+                    <button class="no-accesible">Show All</button>
+                </div>
+                <div class="options-header-button ed">
+                    <button class="normal">About Finder</button>
+                    <button class="normal">Prefereces</button>
+                    <button class="normal">Empty Trash</button>
+                    <button class="normal">Hide Finder</button>
+                    <button class="normal">Hide Others</button>
+                    <button class="no-accesible">Show All</button>
+                </div>
+                <div class="options-header-button vi">
+                    <button class="normal">About Finder</button>
+                    <button class="normal">Prefereces</button>
+                    <button class="normal">Empty Trash</button>
+                    <button class="normal">Hide Finder</button>
+                    <button class="normal">Hide Others</button>
+                    <button class="no-accesible">Show All</button>
+                </div>
+                <div class="options-header-button g">
+                    <button class="normal">About Finder</button>
+                    <button class="normal">Prefereces</button>
+                    <button class="normal">Empty Trash</button>
+                    <button class="normal">Hide Finder</button>
+                    <button class="normal">Hide Others</button>
+                    <button class="no-accesible">Show All</button>
+                </div>
+                <div class="options-header-button win">
+                    <button class="normal">About Finder</button>
+                    <button class="normal">Prefereces</button>
+                    <button class="normal">Empty Trash</button>
+                    <button class="normal">Hide Finder</button>
+                    <button class="normal">Hide Others</button>
+                    <button class="no-accesible">Show All</button>
+                </div>
+                <div class="options-header-button hel">
+                    <button class="normal">About Finder</button>
+                    <button class="normal">Prefereces</button>
+                    <button class="normal">Empty Trash</button>
+                    <button class="normal">Hide Finder</button>
+                    <button class="normal">Hide Others</button>
+                    <button class="no-accesible">Show All</button>
+                </div>
+            </div>
+
+            <div class="allSections">
+                <section class="galery-section">
+                    <div class="navbar" draggable="true">
+                        <div onclick="cerrarVentanaGall()" class="red options" style="background-color: orangered;"></div>
+                        <div class="orange options" style="background-color: orange;"></div>
+                        <div class="green options" style="background-color: lime;"></div>
+                    </div>
+                    <div class="content">
+                        <div class="row1">
+                            <div class="date">July 2023</div>
+                            <div class="galery-content">
+                                <img src="assets/galery/row1/montana1.png">
+                                <img src="assets/galery/row1/playa.png">
+                                <img src="assets/galery/row1/montana2.png">
+                                <img src="assets/galery/row1/piscina.png">
+                            </div>
+                        </div>
+                        <div class="row2">
+                            <div class="date">May 2023</div>
+                            <div class="galery-content">
+                                <img src="assets">
+                                <img src="assets">
+                                <img src="assets">
+                                <img src="assets">
+                            </div>
+                        </div>
+                        <div class="row3">
+                            <div class="date">April 2023</div>
+                            <div class="galery-content">
+                                <img src="assets/galery/row3/arboles.png">
+                                <img src="assets/galery/row3/ciudad.png">
+                                <img src="assets">
+                                <img src="assets/galery/row3/flores.png">
+                            </div>
+                        </div>
+                        <div class="row4">
+                            <div class="date">Decembre 2022</div>
+                            <div class="galery-content">
+                                <img src="assets/galery/row4/navidad.png">
+                                <img src="assets/galery/row4/nieve.png">
+                                <img src="assets">
+                                <img src="assets">
+                            </div>
+                        </div>
+                        <div class="row5">
+                            <div class="date">Septembre 2022</div>
+                            <div class="galery-content">
+                                <img src="assets">
+                                <img src="assets">
+                                <img src="assets">
+                                <img src="assets">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="calculator-section">
+                    <div class="navbar" draggable="true" style="background-color: #a1a1a1; border-radius: 0px;">
+                        <div onclick="cerrarVentanaCalc()" class="red options" style="background-color: orangered;"></div>
+                        <div class="orange options" style="background-color: orange;"></div>
+                        <div class="green options" style="background-color: lime;"></div>
+                    </div>
+                    <div class="result" style="background-color: #a1a1a1;">0</div>
+                    <div class="content2">
+                        <div class="row0">
+                            <button class="gray">AC</button>
+                            <button class="gray">+</button>
+                            <button class="gray">%</button>
+                            <button class="orange">/</button>
+                        </div>
+                        <div class="row1">
+                            <button>7</button>
+                            <button>8</button>
+                            <button>9</button>
+                            <button class="orange">x</button>
+                        </div>
+                        <div class="row2">
+                            <button>4</button>
+                            <button>5</button>
+                            <button>6</button>
+                            <button class="orange">-</button>
+                        </div>
+                        <div class="row3">
+                            <button>1</button>
+                            <button>2</button>
+                            <button>3</button>
+                            <button class="orange">+</button>
+                        </div>
+                        <div class="row4">
+                            <button class="special">0</button>
+                            <button>.</button>
+                            <button class="orange">=</button>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="safary-section">
+                    <div class="browser">
+                        <div class="navbar">
+                            <div onclick="cerrarVentanaSaf()" class="red options" style="background-color: orangered;"></div>
+                            <div class="orange options" style="background-color: orange;"></div>
+                            <div class="green options" style="background-color: lime;"></div>
+                            <input type="text" class="search-input" placeholder="Search...">
+                            <button onclick="searchSafaryInGoogle()" class="button go-button"></button>
+                        </div>
+                        <div class="browser-content">
+                            <br>
+                            <br>
+                            <br>
+                            <div class="notice-safary">
+                                <div class="notice-title">Aún no hay noticias</div>
+                                <div class="notice-content"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="messenger-section">
+                    <div class="navbar">
+                        <div onclick="cerrarVentanaMes()" class="red options" style="background-color: orangered;"></div>
+                        <div class="orange options" style="background-color: orange;"></div>
+                        <div class="green options" style="background-color: lime;"></div>
+                    </div>
+
+                    <div class="messenger-content">
+                        <div class="allContacts">
+                            <div class="contact david-contact">
+                                <img src="assets/messenger/icon-contact.jpg" class="photo-icon">
+                                <p>David</p>
+                            </div>
+                            <div class="contact max-contact">
+                                <img src="assets/messenger/icon-contact.jpg" class="photo-icon">
+                                <p>Max</p>
+                            </div>
+
+                            <div class="contact clara-contact">
+                                <img src="assets/messenger/icon-contact.jpg" class="photo-icon">
+                                <p>Clara</p>
+                            </div>
+                            <div class="contact lara-contact">
+                                <img src="assets/messenger/icon-contact.jpg" class="photo-icon">
+                                <p>Lara</p>
+                            </div>
+                            <div class="contact paul-contact">
+                                <img src="assets/messenger/icon-contact.jpg" class="photo-icon">
+                                <p>Paul</p>
+                            </div>
+                            <div class="contact petter-contact">
+                                <img src="assets/messenger/icon-contact.jpg" class="photo-icon">
+                                <p>Petter</p>
+                            </div>
+                            <div class="contact joanne-contact">
+                                <img src="assets/messenger/icon-contact.jpg" class="photo-icon">
+                                <p>Joanne</p>
+                            </div>
+                        </div>
+
+                        <div class="chats">
+                            <div class="c david active">
+                                <div class="contact-name">
+                                    <p>David</p>
+                                    <div>
+                                        <img src="assets/messenger/normal-call.png">
+                                        <img src="assets/messenger/videocall.png">
+                                        <img src="assets/messenger/three-points.png">
+                                    </div>
+                                </div>
+
+                                <div class="text-space">
+                                    <div class="you">Do you want to meet on Sunday</div>
+                                    <div class="other">I'll go to London on Sunday, so cannot meet you on Sunday.</div>
+                                    <div class="other">The next Tuesday I'm able to meet, do you want to see each other on Tuesday?</div>
+                                    <div class="you">Ok, I'm able on Tuesday. Let's meet at 6pm at the sports center.</div>
+                                    <div class="other">Sure, find! :)</div>
+                                </div>
+                            </div>
+
+                            <div class="c max">
+                                <div class="contact-name">
+                                    <p>Max</p>
+                                    <div>
+                                        <img src="assets/messenger/normal-call.png">
+                                        <img src="assets/messenger/videocall.png">
+                                        <img src="assets/messenger/three-points.png">
+                                    </div>
+                                </div>
+
+                                <div class="text-space">
+                                    <div class="you">Hey Max! What's up?</div>
+                                    <div class="other">Max? Are u there??</div>
+                                    <div class="other">Hello??????</div>
+                                    <div class="you">Why you see my messages and you don't answer me!!??</div>
+                                    <div class="other">I don't want to be your friend anymore, don't text me!</div>
+                                </div>
+                            </div>
+
+                            <div class="c clara">
+                                <div class="contact-name">
+                                    <p>Clara</p>
+                                    <div>
+                                        <img src="assets/messenger/normal-call.png">
+                                        <img src="assets/messenger/videocall.png">
+                                        <img src="assets/messenger/three-points.png">
+                                    </div>
+                                </div>
+
+                                <div class="text-space">
+                                    <div class="other">Hi! Do u know what do we have to do for French homework?</div>
+                                    <div class="you">Yes, in 5 minutes I arrive home and I say you what you have to do for homework.</div>
+                                    <div class="other">No problem.</div>
+                                    <div class="you">Page 35 exercise 4, 5 and 8.</div>
+                                    <div class="other">Thank u very much!!</div>
+                                </div>
+                            </div>
+
+                            <div class="c lara">
+                                <div class="contact-name">
+                                    <p>Lara</p>
+                                    <div>
+                                        <img src="assets/messenger/normal-call.png">
+                                        <img src="assets/messenger/videocall.png">
+                                        <img src="assets/messenger/three-points.png">
+                                    </div>
+                                </div>
+
+                                <div class="text-space">
+                                    <div class="other"></div>
+                                    <div class="you"></div>
+                                    <div class="other"></div>
+                                    <div class="you"></div>
+                                    <div class="other"></div>
+                                </div>
+                            </div>
+
+                            <div class="c paul">
+                                <div class="contact-name">
+                                    <p>Paul</p>
+                                    <div>
+                                        <img src="assets/messenger/normal-call.png">
+                                        <img src="assets/messenger/videocall.png">
+                                        <img src="assets/messenger/three-points.png">
+                                    </div>
+                                </div>
+
+                                <div class="text-space">
+                                    <div class="other"></div>
+                                    <div class="you"></div>
+                                    <div class="other"></div>
+                                    <div class="you"></div>
+                                    <div class="other"></div>
+                                </div>
+                            </div>
+
+                            <div class="c petter">
+                                <div class="contact-name">
+                                    <p>Petter</p>
+                                    <div>
+                                        <img src="assets/messenger/normal-call.png">
+                                        <img src="assets/messenger/videocall.png">
+                                        <img src="assets/messenger/three-points.png">
+                                    </div>
+                                </div>
+
+                                <div class="text-space">
+                                    <div class="other"></div>
+                                    <div class="you"></div>
+                                    <div class="other"></div>
+                                    <div class="you"></div>
+                                    <div class="other"></div>
+                                </div>
+                            </div>
+
+                            <div class="c joanne">
+                                <div class="contact-name">
+                                    <p>Joanne</p>
+                                    <div>
+                                        <img src="assets/messenger/normal-call.png">
+                                        <img src="assets/messenger/videocall.png">
+                                        <img src="assets/messenger/three-points.png">
+                                    </div>
+                                </div>
+
+                                <div class="text-space">
+                                    <div class="other"></div>
+                                    <div class="you"></div>
+                                    <div class="other"></div>
+                                    <div class="you"></div>
+                                    <div class="other"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="calendar-section">
+                    <div class="special-navbar navbar">
+                        <div class="ocmm">
+                            <div onclick="cerrarVentanaCal()" class="red options" style="background-color: orangered;"></div>
+                            <div class="orange options" style="background-color: orange;"></div>
+                            <div class="green options" style="background-color: lime;"></div>
+                        </div>
+                        
+                        <div class="bf">
+                            <button onclick="mostrarMesAnterior()" class="day-before"><</button>
+                            <button class="month" id="currentMonth">Enero</button>
+                            <button onclick="mostrarMesSiguiente()" class="day-after">></button>
+                        </div>
+                    </div>
+
+                    <div class="calendar-content">
+                        <table class="table-calendar">
+                            <thead>
+                                <tr>
+                                    <th>Mon</th>
+                                    <th>Tue</th>
+                                    <th>Wed</th>
+                                    <th>Thu</th>
+                                    <th>Fri</th>
+                                    <th>Sat</th>
+                                    <th>Sun</th>
+                                </tr>
+                            </thead>
+                            <tbody id="calendarBody"></tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section class="wallpaper-section">
+                    <div class="navbar">
+                        <div onclick="cerrarVentanaWal()" class="red options" style="background-color: orangered;"></div>
+                        <div class="orange options" style="background-color: orange;"></div>
+                        <div class="green options" style="background-color: lime;"></div>
+                    </div>
+
+                    <div class="wallpaper-content">
+                        <h3>Select your wallpaper</h3>
+                        <div class="allWallpapers">
+                            <div class="wall-row1">
+                                <img src="assets/wallpapers/wallpaper1.png" onclick="changeBackground('assets/wallpapers/wallpaper1.png')">
+                                <img src="assets/wallpapers/wallpaper2.png" onclick="changeBackground('assets/wallpapers/wallpaper2.png')">
+                                <img src="assets/wallpapers/wallpaper3.png" onclick="changeBackground('assets/wallpapers/wallpaper3.png')">
+                            </div>
+                            <div class="wall-row2">
+                                <img src="assets/wallpapers/wallpaper4.png" onclick="changeBackground('assets/wallpapers/wallpaper4.png')">
+                                <img src="assets/wallpapers/wallpaper5.png" onclick="changeBackground('assets/wallpapers/wallpaper5.png')">
+                                <img src="assets/wallpapers/wallpaper6.png" onclick="changeBackground('assets/wallpapers/wallpaper6.png')">
+                            </div>
+                            <div class="wall-row3">
+                                <img src="assets/wallpapers/wallpaper7.png" onclick="changeBackground('assets/wallpapers/wallpaper7.png')">
+                                <img src="assets/wallpapers/wallpaper8.png" onclick="changeBackground('assets/wallpapers/wallpaper8.png')">
+                                <img src="assets/wallpapers/wallpaper9.png" onclick="changeBackground('assets/wallpapers/wallpaper9.png')">
+                            </div>
+                            <div class="wall-row4">
+                                <img src="assets/wallpapers/wallpaper10.png" onclick="changeBackground('assets/wallpapers/wallpaper10.png')">
+                                <img src="assets/wallpapers/wallpaper11.png" onclick="changeBackground('assets/wallpapers/wallpaper11.png')">
+                                <img src="assets/wallpapers/wallpaper12.png" onclick="changeBackground('assets/wallpapers/wallpaper12.png')">
+                            </div>
+                            <div class="wall-row5">
+                                <img src="assets/wallpapers/wallpaper13.png" onclick="changeBackground('assets/wallpapers/wallpaper13.png')">
+                                <img src="assets/wallpapers/wallpaper14.png" onclick="changeBackground('assets/wallpapers/wallpaper14.png')">
+                                <img src="assets/wallpapers/wallpaper15.png" onclick="changeBackground('assets/wallpapers/wallpaper15.png')">
+                            </div>
+                            <div class="wall-row6">
+                                <img src="assets/wallpapers/wallpaper16.png" onclick="changeBackground('assets/wallpapers/wallpaper16.png')">
+                                <img src="assets/wallpapers/wallpaper17.png" onclick="changeBackground('assets/wallpapers/wallpaper17.png')">
+                                <img src="assets/wallpapers/wallpaper18.png" onclick="changeBackground('assets/wallpapers/wallpaper18.png')">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="apple-store-section">
+                    <div class="navbar">
+                        <div onclick="cerrarVentanaAPS()" class="red options" style="background-color: orangered;"></div>
+                        <div class="orange options" style="background-color: orange;"></div>
+                        <div class="green options" style="background-color: lime;"></div>
+                    </div>
+
+                    <div class="apple-store-content">
+                        <div>
+                            <div>
+                                <img src="assets/apple-store/tiktok-icon.png">
+                                <h5>Tik Tok</h5>
+                            </div>
+                            <button>Obtener</button>
+                        </div>
+
+                        <div>
+                            <div>
+                                <img src="assets/apple-store/instagram-icon.jpeg">
+                                <h5>Instagram</h5>
+                            </div>
+                            <button>Obtener</button>
+                        </div>
+
+                        <div>
+                            <div>
+                                <img src="assets/apple-store/twitch-icon.png">
+                                <h5>Twitch</h5>
+                            </div>
+                            <button>Obtener</button>
+                        </div>
+
+                        <div>
+                            <div>
+                                <img src="assets/apple-store/google-maps-icon.png">
+                                <h5>Google Maps</h5>
+                            </div>
+                            <button>Obtener</button>
+                        </div>
+
+                        <div>
+                            <div>
+                                <img src="assets/apple-store/suika-icon.jpeg">
+                                <h5>Suika Game</h5>
+                            </div>
+                            <button>Obtener</button>
+                        </div>
+
+                        <div>
+                            <div>
+                                <img src="assets/apple-store/minecraft-icon.jpeg">
+                                <h5>Minecraft</h5>
+                            </div>
+                            <button>Obtener</button>
+                        </div>
+
+                        <div>
+                            <div>
+                                <img src="assets/apple-store/photoshop-icon.png">
+                                <h5>Photoshop</h5>
+                            </div>
+                            <button>Obtener</button>
+                        </div>
+
+                        <div>
+                            <div>
+                                <img src="assets/apple-store/spotify.png">
+                                <h5>Spotify</h5>
+                            </div>
+                            <button>Obtener</button>
+                        </div>
+                </section>
+
+                <section class="vscode-section">
+                    <div class="navbar">
+                        <div onclick="cerrarVentanaVSC()" class="red options" style="background-color: orangered;"></div>
+                        <div class="orange options" style="background-color: orange;"></div>
+                        <div class="green options" style="background-color: lime;"></div>
+                    </div>
+
+                    <div class="vscode-content">
+                        <div class="editor" contenteditable="true" spellcheck="false">
+                            <pre>
+                                <code class="language-javascript">
+// Puedes editar el documento
+// Para saltar de línea para escribir pulsa mayus + enter
+// Si pulsas solo enter saldrá una línea que queda muy mal
+
+import { tick } from 'svelte';
+export function portal(el: HTMLElement, target: HTMLElement | string = 'body') {
+  let targetEl: HTMLElement;
+
+  async function update(newTarget: HTMLElement | string) {
+    target = newTarget;
+
+    if (typeof target === 'string') {
+      targetEl = document.querySelector(target);
+
+      if (targetEl === null) {
+        await tick();
+        targetEl = document.querySelector(target);
+      }
+
+      if (targetEl === null) {
+        throw new Error(`No element found matching css selector: "${target}"`);
+      }
+    } else if (target instanceof HTMLElement) {
+      targetEl = target;
+    } else {
+      throw new TypeError(
+        `Unknown portal target type: ${
+          target === null ? 'null' : typeof target
+        }. Allowed types: string (CSS selector) or HTMLElement.`,
+      );
+    }
+    targetEl.appendChild(el);
+    el.hidden = false;
+  }
+
+  function destroy() {
+    if (el.parentNode) {
+      el.parentNode.removeChild(el);
+    }
+  }
+
+  update(target);
+
+  return {
+    update,
+    destroy,
+  };
+}
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <footer>
+                <div class="container">
+                    <img src="assets/icons/finder.png" class="finder-img">
+                    <img src="assets/icons/wallpaper.png" class="wallpaper-img">
+                    <img src="assets/icons/calculator.png" class="calculator-img">
+                    <img src="assets/icons/calendar.png" class="calendar-img">
+                    <img src="assets/icons/vscode.png" class="vscode-img">
+                    <img src="assets/icons/apple-store.png" class="apple-store-img">
+                    <img src="assets/icons/galery.png" class="galery-img">
+                    <a href="https://github.com/adriiiaa12" target="_blank"><img src="assets/icons/github.png" class="github-img"></a>                    
+                    <img src="assets/icons/messenger.png" class="messenger-img">
+                    <img src="assets/icons/safary.png" class="safary-img">
+                </div>
+            </footer>
+        </div>
+
+        <script src="scr/prism.js"></script> 
+        <script src="scr/script.js"></script>
+    </body>
+</html>

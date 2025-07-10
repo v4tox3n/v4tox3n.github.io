@@ -1,0 +1,8 @@
+{
+    "name": "Portugal",
+    "continent": "europa",
+    "meters": "92200",
+    "sea": "yes",
+    "color": "verde",
+    "flag": ["verde", "rojo", "amarillo"]
+}

@@ -1,0 +1,8 @@
+{
+    "name": "Palaos",
+    "continent": "oceania",
+    "meters": "459",
+    "sea": "yes",
+    "color": "azul",
+    "flag": ["azul", "amarillo"]
+}

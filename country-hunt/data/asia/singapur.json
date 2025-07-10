@@ -1,0 +1,8 @@
+{
+    "name": "Singapur",
+    "continent": "asia",
+    "meters": "725",
+    "sea": "yes",
+    "color": "rojo",
+    "flag": ["rojo", "blanco"]
+}

@@ -1,0 +1,8 @@
+{
+    "name": "Iraq",
+    "continent": "asia",
+    "meters": "438317",
+    "sea": "no",
+    "color": "verde",
+    "flag": ["rojo", "blanco", "negro", "verde"]
+}

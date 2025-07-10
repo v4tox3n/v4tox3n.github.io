@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Country Hunt</title>
+        <link rel="icon" href="">
+        <link rel="stylesheet" href="styles/styles.css">
+        <!-- MEDIAQUERYES -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">🌍 Country Hunt</div>
+            <nav>
+              <a href="#home">Home</a>
+              <a href="#game">Play</a>
+              <a href="#game-modes">Game Modes</a>
+              <a href="#how-to-play">How to Play</a>
+              <a href="#game-examples">Game Examples</a>
+              <div class="search-icon">🔍</div> 
+            </nav>
+        </header>
+
+        <section class="home-section" id="home">
+            <div class="section-content">
+                <h1 class="game-title">Country Hunt</h1>
+                <a href="#game" class="play-button" id="playButton">¡Jugar Ahora!</a>
+            </div>
+        </section>
+
+        <section class="game-section game-background" id="game">
+            <div class="bubble small"></div>
+            <div class="bubble medium"></div>
+            <div class="bubble large"></div>
+            <div class="bubble small"></div>
+            <div class="bubble medium"></div>
+            <div class="bubble large"></div>
+            <div class="bubble small"></div>
+            <div class="bubble medium"></div>
+            <div class="bubble large"></div>
+            <div class="bubble small"></div>
+            <div class="bubble medium"></div>
+            <div class="bubble large"></div>
+            <div class="bubble small"></div>
+            <div class="bubble medium"></div>
+            <div class="bubble large"></div>
+            <div class="bubble small"></div>
+            <div class="bubble medium"></div>
+            <div class="bubble large"></div>
+
+            <div class="game-content">
+                <div class="header">
+                    <nav>
+                        <h1 class="heading">GUESS THE COUNTRY</h1>
+                    </nav>
+                </div>
+        
+                <div class="div">
+                    <input type="text" class="searchInput" placeholder="Intento 1 de 10">
+                    <ul class="results"></ul>
+                </div>
+                <div class="answers-container"></div>
+            </div>
+        </section>
+
+        <section class="game-mode-section" id="game-modes">
+            <div class="particle" style="top: 10%; left: 20%; animation-delay: 0s;"></div>
+            <div class="particle" style="top: 30%; left: 70%; animation-delay: 1s;"></div>
+            <div class="particle" style="top: 50%; left: 40%; animation-delay: 2s;"></div>
+            <div class="particle" style="top: 80%; left: 80%; animation-delay: 3s;"></div>
+            
+            <div class="particle" style="top: 5%; left: 30%; animation-delay: 0s;"></div>
+            <div class="particle" style="top: 20%; left: 60%; animation-delay: 1s;"></div>
+            <div class="particle" style="top: 40%; left: 50%; animation-delay: 2s;"></div>
+            <div class="particle" style="top: 70%; left: 90%; animation-delay: 3s;"></div>
+
+            <div class="wave"></div>
+
+            <div class="header">
+                <nav>
+                    <h1 class="heading">Game Modes</h1>
+                </nav>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="game-mode-container">
+                <div class="continent-card active">
+                  <div class="continent-name">Europa</div>
+                  <div class="toggle-container europa-toggle active">
+                    <div class="toggle"></div>
+                  </div>
+                </div>
+
+                <div class="continent-card active">
+                  <div class="continent-name">África</div>
+                  <div class="toggle-container africa-toggle active">
+                    <div class="toggle"></div>
+                  </div>
+                </div>
+
+                <div class="continent-card active">
+                  <div class="continent-name">Asia</div>
+                  <div class="toggle-container asia-toggle active">
+                    <div class="toggle"></div>
+                  </div>
+                </div>
+
+                <div class="continent-card active">
+                  <div class="continent-name">América</div>
+                  <div class="toggle-container america-toggle active">
+                    <div class="toggle"></div>
+                  </div>
+                </div>
+
+                <div class="continent-card inactive">
+                  <div class="continent-name">Oceanía</div>
+                  <div class="toggle-container oceania-toggle inactive">
+                    <div class="toggle"></div>
+                  </div>
+                </div>
+              </div>
+        </section>
+
+        <section class="home2-section" id="how-to-play"></section>
+        <section class="home2-section" id="game-examples"></section>
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
