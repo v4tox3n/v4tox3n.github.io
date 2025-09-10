@@ -1,8 +1,0 @@
-{
-    "name": "Costa Rica",
-    "continent": "américa",
-    "meters": "51100",
-    "sea": "yes",
-    "color": "rojo",
-    "flag": ["rojo", "blanco", "azul"]
-}

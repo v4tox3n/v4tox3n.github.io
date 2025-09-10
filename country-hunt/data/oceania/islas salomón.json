@@ -1,8 +1,0 @@
-{
-    "name": "Islas Salomón",
-    "continent": "oceania",
-    "meters": "28896",
-    "sea": "yes",
-    "color": "azul",
-    "flag": ["azul", "amarillo", "verde", "blanco"]
-}

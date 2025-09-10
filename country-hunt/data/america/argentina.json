@@ -1,8 +1,0 @@
-{
-    "name": "Argentina",
-    "continent": "américa",
-    "meters": "2780000",
-    "sea": "yes",
-    "color": "azul",
-    "flag": ["azul", "blanco", "amarillo"]
-}

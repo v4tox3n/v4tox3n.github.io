@@ -1,8 +1,0 @@
-{
-    "name": "China",
-    "continent": "asia",
-    "meters": "9600000",
-    "sea": "yes",
-    "color": "rojo",
-    "flag": ["rojo", "amarillo"]
-}

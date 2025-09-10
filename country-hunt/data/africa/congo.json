@@ -1,8 +1,0 @@
-{
-    "name": "Congo",
-    "continent": "africa",
-    "meters": "342000",
-    "sea": "yes",
-    "color": "verde",
-    "flag": ["verde", "amarillo", "rojo"]
-}

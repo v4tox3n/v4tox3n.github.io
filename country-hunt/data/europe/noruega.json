@@ -1,8 +1,0 @@
-{
-    "name": "Noruega",
-    "continent": "europa",
-    "meters": "385000",
-    "sea": "yes",
-    "color": "rojo",
-    "flag": ["rojo", "azul", "blanco"]
-}

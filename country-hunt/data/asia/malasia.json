@@ -1,8 +1,0 @@
-{
-    "name": "Malasia",
-    "continent": "asia",
-    "meters": "330803",
-    "sea": "yes",
-    "color": "amarillo",
-    "flag": ["amarillo", "rojo", "blanco", "azul"]
-}

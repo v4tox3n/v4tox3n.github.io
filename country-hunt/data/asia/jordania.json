@@ -1,8 +1,0 @@
-{
-    "name": "Jordania",
-    "continent": "asia",
-    "meters": "89342",
-    "sea": "yes",
-    "color": "rojo",
-    "flag": ["rojo", "blanco", "verde", "negro"]
-}

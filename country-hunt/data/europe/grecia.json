@@ -1,8 +1,0 @@
-{
-    "name": "Grecia",
-    "continent": "europa",
-    "meters": "132000",
-    "sea": "yes",
-    "color": "azul",
-    "flag": ["azul", "blanco"]
-}

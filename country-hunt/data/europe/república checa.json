@@ -1,8 +1,0 @@
-{
-    "name": "República Checa",
-    "continent": "europa",
-    "meters": "78800",
-    "sea": "no",
-    "color": "rojo",
-    "flag": ["rojo", "blanco", "azul"]
-}

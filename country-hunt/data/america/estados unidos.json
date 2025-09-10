@@ -1,8 +1,0 @@
-{
-    "name": "Estados Unidos",
-    "continent": "américa",
-    "meters": "9833517",
-    "sea": "yes",
-    "color": "rojo",
-    "flag": ["rojo", "blanco", "azul"]
-}

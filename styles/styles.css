@@ -1047,3 +1047,8 @@ header.header nav ul li span.active {
     font-weight: 500;
     margin-left: 0.5rem;
 }
+
+.escalar {
+    transform: scale(0.6);
+    margin-top: -10px;
+}
