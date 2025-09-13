@@ -367,8 +367,8 @@ header.header nav ul li span.active {
 }
 
 .project-card {
-    width: 17rem;
-    height: 17rem;
+    width: 15rem;
+    height: 22rem;
     border-radius: 0.8rem;
     display: flex;
     flex-direction: column;
@@ -391,24 +391,27 @@ header.header nav ul li span.active {
 .card-1 {
     top: -30rem;
     left: -15rem;
-    background: #90d2ec;
-    transform: rotate(-10deg);
+    /* background: #90d2ec; */
+    background: transparent;
+    transform: rotate(-13deg);
     transition: all 0.3s ease-in-out;
 }
 
 .card-2 {
     top: -12rem;
     left: 0;
-    background: #84d884;
-    transform: rotate(5deg);
+    /* background: #84d884; */
+    background: transparent;
+    transform: rotate(0deg);
     transition: all 0.3s ease-in-out;
 }
 
 .card-3 {
     top: -10rem;
     left: 15rem;
-    background: #C9A0DC;
-    transform: rotate(10deg);
+    /* background: #C9A0DC; */
+    background: transparent;
+    transform: rotate(15deg);
     transition: all 0.3s ease-in-out;
 }
 
@@ -430,17 +433,17 @@ header.header nav ul li span.active {
 
 .card-1:hover {
     box-shadow: 0 0 50px #90d2ec;
-    transform: rotate(-10deg) scale(1.1);
+    transform: rotate(-13deg) scale(1.1);
 }
 
 .card-2:hover {
     box-shadow: 0 0 50px #84d884;
-    transform: rotate(5deg) scale(1.1);
+    transform: rotate(0deg) scale(1.1);
 }
 
 .card-3:hover {
     box-shadow: 0 0 50px #C9A0DC;
-    transform: rotate(10deg) scale(1.1);
+    transform: rotate(15deg) scale(1.1);
 }
 
 .card-4:hover {
@@ -756,7 +759,13 @@ header.header nav ul li span.active {
 
 .tl.active {
     top: 90px;
+    animation: tlActive 1s ease;
     transition: all 0.3s ease-in-out;
+}
+
+@keyframes tlActive {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 .theme {
@@ -840,10 +849,17 @@ header.header nav ul li span.active {
     color: black;
 }
 
-.project-card a img {
+/* .project-card a img {
     width: 80%;
     height: auto;
+} */
+
+.project-card a img {
+    width: 17rem;
+    height: auto;
 }
+
+
 
 .section-about div {
     display: flex;
@@ -1051,4 +1067,56 @@ header.header nav ul li span.active {
 .escalar {
     transform: scale(0.6);
     margin-top: -10px;
+}
+
+.cog-wheel-container:hover .cog-wheel {
+    animation: rotateWheelConf 1s ease-out;
+    transition: all .3s ease;
+}
+
+.cog-wheel-container .cog-wheel {
+    animation: rotateWheelReverse 1s ease-out;
+    transition: all .3s ease;
+}
+
+@keyframes rotateWheelConf {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-270deg);
+    }
+}
+
+@keyframes rotateWheelReverse {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(270deg);
+    }
+}
+
+.cog-wheel-container:hover .x.active {
+    animation: xAnimation .3s ease-in-out;
+    transition: all .3s ease;
+}
+
+@keyframes xAnimation {
+    0% {
+        transform: scale(1) rotate(-0deg);
+    } 25% {
+        transform: scale(1.15) rotate(-45deg);
+    } 50% {
+        transform: scale(0.85) rotate(-90);
+    } 75% {
+        transform: scale(1.15) rotate(-135deg);
+    } 100% {
+        transform: scale(1) rotate(-180deg);
+    }
+}
+
+.button-more {
+    width: 100%;
+    /* background: aqua; */
 }

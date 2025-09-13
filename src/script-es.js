@@ -19,10 +19,8 @@ let project_card = document.querySelectorAll('.project-card');
 
 project_card.forEach((e, index) => {
     e.addEventListener('click', function() {
-        if (index === 0 || index === 1) {
+        if (index === 0 || index === 1 || index === 2) {
             
-        } else if (index === 2) {
-            alert("Este proyecto estará disponible pronto");
         } else {
             alert("Este proyecto aún no está disponible");
         }
