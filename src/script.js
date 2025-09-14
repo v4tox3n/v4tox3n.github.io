@@ -213,3 +213,42 @@ wheel_config.addEventListener('click', function() {
     icon1.classList.toggle('active');
     icon2.classList.toggle('active');
 })
+
+const animAbout = document.querySelectorAll(".animate-on-scroll");
+const animServicesRight = document.querySelectorAll(".animate-on-scroll-right");
+const animServicesLeft = document.querySelectorAll(".animate-on-scroll-left");
+const animContactInputs = document.querySelectorAll(".animate-on-scroll-input");
+
+const observer2Options = {
+    root: null,
+    threshold: 0.6
+};
+
+const observer2 = new IntersectionObserver((entries, observer2) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer2.unobserve(entry.target);
+        }
+    });
+}, observer2Options);
+
+animAbout.forEach(element => {
+    element.classList.add('hidden'); 
+    observer2.observe(element);
+});
+
+animServicesRight.forEach(element => {
+    element.classList.add('hidden'); 
+    observer2.observe(element);
+});
+
+animServicesLeft.forEach(element => {
+    element.classList.add('hidden'); 
+    observer2.observe(element);
+});
+
+animContactInputs.forEach(element => {
+    element.classList.add('hidden'); 
+    observer2.observe(element);
+});

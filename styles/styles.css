@@ -880,7 +880,7 @@ header.header nav ul li span.active {
     align-items: center;
     overflow: hidden;
     position: relative;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 .social-media i {
@@ -907,7 +907,7 @@ header.header nav ul li span.active {
 
 .social-media:hover::before {
     animation: social-media 0.7s forwards;
-    border-radius: 5px;
+    border-radius: 0px;
 }
 
 @keyframes social-media {
@@ -1064,6 +1064,11 @@ header.header nav ul li span.active {
     margin-left: 0.5rem;
 }
 
+.bar img {
+    width: 10rem;
+    height: 10rem;
+}
+
 .escalar {
     transform: scale(0.6);
     margin-top: -10px;
@@ -1119,4 +1124,61 @@ header.header nav ul li span.active {
 .button-more {
     width: 100%;
     /* background: aqua; */
+}
+
+.animate-on-scroll.hidden {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.animate-on-scroll-right.hidden {
+    opacity: 0;
+    transform: translateX(80px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.animate-on-scroll-left.hidden {
+    opacity: 0;
+    transform: translateX(-80px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.animate-on-scroll-right.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.animate-on-scroll-left.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.animate-on-scroll-input.hidden {
+    opacity: 0;
+    transform: rotate(0deg);
+    transition: opacity 0.7s ease-out, rotate 0.7s ease-out;
+}
+
+.animate-on-scroll-input.visible {
+    opacity: 1;
+    transform: rotate(0deg);
+    animation: contactInputs .3s ease-out;
+}
+
+@keyframes contactInputs {
+    0% {
+        transform: rotate(-8deg);
+    } 33% {
+        transform: rotate(0deg);
+    } 66% {
+        transform: rotate(8deg);
+    } 100% {
+        transform: rotate(0deg);
+    }
 }
