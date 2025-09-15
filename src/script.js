@@ -218,6 +218,7 @@ const animAbout = document.querySelectorAll(".animate-on-scroll");
 const animServicesRight = document.querySelectorAll(".animate-on-scroll-right");
 const animServicesLeft = document.querySelectorAll(".animate-on-scroll-left");
 const animContactInputs = document.querySelectorAll(".animate-on-scroll-input");
+const animSkillsFlip = document.querySelectorAll(".animate-on-scroll-flip");
 
 const observer2Options = {
     root: null,
@@ -249,6 +250,11 @@ animServicesLeft.forEach(element => {
 });
 
 animContactInputs.forEach(element => {
+    element.classList.add('hidden'); 
+    observer2.observe(element);
+});
+
+animSkillsFlip.forEach(element => {
     element.classList.add('hidden'); 
     observer2.observe(element);
 });
